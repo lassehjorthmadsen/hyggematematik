@@ -1,0 +1,20 @@
+project:
+  type: book
+
+book:
+  title: "Hyggematematik"
+  author: "Lasse Hjorth Madsen"
+  date: "today"
+  chapters:
+    - index.qmd
+    - differentialregning.qmd
+
+format:
+  html:
+    theme: cosmo
+    number-sections: false 
+    echo: false
+    warning: false
+    message: false
+  pdf:
+    documentclass: scrreprt
