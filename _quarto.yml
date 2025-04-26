@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "Hyggematematik"
@@ -18,12 +19,7 @@ format:
     number-sections: false 
     toc-title: "Indholdsfortegnelse"
 
-  pdf:
-    documentclass: scrreprt
-
 execute: 
     echo: false
     warning: false
     message: false
-
-lang: da
