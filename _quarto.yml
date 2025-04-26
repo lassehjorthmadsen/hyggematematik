@@ -3,18 +3,27 @@ project:
 
 book:
   title: "Hyggematematik"
-  author: "Lasse Hjorth Madsen"
+  author: "Selma og Lasse Hjorth Madsen"
   date: "today"
+  language: "da"
   chapters:
     - index.qmd
     - differentialregning.qmd
+    - enheder.qmd
+    - potenser-rodder.qmd
 
 format:
   html:
     theme: cosmo
     number-sections: false 
+    toc-title: "Indholdsfortegnelse"
+
+  pdf:
+    documentclass: scrreprt
+
+execute: 
     echo: false
     warning: false
     message: false
-  pdf:
-    documentclass: scrreprt
+
+lang: da
