@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="da" xml:lang="da"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.551">
@@ -55,17 +55,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Ingen resultater",
+    "search-matching-documents-text": "Matchende dokumenter",
+    "search-copy-link-title": "Kopier link for at søge",
+    "search-hide-matches-text": "Skjul yderligere resultater",
+    "search-more-match-text": "andet resultat i dette dokument",
+    "search-more-matches-text": "andre resultater i dette dokument",
+    "search-clear-button-title": "Ryd",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Fortryd",
+    "search-submit-button-title": "Indsend",
+    "search-label": "Søg"
   }
 }</script>
 
@@ -107,11 +107,11 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skift sidebjælke" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./differentialregning.html"><span class="chapter-title">Differentialregning</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skift sidebjælke" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -130,7 +130,7 @@ window.Quarto = {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Søg"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -153,7 +153,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./potenser-rodder.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Logaritmer</span></a>
+  <a href="./potenser-rodder.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Potenser og rødder</span></a>
   </div>
 </li>
     </ul>
@@ -163,18 +163,22 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Indholdsfortegnelse</h2>
+    <h2 id="toc-title">Indhold</h2>
    
   <ul>
   <li><a href="#hvad-er-differentialregning" id="toc-hvad-er-differentialregning" class="nav-link active" data-scroll-target="#hvad-er-differentialregning">Hvad er differentialregning?</a></li>
-  <li><a href="#en-simpel-funktion" id="toc-en-simpel-funktion" class="nav-link" data-scroll-target="#en-simpel-funktion">1. En simpel funktion</a></li>
-  <li><a href="#hvad-er-en-tangent" id="toc-hvad-er-en-tangent" class="nav-link" data-scroll-target="#hvad-er-en-tangent">2. Hvad er en tangent?</a></li>
-  <li><a href="#hvordan-finder-vi-tangentens-hældning" id="toc-hvordan-finder-vi-tangentens-hældning" class="nav-link" data-scroll-target="#hvordan-finder-vi-tangentens-hældning">3. Hvordan finder vi tangentens hældning?</a></li>
-  <li><a href="#flere-tangenter-og-deres-hældninger" id="toc-flere-tangenter-og-deres-hældninger" class="nav-link" data-scroll-target="#flere-tangenter-og-deres-hældninger">4. Flere tangenter og deres hældninger</a></li>
-  <li><a href="#den-afledte-funktion-hastighedsgrafen" id="toc-den-afledte-funktion-hastighedsgrafen" class="nav-link" data-scroll-target="#den-afledte-funktion-hastighedsgrafen">5. Den afledte funktion: Hastighedsgrafen</a></li>
-  <li><a href="#den-dobbelte-afledte-acceleration" id="toc-den-dobbelte-afledte-acceleration" class="nav-link" data-scroll-target="#den-dobbelte-afledte-acceleration">6. Den dobbelte afledte: Acceleration</a></li>
-  <li><a href="#illustration-af-acceleration" id="toc-illustration-af-acceleration" class="nav-link" data-scroll-target="#illustration-af-acceleration">7. Illustration af acceleration</a></li>
-  <li><a href="#et-knap-så-enkelt-eksempel" id="toc-et-knap-så-enkelt-eksempel" class="nav-link" data-scroll-target="#et-knap-så-enkelt-eksempel">8. Et knap så enkelt eksempel</a></li>
+  <li><a href="#en-simpel-funktion" id="toc-en-simpel-funktion" class="nav-link" data-scroll-target="#en-simpel-funktion">En simpel funktion</a></li>
+  <li><a href="#hvad-er-en-tangent" id="toc-hvad-er-en-tangent" class="nav-link" data-scroll-target="#hvad-er-en-tangent">Hvad er en tangent?</a></li>
+  <li><a href="#hvordan-finder-vi-tangentens-hældning" id="toc-hvordan-finder-vi-tangentens-hældning" class="nav-link" data-scroll-target="#hvordan-finder-vi-tangentens-hældning">Hvordan finder vi tangentens hældning?</a></li>
+  <li><a href="#flere-tangenter-og-deres-hældninger" id="toc-flere-tangenter-og-deres-hældninger" class="nav-link" data-scroll-target="#flere-tangenter-og-deres-hældninger">Flere tangenter og deres hældninger</a></li>
+  <li><a href="#den-afledte-funktion-hastighed" id="toc-den-afledte-funktion-hastighed" class="nav-link" data-scroll-target="#den-afledte-funktion-hastighed">Den afledte funktion: Hastighed</a></li>
+  <li><a href="#den-dobbelte-afledte-acceleration" id="toc-den-dobbelte-afledte-acceleration" class="nav-link" data-scroll-target="#den-dobbelte-afledte-acceleration">Den dobbelte afledte: Acceleration</a></li>
+  <li><a href="#et-knap-så-enkelt-eksempel" id="toc-et-knap-så-enkelt-eksempel" class="nav-link" data-scroll-target="#et-knap-så-enkelt-eksempel">Et knap så enkelt eksempel</a>
+  <ul class="collapse">
+  <li><a href="#afstand" id="toc-afstand" class="nav-link" data-scroll-target="#afstand">Afstand</a></li>
+  <li><a href="#hastighed" id="toc-hastighed" class="nav-link" data-scroll-target="#hastighed">Hastighed</a></li>
+  <li><a href="#acceleration" id="toc-acceleration" class="nav-link" data-scroll-target="#acceleration">Acceleration</a></li>
+  </ul></li>
   <li><a href="#opsummering" id="toc-opsummering" class="nav-link" data-scroll-target="#opsummering">Opsummering</a></li>
   </ul>
 </nav>
@@ -207,7 +211,7 @@ window.Quarto = {
 <p>Lad os komme i gang.</p>
 </section>
 <section id="en-simpel-funktion" class="level2">
-<h2 class="anchored" data-anchor-id="en-simpel-funktion">1. En simpel funktion</h2>
+<h2 class="anchored" data-anchor-id="en-simpel-funktion">En simpel funktion</h2>
 <p>Forestil dig, at du cykler og måler, hvor langt du kommer som funktion af tid. Lad os sige, at afstanden du har tilbagelagt (i meter) følger denne enkle regel:</p>
 <p><span class="math display">\[f(x) = x^2\]</span></p>
 <p>Her er <span class="math inline">\(x\)</span> tiden (i sekunder), og <span class="math inline">\(f(x)\)</span> er afstanden (i meter). Hvis du cykler i 3 sekunder, har du kørt <span class="math inline">\(3^2 = 9\)</span> meter.</p>
@@ -216,7 +220,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="differentialregning_files/figure-html/plot-funktion-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="differentialregning_files/figure-html/plot-funktion-1-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -224,7 +228,7 @@ window.Quarto = {
 <p>I det her eksempel viser grafen, at du cykler hurtigere og hurtigere. Jo længere tid der går, jo stejlere er grafen, og jo hurtigere stiger afstanden. Sådan kan det jo ikke blive ved med at gå i virkeligheden, for til sidst ville man cykle hurtigere end bilerne. Men for hyggematematikkens skyld, holder vi fast i eksemplet lidt endnu.</p>
 </section>
 <section id="hvad-er-en-tangent" class="level2">
-<h2 class="anchored" data-anchor-id="hvad-er-en-tangent">2. Hvad er en tangent?</h2>
+<h2 class="anchored" data-anchor-id="hvad-er-en-tangent">Hvad er en tangent?</h2>
 <p>En <strong>tangent</strong> er en lige linje, der rører grafen et bestemt sted og viser, hvor stejl grafen er lige der. For vores cykel betyder tangentens <strong>hældning</strong> cyklens <strong>hastighed</strong> på det tidspunkt.</p>
 <p>Tænk på det sådan: Når kurven er meget stejl, ændrer afstanden sig hurtigt, hvilket er det samme som at sige, at du kører hurtigt. Tangenten fortæller os præcis, hvor hurtigt du kører på et givet tidspunkt.</p>
 <p>Lad os tegne en tangent til grafen, når <span class="math inline">\(x = 3\ sekunder\)</span>:</p>
@@ -240,7 +244,7 @@ window.Quarto = {
 <p>Den røde streg er tangenten ved <span class="math inline">\(x=3\)</span>. Hældningen af denne linje fortæller os hastigheden, som vi snart finder ud af.</p>
 </section>
 <section id="hvordan-finder-vi-tangentens-hældning" class="level2">
-<h2 class="anchored" data-anchor-id="hvordan-finder-vi-tangentens-hældning">3. Hvordan finder vi tangentens hældning?</h2>
+<h2 class="anchored" data-anchor-id="hvordan-finder-vi-tangentens-hældning">Hvordan finder vi tangentens hældning?</h2>
 <p>For at finde hastigheden (tangentens hældning), bruger vi <strong>differentiering</strong>. Det betyder, at vi finder en ny regel, der fortæller os, hvor stejl grafen er for hver tid <span class="math inline">\(x\)</span>.</p>
 <p>Vores afstandsfunktion er:</p>
 <p><span class="math display">\[ f(x) = x^2 \]</span></p>
@@ -252,7 +256,7 @@ window.Quarto = {
 <p>Så ved <span class="math inline">\(x=3\ sekunder\)</span> kører du 6 meter per sekund. Den afledte funktion <span class="math inline">\(f'(x)=2x\)</span> giver os med andre ord hastigheden for enhver tid.</p>
 </section>
 <section id="flere-tangenter-og-deres-hældninger" class="level2">
-<h2 class="anchored" data-anchor-id="flere-tangenter-og-deres-hældninger">4. Flere tangenter og deres hældninger</h2>
+<h2 class="anchored" data-anchor-id="flere-tangenter-og-deres-hældninger">Flere tangenter og deres hældninger</h2>
 <p>Lad os tegne grafen igen, men nu med tangenter ved flere tidspunkter, så vi kan se, hvordan hastigheden ændrer sig. Vi vælger <span class="math inline">\(x=1,2,3\)</span>:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -265,8 +269,8 @@ window.Quarto = {
 </div>
 <p>Hver tangent viser hastigheden ved et bestemt tidspunkt: 1, 2, eller 3 sekunder. Bemærk, at hældningerne bliver større, når tiden stiger – det betyder, at cyklen kører hurtigere og hurtigere.</p>
 </section>
-<section id="den-afledte-funktion-hastighedsgrafen" class="level2">
-<h2 class="anchored" data-anchor-id="den-afledte-funktion-hastighedsgrafen">5. Den afledte funktion: Hastighedsgrafen</h2>
+<section id="den-afledte-funktion-hastighed" class="level2">
+<h2 class="anchored" data-anchor-id="den-afledte-funktion-hastighed">Den afledte funktion: Hastighed</h2>
 <p>Den afledte funktion <span class="math inline">\(f'(x) = 2x\)</span> er faktisk en graf over hastigheden. Lad os tegne den for at se, hvordan hastigheden ændrer sig over tid:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -280,16 +284,13 @@ window.Quarto = {
 <p>Grafen viser, at hastigheden stiger jævnt og følger en ret linje. Hvis vi kigger tilbage på tangenterne, kan vi se, at hældningerne (hastighederne) passer med værdierne på denne graf. For eksempel ved <span class="math inline">\(x = 3\)</span> er hastigheden 6, præcis som vi beregnede.</p>
 </section>
 <section id="den-dobbelte-afledte-acceleration" class="level2">
-<h2 class="anchored" data-anchor-id="den-dobbelte-afledte-acceleration">6. Den dobbelte afledte: Acceleration</h2>
-<p>Nu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig mere og mere over tid – det kalder vi <strong>acceleration</strong>. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den <strong>dobbelt afledte</strong>.</p>
+<h2 class="anchored" data-anchor-id="den-dobbelte-afledte-acceleration">Den dobbelte afledte: Acceleration</h2>
+<p>Nu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig over tid – det kalder vi <strong>acceleration</strong>. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den <strong>dobbelt afledte</strong>.</p>
 <p>Hastighedsfunktionen er:</p>
 <p><span class="math display">\[f'(x) = 2x\]</span></p>
 <p>Når vi differentierer igen, får vi:</p>
 <p><span class="math display">\[f''(x) = 2\]</span></p>
-<p>Dette betyder, at accelerationen er 2 meter per sekund per sekund (eller <span class="math inline">\(2 \text{m/s}^2\)</span>). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund.</p>
-</section>
-<section id="illustration-af-acceleration" class="level2">
-<h2 class="anchored" data-anchor-id="illustration-af-acceleration">7. Illustration af acceleration</h2>
+<p>Det betyder, at accelerationen er 2 meter per sekund per sekund (eller <span class="math inline">\(2 \text{m/s}^2\)</span>). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund.</p>
 <p>Lad os tegne en graf for accelerationen for at gøre det tydeligt:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -300,13 +301,15 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Denne graf er en lige linje, fordi accelerationen er konstant. Det fortæller os, at cyklen hele tiden får lige meget mere fart.</p>
+<p>Denne lidt kedelige, graf er bare en lige linje, fordi accelerationen er konstant. Det fortæller os, at cyklen hele tiden får lige meget mere fart.</p>
 </section>
 <section id="et-knap-så-enkelt-eksempel" class="level2">
-<h2 class="anchored" data-anchor-id="et-knap-så-enkelt-eksempel">8. Et knap så enkelt eksempel</h2>
+<h2 class="anchored" data-anchor-id="et-knap-så-enkelt-eksempel">Et knap så enkelt eksempel</h2>
+<section id="afstand" class="level3">
+<h3 class="anchored" data-anchor-id="afstand">Afstand</h3>
 <p>Lad os sige, at vi i stedet for vores første, ret enkle funktion, <span class="math inline">\(f(x) = x^2\)</span>, bruger en mere kompliceret funktion, lad os kalde den <span class="math inline">\(g(x)\)</span>:</p>
 <p><span class="math display">\[ g(x) = x^3 - 18x^2 + 80x \]</span> Her er <span class="math inline">\(x\)</span> stadig tiden (i sekunder), og <span class="math inline">\(g(x)\)</span> er afstanden (i meter). Denne funktion er en tredjegradsligning, hvilket betyder, at grafen ikke bare stiger eller falder hele tiden – den kan gå op og ned som en rutsjebane.</p>
-<p>Lad os starte med at tegne grafen for at se, hvordan din cykeltur ser ud:</p>
+<p>Lad os starte med at tegne grafen for at se, hvordan cykelturen nu ser ud:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -316,13 +319,15 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Som man kan se, stiger afstande de første par sekunder, men så <em>falder</em> den igen. Man kan forestille sig, at du havde glemt cykelhjelmen, vendte om og hentede den, og så startede turen en gang til. Til sidst, når du er kommet godt i gang, går det hurtigt fremad.</p>
-<p>Ligesom før vil vi tegne tangenter for at finde hastigheden på forskellige tidspunkter. Tangenten viser, hvor stejl grafen er, og det fortæller os, hvor hurtigt du cykler. Vi vælger fem tidspunkter: <span class="math inline">\(x=1, 2.5, 5, 10, 15\)</span>.</p>
-<p>For at tegne tangenterne skal vi bruge den afledte funktion til at finde hældningen. Den afledte af <span class="math display">\[ g(x) = x^3 - 18x^2 + 80x \]</span> er:</p>
-<p><span class="math display">\[ g'(x) = 3x^2 - 36x + 80 \]</span></p>
+<p>Som man kan se, stiger afstanden de første par sekunder, men så <em>falder</em> den igen. Man kan forestille sig, at du havde glemt cykelhjelmen, vendte om og hentede den, og så startede turen en gang til. Til sidst, når du er kommet godt i gang, går det hurtigt fremad.</p>
+</section>
+<section id="hastighed" class="level3">
+<h3 class="anchored" data-anchor-id="hastighed">Hastighed</h3>
+<p>Ligesom før vil vi tegne tangenter for at finde hastigheden på forskellige tidspunkter. Tangenten viser, hvor stejl grafen er, og det fortæller os, hvor hurtigt du cykler. Vi vælger 3 tidspunkter: <span class="math inline">\(x=2, 7, 12\)</span>.</p>
+<p>For at tegne tangenterne skal vi bruge den afledte funktion til at finde hældningen. Den afledte af: <span class="math display">\[ g(x) = x^3 - 18x^2 + 80x \]</span> er: <span class="math display">\[ g'(x) = 3x^2 - 36x + 80 \]</span></p>
 <p>Den differentieringsregel vi bruger her, ser sådan ud:</p>
 <p><span class="math display">\[ f(x) = x^n \]</span> <span class="math display">\[ f'(x) = nx^{(n-1)} \]</span> (<em>Hvorfor</em> den regel gælder, kan du finde en forklaring på til allersidst.)</p>
-<p><span class="math inline">\(g'(x)\)</span> er altså en funktion, der ortæller os hastigheden, eller hændingen til tangenten, for hver tid, <span class="math inline">\(x\)</span>. For at tegne tangenten ved en bestemt x-værdi, <span class="math inline">\(x_0\)</span>, bruger vi ligningen for tangentlinjen: <span class="math display">\[ y = g(x_0) + g'(x_0) \cdot (x - x_0) \]</span> Lad os tegne grafen med nogle tangenter, så vi får et indtryk af, hvordan det virker:</p>
+<p><span class="math inline">\(g'(x)\)</span> er altså en funktion, der fortæller os hastigheden, eller hældingen til tangenten, for hver tid, <span class="math inline">\(x\)</span>. For at tegne tangenten ved en bestemt x-værdi, <span class="math inline">\(x_0\)</span>, bruger vi ligningen for tangentlinjen: <span class="math display">\[ y = g(x_0) + g'(x_0) \cdot (x - x_0) \]</span> Lad os tegne grafen med nogle tangenter, så vi får et indtryk af, hvordan det ser ud:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -332,14 +337,60 @@ window.Quarto = {
 </div>
 </div>
 </div>
+<p>Som vi kan se, har nogle af tangenterne negativ hældning, fordi cyklisten vender om og kører tilbage igen for at hente den glemte cykelhjelm. Derfor er hastigheden på en måde negativ.</p>
+<p>Lad os for sjov prøve at tegne en hel masse tangenter, for at illustrere hvordan tangenter opfører sig:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="differentialregning_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Det er ret flot, og hvis man kigger efter, kan man se hvordan tangenternes hældning gradvist ændrer sig, som tiden går, og vi bevæger os ud af x-aksen.</p>
+<p>Vi kan vise alle hældningerne, ved at at tegne vores afledte funktion, <span class="math inline">\(g'(x)\)</span>. Den er en andengradsligning og danner derfor en parabel:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="differentialregning_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Du kan kontrollere, at de sorte prikker viser hældningen for de tangenter, vi så tidligere. Bemærk at hastigheden efter 12 sekunder er meget høj, over 75 meter i sekundet, hvilket selvfølgelig ikke er helt realistisk for en cykel.</p>
+</section>
+<section id="acceleration" class="level3">
+<h3 class="anchored" data-anchor-id="acceleration">Acceleration</h3>
+<p>For at finde accelerationen, differentierer vi hastighedsfunktionen én gang til, med de samme differentieringsregler som tidligere. Den dobbelt afledte, <span class="math inline">\(g''(x)\)</span> er:</p>
+<p><span class="math display">\[ g''(x)=6x-36 \]</span></p>
+<p>Denne funktion viser, hvordan accelerationen ændrer sig over tid. Lad os tegne den:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="differentialregning_files/figure-html/plot_gmm-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Hvor den afledte funktion viste hastigheden ved forskellige tidspunkter, viser den dobbelt afledte funktion, hvor meget hastigheden <em>ændrer</em> sig over tid. Det er det, vi kalder acceleration.</p>
+<p>I grafen kan man se, at accelerationen stiger jævnt over tid. Når for eksempel <span class="math inline">\(x=2\)</span>, er accelerationen negativ, fordi cyklisten er ved at tage farten af for at vende om. Men som tiden går, bliver accelerationen større og større, hvilket betyder, at hastigheden ændrer sig hurtigere og hurtigere. Det er klart, at det ikke kan fortsætte sådan, for der er grænser for, hvor hurtigt cykler (og alle andre transportmidler) kan køre.</p>
+</section>
 </section>
 <section id="opsummering" class="level2">
 <h2 class="anchored" data-anchor-id="opsummering">Opsummering</h2>
 <ul>
-<li>Vi startede med at kigge på, hvor langt en cykel kører <span class="math inline">\(f(x) = x^2\)</span>.</li>
-<li>Vi fandt ud af, at tangentens hældning viser <strong>hastigheden</strong>, og vi brugte differentiering til at finde hastighedsfunktionen <span class="math inline">\(f'(x) = 2x\)</span>.</li>
+<li>Vi startede med at kigge på, hvor langt en cykel kører. Vi brugte en ret enkel andengradsligning som eksempel til at beskrive afstand, <span class="math inline">\(f(x)\)</span>, som funktion af tid, <span class="math inline">\(x\)</span>, sådan her: <span class="math inline">\(f(x) = x^2\)</span>.</li>
+<li>Vi fandt ud af, at tangentens hældning viser cyklens <strong>hastighed</strong>, og vi brugte differentiering til at finde <strong>hastighedsfunktionen</strong>: <span class="math inline">\(f'(x) = 2x\)</span>.</li>
 <li>Vi tegnede tangenter og så, at hastigheden stiger over tid.</li>
-<li>Til sidst lærte vi om <strong>acceleration</strong> ved at differentiere igen <span class="math inline">\(f''(x) = 2\)</span>, og vi tegnede en graf for at vise, at accelerationen er konstant.</li>
+<li>Derefter så vi på <strong>acceleration</strong> ved at differentiere igen <span class="math inline">\(f''(x) = 2\)</span>, og vi tegnede en ret kedelig graf for at vise, at accelerationen er konstant.</li>
+<li>Til sidst prøvede vi det hele igen for en lidt mere kompliceret funktion, nemlig en tredjegradsligning: <span class="math inline">\(g(x) = x^3 - 18x^2 + 80x\)</span>. Vi så at:
+<ul>
+<li>Den afledte funktion, altså <strong>hastighedsfunktionen</strong>, <span class="math inline">\(g'(x) = 3x^2 - 36x + 80\)</span>, er en andengradsligning, som sjovt nok kan give negative hastigheder.</li>
+<li>Den dobbelt afledte funktion, altså <strong>accelerationsfunktionen</strong>, <span class="math inline">\(g''(x)=6x-36\)</span>, viste, at hastigheden hele tiden steg.</li>
+</ul></li>
 </ul>
 
 
@@ -400,12 +451,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopieret!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopieret!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
