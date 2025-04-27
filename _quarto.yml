@@ -4,7 +4,7 @@ project:
 
 book:
   title: "Hyggematematik"
-  author: "Selma og Lasse Hjorth Madsen"
+  author: "Selma og Lasse"
   date: "today"
   language: "da"
   chapters:
@@ -17,9 +17,11 @@ format:
   html:
     theme: cosmo
     number-sections: false 
-    toc-title: "Indholdsfortegnelse"
+    toc-title: "Indhold"
 
 execute: 
     echo: false
     warning: false
     message: false
+    
+lang: "da"

@@ -1,8 +1,8 @@
 ---
-title: "Logaritmer"
+title: "Potenser og rødder"
 autor: "Lasse Hjorth Madsen"
 published: "today"
 format: html
 ---
 
-## Hvad er logaritmer?
+## Hvad er potenser og rødder?

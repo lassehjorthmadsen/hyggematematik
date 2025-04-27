@@ -17,7 +17,7 @@ library(ggrepel)
 theme_set(theme_minimal())
 ```
 
-## 1. En simpel funktion
+## En simpel funktion
 
 Forestil dig, at du cykler og måler, hvor langt du kommer som funktion af tid. Lad os sige, at afstanden du har tilbagelagt (i meter) følger denne enkle regel:
 
@@ -27,16 +27,17 @@ Her er $x$ tiden (i sekunder), og $f(x)$ er afstanden (i meter). Hvis du cykler 
 
 Lad os tegne en graf for at se, hvordan det ser ud:
 
-```{r plot-funktion}
+```{r plot-funktion-1}
 # Funktion for afstand
 f <- function(x) x^2
-
 data <- tibble(tid = seq(0, 5, by = 0.1), afstand = f(tid))
+tangent_punkter <- seq(1, 3)
 
 p1 <- ggplot(data, aes(x = tid, y = afstand)) +
   geom_line(color = "blue", size = 1, alpha = 0.5) +
   lims(x = c(0, 5), y = c(0, 25)) +
-  labs(title = "Afstand tilbagelagt på cyklen",
+  labs(title = "Afstand tilbagelagt på cykel",
+       subtitle = "Vi bruger en andengradsligning som eksempel",
        x = "Tid (sekunder)",
        y = "Afstand (meter)")
 
@@ -45,7 +46,7 @@ p1
 
 I det her eksempel viser grafen, at du cykler hurtigere og hurtigere. Jo længere tid der går, jo stejlere er grafen, og jo hurtigere stiger afstanden. Sådan kan det jo ikke blive ved med at gå i virkeligheden, for til sidst ville man cykle hurtigere end bilerne. Men for hyggematematikkens skyld, holder vi fast i eksemplet lidt endnu. 
 
-## 2. Hvad er en tangent?
+## Hvad er en tangent?
 
 En **tangent** er en lige linje, der rører grafen et bestemt sted og viser, hvor stejl grafen er lige der. For vores cykel betyder tangentens **hældning** cyklens **hastighed** på det tidspunkt.
 
@@ -57,19 +58,19 @@ Lad os tegne en tangent til grafen, når $x = 3\ sekunder$:
 fm <- function(x, x0) 2 * x0 * (x - x0) + f(x0) 
 
 # Data til tangenter
-tangent_data <- expand_grid(data, punkt = seq(1, 3)) |> 
+tangent_data <- expand_grid(data, punkt = tangent_punkter) |> 
   mutate(y = fm(tid, punkt))
 
 # Plot funktion og tangent
 p1 +
   geom_line(data = filter(tangent_data, punkt == 3), aes(x = tid, y = y), color = "red", size = 0.5, linetype = "dashed") +
   geom_point(data = tibble(tid = 3, afstand = f(3)), color = "red") +
-  labs(title = "Afstand med tangent ved x = 3 sekunder") 
+  labs(subtitle = "Tangent ved x = 3 sekunder") 
 ```
 
 Den røde streg er tangenten ved $x=3$. Hældningen af denne linje fortæller os hastigheden, som vi snart finder ud af.
 
-## 3. Hvordan finder vi tangentens hældning?
+## Hvordan finder vi tangentens hældning?
 
 For at finde hastigheden (tangentens hældning), bruger vi **differentiering**. Det betyder, at vi finder en ny regel, der fortæller os, hvor stejl grafen er for hver tid $x$.
 
@@ -89,7 +90,7 @@ $$ f'(3) = 2 \cdot 3 = 6 \text{ meter per sekund} $$
 
 Så ved $x=3\ sekunder$ kører du 6 meter per sekund. Den afledte funktion $f'(x)=2x$ giver os med andre ord hastigheden for enhver tid.
 
-## 4. Flere tangenter og deres hældninger
+## Flere tangenter og deres hældninger
 
 Lad os tegne grafen igen, men nu med tangenter ved flere tidspunkter, så vi kan se, hvordan hastigheden ændrer sig. Vi vælger $x=1,2,3$:
 
@@ -116,13 +117,13 @@ p1 +
                   direction = "y",
                   segment.color = "grey",
                   arrow = arrow(length = unit(0.02, "npc"))) +
-  labs(title = "Afstand med tangenter ved x = 1, 2, 3",
+  labs(subtitle = "Tangenter ved x = 1, 2, 3",
        color = "Tidspunkt")
 ```
 
 Hver tangent viser hastigheden ved et bestemt tidspunkt: 1, 2, eller 3 sekunder. Bemærk, at hældningerne bliver større, når tiden stiger -- det betyder, at cyklen kører hurtigere og hurtigere.
 
-## 5. Den afledte funktion: Hastighedsgrafen
+## Den afledte funktion: Hastighed
 
 Den afledte funktion $f'(x) = 2x$ er faktisk en graf over hastigheden. Lad os tegne den for at se, hvordan hastigheden ændrer sig over tid:
 
@@ -130,7 +131,7 @@ Den afledte funktion $f'(x) = 2x$ er faktisk en graf over hastigheden. Lad os te
 # Plot hastighed
 ggplot(data, aes(x = tid, y = 2*tid)) +
   geom_line(color = "darkgreen", size = 1) +
-  geom_point(data = filter(data, tid %in% c(1, 2, 3)), size = 2) +
+  geom_point(data = filter(data, tid %in% tangent_punkter), size = 2) +
   scale_x_continuous(breaks = seq(1, 5)) +
   scale_y_continuous(breaks = seq(1, 10)) +
   labs(title = "Hastighed som funktion af tid",
@@ -140,9 +141,9 @@ ggplot(data, aes(x = tid, y = 2*tid)) +
 
 Grafen viser, at hastigheden stiger jævnt og følger en ret linje. Hvis vi kigger tilbage på tangenterne, kan vi se, at hældningerne (hastighederne) passer med værdierne på denne graf. For eksempel ved $x = 3$ er hastigheden 6, præcis som vi beregnede.
 
-## 6. Den dobbelte afledte: Acceleration
+## Den dobbelte afledte: Acceleration
 
-Nu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig mere og mere over tid -- det kalder vi **acceleration**. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den **dobbelt afledte**.
+Nu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig over tid -- det kalder vi **acceleration**. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den **dobbelt afledte**.
 
 Hastighedsfunktionen er:
 
@@ -152,14 +153,11 @@ Når vi differentierer igen, får vi:
 
 $$f''(x) = 2$$
 
-Dette betyder, at accelerationen er 2 meter per sekund per sekund (eller $2 \text{m/s}^2$). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund.
-
-## 7. Illustration af acceleration
+Det betyder, at accelerationen er 2 meter per sekund per sekund (eller $2 \text{m/s}^2$). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund.
 
 Lad os tegne en graf for accelerationen for at gøre det tydeligt:
 
 ```{r plot-acceleration}
-# Plot acceleration
 ggplot(data, aes(x = tid, y = 2)) +
   geom_line(color = "orange", size = 1) +
   labs(title = "Acceleration som funktion af tid",
@@ -168,16 +166,18 @@ ggplot(data, aes(x = tid, y = 2)) +
   theme_minimal()
 ```
 
-Denne graf er en lige linje, fordi accelerationen er konstant. Det fortæller os, at cyklen hele tiden får lige meget mere fart.
+Denne lidt kedelige, graf er bare en lige linje, fordi accelerationen er konstant. Det fortæller os, at cyklen hele tiden får lige meget mere fart.
 
-## 8. Et knap så enkelt eksempel
+## Et knap så enkelt eksempel
+
+### Afstand
 
 Lad os sige, at vi i stedet for vores første, ret enkle funktion, $f(x) = x^2$, bruger en mere kompliceret funktion, lad os kalde den $g(x)$:
 
-  $$ g(x) = x^3 - 18x^2 + 80x $$
+$$ g(x) = x^3 - 18x^2 + 80x $$
 Her er $x$ stadig tiden (i sekunder), og $g(x)$ er afstanden (i meter). Denne funktion er en tredjegradsligning, hvilket betyder, at grafen ikke bare stiger eller falder hele tiden – den kan gå op og ned som en rutsjebane.
 
-Lad os starte med at tegne grafen for at se, hvordan din cykeltur ser ud:
+Lad os starte med at tegne grafen for at se, hvordan cykelturen nu ser ud:
 
 ```{r}
 # Funktion for afstand
@@ -185,23 +185,30 @@ g <- function(x) x^3 - 18*x^2 + 80*x
 
 data <- tibble(tid = seq(0, 15, by = 0.1), afstand = g(tid))
 
+tangent_punkter <- c(2, 7, 12)
+
 p2 <- ggplot(data, aes(x = tid, y = afstand)) +
   geom_line(color = "blue", size = 1, alpha = 0.5) +
   lims(x = c(0, 15), y = c(-10, 500)) +
-  labs(title = "Afstand tilbagelagt på cyklen (tredjegradsfunktion)",
+  labs(title = "Afstand tilbagelagt på cykel",
+       subtitle = "Denne gang en mere kompliceret tredjegradsfunktion",
        x = "Tid (sekunder)",
        y = "Afstand (meter)")
 
 p2
+
 ```
 
-Som man kan se, stiger afstande de første par sekunder, men så *falder* den igen. Man kan forestille sig, at du havde glemt cykelhjelmen, vendte om og hentede den, og så startede turen en gang til. Til sidst, når du er kommet godt i gang, går det hurtigt fremad.
+Som man kan se, stiger afstanden de første par sekunder, men så *falder* den igen. Man kan forestille sig, at du havde glemt cykelhjelmen, vendte om og hentede den, og så startede turen en gang til. Til sidst, når du er kommet godt i gang, går det hurtigt fremad.
 
-Ligesom før vil vi tegne tangenter for at finde hastigheden på forskellige tidspunkter. Tangenten viser, hvor stejl grafen er, og det fortæller os, hvor hurtigt du cykler. Vi vælger fem tidspunkter: $x=1, 2.5, 5, 10, 15$.
+### Hastighed
 
-For at tegne tangenterne skal vi bruge den afledte funktion til at finde hældningen. Den afledte af $$ g(x) = x^3 - 18x^2 + 80x $$ er:
+Ligesom før vil vi tegne tangenter for at finde hastigheden på forskellige tidspunkter. Tangenten viser, hvor stejl grafen er, og det fortæller os, hvor hurtigt du cykler. Vi vælger `r length(tangent_punkter)` tidspunkter: $x=`r paste(tangent_punkter, collapse = ", ")`$.
 
-  $$ g'(x) = 3x^2 - 36x + 80 $$
+For at tegne tangenterne skal vi bruge den afledte funktion til at finde hældningen. Den afledte af:
+$$ g(x) = x^3 - 18x^2 + 80x $$
+er:
+$$ g'(x) = 3x^2 - 36x + 80 $$
 
 Den differentieringsregel vi bruger her, ser sådan ud:
 
@@ -209,17 +216,16 @@ $$ f(x) = x^n $$
 $$ f'(x) = nx^{(n-1)} $$
 (*Hvorfor* den regel gælder, kan du finde en forklaring på til allersidst.)
 
-$g'(x)$  er altså en funktion, der ortæller os hastigheden, eller hændingen til tangenten, for hver tid, $x$. For at tegne tangenten ved en bestemt x-værdi, $x_0$, bruger vi ligningen for tangentlinjen: 
+$g'(x)$  er altså en funktion, der fortæller os hastigheden, eller hældingen til tangenten, for hver tid, $x$. For at tegne tangenten ved en bestemt x-værdi, $x_0$, bruger vi ligningen for tangentlinjen: 
 $$ y = g(x_0) + g'(x_0) \cdot (x - x_0) $$
-Lad os tegne grafen med nogle tangenter, så vi får et indtryk af, hvordan det virker:
+Lad os tegne grafen med nogle tangenter, så vi får et indtryk af, hvordan det ser ud:
   
 ```{r}
-
 # Funktion for tangentlinjen
 gm <- function(x, x0) g(x0) + (3*x0^2 - 36*x0 + 80) * (x - x0)
 
 # Data til tangenter
-tangent_data <- expand_grid(data, punkt = c(2, 7, 12)) |> 
+tangent_data <- expand_grid(data, punkt = tangent_punkter) |> 
   mutate(y = gm(tid, punkt))
 
 # Beregn hældninger til labels
@@ -240,20 +246,80 @@ p2 +
   geom_text_repel(data = slopes, 
                   aes(x = punkt, y = afstand, label = slope),
                   seed = 8,
-                  force = 100,
+                  force = 300,
                   nudge_y = 0.2,
                   segment.size = 0.5,
                   direction = "y",
                   segment.color = "grey",
                   arrow = arrow(length = unit(0.02, "npc"))) +
-  labs(title = "Afstand med tangenter ved x = 2, 7, 12",
+  scale_x_continuous(breaks = c(seq(0, 15, 2), tangent_punkter)) +
+  labs(subtitle = paste("Tangenter ved x =", paste(tangent_punkter, collapse = ", ")),
        color = "Tidspunkt")
 ```
 
+Som vi kan se, har nogle af tangenterne negativ hældning, fordi cyklisten vender om og kører tilbage igen for at hente den glemte cykelhjelm. Derfor er hastigheden på en måde negativ.
+
+Lad os for sjov prøve at tegne en hel masse tangenter, for at illustrere hvordan tangenter opfører sig:
+
+```{r}
+mange_tangent_punkter <- seq(0, 15, 0.2)
+
+tangent_data <- expand_grid(data, punkt = mange_tangent_punkter) |> 
+  mutate(y = gm(tid, punkt))
+
+# Plot funktion og tangenter
+p2 +
+  geom_line(data = tangent_data, 
+            aes(x = tid, y = y, group = punkt),
+            size = 0.5, alpha = 0.2) +
+  labs(subtitle = "En hel masse tangenter")
+
+```
+
+Det er ret flot, og hvis man kigger efter, kan man se hvordan tangenternes hældning gradvist ændrer sig, som tiden går, og vi bevæger os ud af x-aksen.
+
+Vi kan vise alle hældningerne, ved at at tegne vores afledte funktion, $g'(x)$. Den er en andengradsligning og danner derfor en parabel:
+
+```{r}
+# Plot hastighed
+ggplot(data, aes(x = tid, y = 3 * tid^2 - 36*tid + 80)) +
+  geom_line(color = "darkgreen", size = 1) +
+  geom_point(data = filter(data, tid %in% tangent_punkter), size = 2) +
+  scale_x_continuous(breaks = c(seq(0, 15, 2), tangent_punkter)) +
+  labs(title = "Hastighed som funktion af tid",
+       x = "Tid (sekunder)",
+       y = "Hastighed (meter/sekund)") 
+```
+
+Du kan kontrollere, at de sorte prikker viser hældningen for de tangenter, vi så tidligere. Bemærk at hastigheden efter 12 sekunder er meget høj, over 75 meter i sekundet, hvilket selvfølgelig ikke er helt realistisk for en cykel. 
+
+### Acceleration
+
+For at finde accelerationen, differentierer vi hastighedsfunktionen én gang til, med de samme differentieringsregler som tidligere. Den dobbelt afledte, $g''(x)$ er:
+
+$$ g''(x)=6x-36 $$
+
+Denne funktion viser, hvordan accelerationen ændrer sig over tid. Lad os tegne den:
+
+```{r plot_gmm}
+ggplot(data, aes(x = tid, y = 6*tid-36)) +
+  geom_line(color = "orange", size = 1) +
+  scale_x_continuous(breaks = c(seq(0, 15, 2), tangent_punkter)) +
+  labs(title = "Acceleration som funktion af tid",
+       x = "Tid (sekunder)",
+       y = "Acceleration (m/s²)")
+```
+
+Hvor den afledte funktion viste hastigheden ved forskellige tidspunkter, viser den dobbelt afledte funktion, hvor meget hastigheden *ændrer* sig over tid. Det er det, vi kalder acceleration. 
+
+I grafen kan man se, at accelerationen stiger jævnt over tid. Når for eksempel $x=2$, er accelerationen negativ, fordi cyklisten er ved at tage farten af for at vende om. Men som tiden går, bliver accelerationen større og større, hvilket betyder, at hastigheden ændrer sig hurtigere og hurtigere. Det er klart, at det ikke kan fortsætte sådan, for der er grænser for, hvor hurtigt cykler (og alle andre transportmidler) kan køre. 
 
 ## Opsummering
 
--   Vi startede med at kigge på, hvor langt en cykel kører $f(x) = x^2$.
--   Vi fandt ud af, at tangentens hældning viser **hastigheden**, og vi brugte differentiering til at finde hastighedsfunktionen $f'(x) = 2x$.
+-   Vi startede med at kigge på, hvor langt en cykel kører. Vi brugte en ret enkel andengradsligning som eksempel til at beskrive afstand, $f(x)$, som funktion af tid, $x$, sådan her: $f(x) = x^2$.
+-   Vi fandt ud af, at tangentens hældning viser cyklens **hastighed**, og vi brugte differentiering til at finde **hastighedsfunktionen**: $f'(x) = 2x$.
 -   Vi tegnede tangenter og så, at hastigheden stiger over tid.
--   Til sidst lærte vi om **acceleration** ved at differentiere igen $f''(x) = 2$, og vi tegnede en graf for at vise, at accelerationen er konstant.
+-   Derefter så vi på **acceleration** ved at differentiere igen $f''(x) = 2$, og vi tegnede en ret kedelig graf for at vise, at accelerationen er konstant.
+- Til sidst prøvede vi det hele igen for en lidt mere kompliceret funktion, nemlig en tredjegradsligning: $g(x) = x^3 - 18x^2 + 80x$. Vi så at:
+   - Den afledte funktion, altså **hastighedsfunktionen**, $g'(x) = 3x^2 - 36x + 80$, er en andengradsligning, som sjovt nok kan give negative hastigheder.
+   - Den dobbelt afledte funktion, altså **accelerationsfunktionen**, $g''(x)=6x-36$, viste, at hastigheden hele tiden steg. 
