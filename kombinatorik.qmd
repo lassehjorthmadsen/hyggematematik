@@ -1,0 +1,8 @@
+---
+title: "Kombinatorik"
+autor: "Lasse Hjorth Madsen"
+published: "today"
+format: html
+---
+
+## Hvad er kombinatorik?
