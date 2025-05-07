@@ -1,6 +1,15 @@
-.Rproj.user
+# Quarto cache and generated files
+*_cache/
+*_files/
+.quarto/
+_site/
+
+# R-specific
 .Rhistory
 .RData
-.Ruserdata
+*.Rproj
+.Rproj.user/
 
-/.quarto/
+# macOS/Windows artifacts
+.DS_Store
+Thumbs.db

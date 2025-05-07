@@ -1,8 +1,10 @@
 ---
 title: "Potenser og rødder"
-autor: "Lasse Hjorth Madsen"
+author: "Lasse Hjorth Madsen"
 published: "today"
 format: html
 ---
 
 ## Hvad er potenser og rødder?
+
+Se kapitlet @chap:enheder for mere information.

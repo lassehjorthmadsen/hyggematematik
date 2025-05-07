@@ -1,6 +1,6 @@
 ---
 title: "Logaritmer"
-autor: "Lasse Hjorth Madsen"
+author: "Lasse Hjorth Madsen"
 published: "today"
 format: html
 ---

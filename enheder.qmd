@@ -1,8 +1,68 @@
 ---
 title: "Enheder"
-autor: "Lasse Hjorth Madsen"
+author: "Lasse Hjorth Madsen"
 published: "today"
 format: html
 ---
 
-## Hvad er enheder?
+# Hvad er enheder? {#chap:enheder}
+
+Enheder er vigtige. For eksempel betyder det en del, om man kommer 20 *sekunder* for sent til en aftale, eller 20 *minutter* for sent. Sekunder og minutter er to forskellige tidsenheder. 
+
+Enheder kan også være et uventet hjælpemiddel til at forstå, om vi har regnet rigtigt, eller hvordan et bestemt problem skal løses.
+
+## Et løbeeksempel
+
+Lad os sige, man løber 10 kilometer på 1 time. 10 er afstanden, *kilometer* afstandsenheden. 1 er tiden, *time* er tidsenheden.
+
+Der er nogenlunde nemt at se, at den  *hastighed* man har løbet med, er 10 kilometer i timen, hvilket vi til daglig skriver sådan her: 10 km/t.
+
+Regnestykket er så enkelt, at mange næsten ikke tænker over det, men vi har taget afstanden (de 10 kilometer) og divideret med tiden (den ene time) sådan her:
+
+$$\frac{10\ km}{1\ t} = 10 \frac{km}{t}$$
+Hvor kilometer er forkortet til $km$ og timer til $t$. Resultatet er den gennemsnitlige hastighed, og enheden er $\frac{km}{t}$, det samme som km/t, altså kilometer i timen. (Det er den *gennemsnitlige* hastighed, for man løber nok ikke præcist lige hurtigt hele vejen.) 
+
+$\frac{km}{t}$ er *enheden* for hastighed. Tricket er, at enhederne opfører sig som ethvert andet regnestyke. Hvis vi for eksempel havde haft:
+
+$$\frac{8\ a}{2\ b} = 4 \frac{a}{b}$$
+Vi kan omskrive det lidt mere, hvis det er svært umiddelbart at se, hvorfor regnestykket ovenfor er rigtigt:
+
+$$\frac{8\ a}{2\ b} = \frac{8}{2} \cdot \frac{a}{b} = 4 \cdot \frac{a}{b}$$
+
+Tricket er som sagt, at enheder opfører sig ligesom variablerne $a$ og $b$ i stykket herover.
+
+Hvis vi i løbeeksemplet ikke ville udregne løbehastigheden mål i kilometer i timen, men i stedet for vide, hvor mange timer det tager at løbe en kilometer, ville regnestykket bare være den omvendte brøk:
+
+$$\frac{1\ t}{10\ km} = 0,1 \frac{t}{km}$$
+Det tager altså 0,1 time at løbe en kilometer. Løbere vil tit gerne vide, hvor mange *minutter*, ikke timer, det tager at løbe en kilometer. Og eftersom $1\ time = 60\ minutter$ kan vi bare stille omregningen sådan op:
+
+$$0,1 \frac{t}{km} \cdot 60 \frac{min}{t} = 0,1 \cdot 60 \cdot \frac{t\cdot min}{km \cdot t} = 6 \frac{min}{km}$$
+Det tager altså løberen 6 minutter ($min$) at løbe én kilometer. Igen: Læg mærke til at vi fandt den nye enhed $\frac{min}{km}$ ved bare at behandle enhederne som almindelige tal eller variabler.
+
+Hvis vi gerne vil ændre enhed igen, så se hvor lang tid det tager at løbe en meter ($m$), bruger vi blot at $1\ m = 0,001\ km$ og regner på samme måde:
+
+$$6 \frac{min}{km} \cdot 0,001 \frac{km}{m} = 0,006 \frac{min}{m}$$
+
+Det tager altså 0,006 minutter at løbe én meter. Og hvis vil gerne vil have det i sekunder per meter, bruger vi, at der 60 sekunder ($s$) per minut: 
+
+$$0,006 \frac{min}{m} \cdot 60 \frac{s}{min} = 0,36 \frac{s}{m}$$
+Det tager 0,36 sekunder at løbe en meter.
+
+## Sjove enheder
+
+### Frekvens
+
+Hvis du fandt løbeeksemplet nemt, er det måske fordi enhederne, meter, minutter og sekunder er så velkendte.
+
+En knap så kendt enhed er hertz, som bruges til at måle, hvor *ofte* noget forekommer i løbet at et bestemt tidsrum. Vi kalder det nogle gange frekvens.
+
+Et eksempel kan være hjerteslag eller puls. Lad os sige, at en person har 90 hjerteslag på 60 sekunder. Pulsen er derfor:
+
+$$ \frac{90}{60 s} = \frac{3}{2 s} = 1,5 \frac{1}{s} = 1,5 s^{-1}$$
+Enheden for hertz er nemlig $s^{-1}$ og $\frac{1}{s} = s^{-1}$. Det kan godt virke forvirrende, fordi den enhed ikke er så velkendt fra hverdagen. Grunden til at vi ender med en lidt sjov enhed er, at antallet af hjerteslag bare er almindelige tælletal. Tælleren i brøken $\frac{3}{2 s}$ har med andre ord ikke nogen enhed.
+
+### Acceleration
+
+### Kraft
+
+Newton

@@ -10,13 +10,53 @@
     ]
   },
   {
+    "objectID": "enheder.html",
+    "href": "enheder.html",
+    "title": "Enheder",
+    "section": "",
+    "text": "Hvad er enheder?\nEnheder er vigtige. For eksempel betyder det en del, om man kommer 20 sekunder for sent til en aftale, eller 20 minutter for sent. Sekunder og minutter er to forskellige tidsenheder.\nEnheder kan også være et uventet hjælpemiddel til at forstå, om vi har regnet rigtigt, eller hvordan et bestemt problem skal løses.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Enheder</span>"
+    ]
+  },
+  {
+    "objectID": "enheder.html#et-løbeeksempel",
+    "href": "enheder.html#et-løbeeksempel",
+    "title": "Enheder",
+    "section": "Et løbeeksempel",
+    "text": "Et løbeeksempel\nLad os sige, man løber 10 kilometer på 1 time. 10 er afstanden, kilometer afstandsenheden. 1 er tiden, time er tidsenheden.\nDer er nogenlunde nemt at se, at den hastighed man har løbet med, er 10 kilometer i timen, hvilket vi til daglig skriver sådan her: 10 km/t.\nRegnestykket er så enkelt, at mange næsten ikke tænker over det, men vi har taget afstanden (de 10 kilometer) og divideret med tiden (den ene time) sådan her:\n\\[\\frac{10\\ km}{1\\ t} = 10 \\frac{km}{t}\\] Hvor kilometer er forkortet til \\(km\\) og timer til \\(t\\). Resultatet er den gennemsnitlige hastighed, og enheden er \\(\\frac{km}{t}\\), det samme som km/t, altså kilometer i timen. (Det er den gennemsnitlige hastighed, for man løber nok ikke præcist lige hurtigt hele vejen.)\n\\(\\frac{km}{t}\\) er enheden for hastighed. Tricket er, at enhederne opfører sig som ethvert andet regnestyke. Hvis vi for eksempel havde haft:\n\\[\\frac{8\\ a}{2\\ b} = 4 \\frac{a}{b}\\] Vi kan omskrive det lidt mere, hvis det er svært umiddelbart at se, hvorfor regnestykket ovenfor er rigtigt:\n\\[\\frac{8\\ a}{2\\ b} = \\frac{8}{2} \\cdot \\frac{a}{b} = 4 \\cdot \\frac{a}{b}\\]\nTricket er som sagt, at enheder opfører sig ligesom variablerne \\(a\\) og \\(b\\) i stykket herover.\nHvis vi i løbeeksemplet ikke ville udregne løbehastigheden mål i kilometer i timen, men i stedet for vide, hvor mange timer det tager at løbe en kilometer, ville regnestykket bare være den omvendte brøk:\n\\[\\frac{1\\ t}{10\\ km} = 0,1 \\frac{t}{km}\\] Det tager altså 0,1 time at løbe en kilometer. Løbere vil tit gerne vide, hvor mange minutter, ikke timer, det tager at løbe en kilometer. Og eftersom \\(1\\ time = 60\\ minutter\\) kan vi bare stille omregningen sådan op:\n\\[0,1 \\frac{t}{km} \\cdot 60 \\frac{min}{t} = 0,1 \\cdot 60 \\cdot \\frac{t\\cdot min}{km \\cdot t} = 6 \\frac{min}{km}\\] Det tager altså løberen 6 minutter (\\(min\\)) at løbe én kilometer. Igen: Læg mærke til at vi fandt den nye enhed \\(\\frac{min}{km}\\) ved bare at behandle enhederne som almindelige tal eller variabler.\nHvis vi gerne vil ændre enhed igen, så se hvor lang tid det tager at løbe en meter (\\(m\\)), bruger vi blot at \\(1\\ m = 0,001\\ km\\) og regner på samme måde:\n\\[6 \\frac{min}{km} \\cdot 0,001 \\frac{km}{m} = 0,006 \\frac{min}{m}\\]\nDet tager altså 0,006 minutter at løbe én meter. Og hvis vil gerne vil have det i sekunder per meter, bruger vi, at der 60 sekunder (\\(s\\)) per minut:\n\\[0,006 \\frac{min}{m} \\cdot 60 \\frac{s}{min} = 0,36 \\frac{s}{m}\\] Det tager 0,36 sekunder at løbe en meter.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Enheder</span>"
+    ]
+  },
+  {
+    "objectID": "enheder.html#sjove-enheder",
+    "href": "enheder.html#sjove-enheder",
+    "title": "Enheder",
+    "section": "Sjove enheder",
+    "text": "Sjove enheder\n\nFrekvens\nHvis du fandt løbeeksemplet nemt, er det måske fordi enhederne, meter, minutter og sekunder er så velkendte.\nEn knap så kendt enhed er hertz, som bruges til at måle, hvor ofte noget forekommer i løbet at et bestemt tidsrum. Vi kalder det nogle gange frekvens.\nEt eksempel kan være hjerteslag eller puls. Lad os sige, at en person har 90 hjerteslag på 60 sekunder. Pulsen er derfor:\n\\[ \\frac{90}{60 s} = \\frac{3}{2 s} = 1,5 \\frac{1}{s} = 1,5 s^{-1}\\] Enheden for hertz er nemlig \\(s^{-1}\\) og \\(\\frac{1}{s} = s^{-1}\\). Det kan godt virke forvirrende, fordi den enhed ikke er så velkendt fra hverdagen. Grunden til at vi ender med en lidt sjov enhed er, at antallet af hjerteslag bare er almindelige tælletal. Tælleren i brøken \\(\\frac{3}{2 s}\\) har med andre ord ikke nogen enhed.\n\n\nAcceleration\n\n\nKraft\nNewton",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Enheder</span>"
+    ]
+  },
+  {
+    "objectID": "potenser-rodder.html",
+    "href": "potenser-rodder.html",
+    "title": "Potenser og rødder",
+    "section": "",
+    "text": "Hvad er potenser og rødder?\nSe kapitlet @chap:enheder for mere information.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Potenser og rødder</span>"
+    ]
+  },
+  {
     "objectID": "differentialregning.html",
     "href": "differentialregning.html",
     "title": "Differentialregning",
     "section": "",
     "text": "Hvad er differentialregning?\nDifferentialregning handler om at forstå, hvordan ting ændrer sig – som for eksemple hvor hurtigt en cykel kører, eller hvordan dens hastighed ændrer sig. Vi bruger eksempler og grafer til at gøre det nemt at forstå.\nLad os komme i gang.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   },
   {
@@ -26,7 +66,7 @@
     "section": "En simpel funktion",
     "text": "En simpel funktion\nForestil dig, at du cykler og måler, hvor langt du kommer som funktion af tid. Lad os sige, at afstanden du har tilbagelagt (i meter) følger denne enkle regel:\n\\[f(x) = x^2\\]\nHer er \\(x\\) tiden (i sekunder), og \\(f(x)\\) er afstanden (i meter). Hvis du cykler i 3 sekunder, har du kørt \\(3^2 = 9\\) meter.\nLad os tegne en graf for at se, hvordan det ser ud:\n\n\n\n\n\n\n\n\n\nI det her eksempel viser grafen, at du cykler hurtigere og hurtigere. Jo længere tid der går, jo stejlere er grafen, og jo hurtigere stiger afstanden. Sådan kan det jo ikke blive ved med at gå i virkeligheden, for til sidst ville man cykle hurtigere end bilerne. Men for hyggematematikkens skyld, holder vi fast i eksemplet lidt endnu.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   },
   {
@@ -36,27 +76,27 @@
     "section": "Hvad er en tangent?",
     "text": "Hvad er en tangent?\nEn tangent er en lige linje, der rører grafen et bestemt sted og viser, hvor stejl grafen er lige der. For vores cykel betyder tangentens hældning cyklens hastighed på det tidspunkt.\nTænk på det sådan: Når kurven er meget stejl, ændrer afstanden sig hurtigt, hvilket er det samme som at sige, at du kører hurtigt. Tangenten fortæller os præcis, hvor hurtigt du kører på et givet tidspunkt.\nLad os tegne en tangent til grafen, når \\(x = 3\\ sekunder\\):\n\n\n\n\n\n\n\n\n\nDen røde streg er tangenten ved \\(x=3\\). Hældningen af denne linje fortæller os hastigheden, som vi snart finder ud af.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   },
   {
-    "objectID": "differentialregning.html#hvordan-finder-vi-tangentens-hældning",
-    "href": "differentialregning.html#hvordan-finder-vi-tangentens-hældning",
+    "objectID": "differentialregning.html#tangentens-hældning",
+    "href": "differentialregning.html#tangentens-hældning",
     "title": "Differentialregning",
-    "section": "Hvordan finder vi tangentens hældning?",
-    "text": "Hvordan finder vi tangentens hældning?\nFor at finde hastigheden (tangentens hældning), bruger vi differentiering. Det betyder, at vi finder en ny regel, der fortæller os, hvor stejl grafen er for hver tid \\(x\\).\nVores afstandsfunktion er:\n\\[ f(x) = x^2 \\]\nNår vi differentierer, får vi den afledte funktion, som er hastigheden. Vi kalder den \\(f'(x)\\), som udtales “f-mærke”.\n\\[ f'(x) = 2t \\]\nLige nu skal du bare vide, at vi brugte en særlig regel, for at finde ud af, at når \\(f(x)=x^2\\), så er \\(f'(x) = 2x\\). Den regel kommer vi tilbage til.\nDet vigtige lige nu er, at vi ved, at hastigheden ved \\(x = 3\\ sekunder\\) er:\n\\[ f'(3) = 2 \\cdot 3 = 6 \\text{ meter per sekund} \\]\nSå ved \\(x=3\\ sekunder\\) kører du 6 meter per sekund. Den afledte funktion \\(f'(x)=2x\\) giver os med andre ord hastigheden for enhver tid.",
+    "section": "Tangentens hældning",
+    "text": "Tangentens hældning\nFor at finde hastigheden (tangentens hældning), bruger vi differentiering. Det betyder, at vi finder en ny regel, der fortæller os, hvor stejl grafen er for hver tid \\(x\\).\nVores afstandsfunktion er:\n\\[ f(x) = x^2 \\]\nNår vi differentierer, får vi den afledte funktion, som er hastigheden. Vi kalder den \\(f'(x)\\), som udtales “f-mærke”.\n\\[ f'(x) = 2x \\]\nLige nu skal du bare vide, at vi brugte en særlig regel, for at finde ud af, at når \\(f(x)=x^2\\), så er \\(f'(x) = 2x\\). Den regel kommer vi tilbage til.\nDet vigtige lige nu er, at vi ved, at hastigheden ved \\(x = 3\\ sekunder\\) er:\n\\[ f'(3) = 2 \\cdot 3 = 6 \\text{ meter per sekund} \\]\nSå ved \\(x=3\\ sekunder\\) kører du 6 meter per sekund. Den afledte funktion \\(f'(x)=2x\\) giver os med andre ord hastigheden for enhver tid.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   },
   {
-    "objectID": "differentialregning.html#flere-tangenter-og-deres-hældninger",
-    "href": "differentialregning.html#flere-tangenter-og-deres-hældninger",
+    "objectID": "differentialregning.html#flere-tangenter-og-hældninger",
+    "href": "differentialregning.html#flere-tangenter-og-hældninger",
     "title": "Differentialregning",
-    "section": "Flere tangenter og deres hældninger",
-    "text": "Flere tangenter og deres hældninger\nLad os tegne grafen igen, men nu med tangenter ved flere tidspunkter, så vi kan se, hvordan hastigheden ændrer sig. Vi vælger \\(x=1,2,3\\):\n\n\n\n\n\n\n\n\n\nHver tangent viser hastigheden ved et bestemt tidspunkt: 1, 2, eller 3 sekunder. Bemærk, at hældningerne bliver større, når tiden stiger – det betyder, at cyklen kører hurtigere og hurtigere.",
+    "section": "Flere tangenter og hældninger",
+    "text": "Flere tangenter og hældninger\nLad os tegne grafen igen, men nu med tangenter ved flere tidspunkter, så vi kan se, hvordan hastigheden ændrer sig. Vi vælger \\(x=1,2,3\\):\n\n\n\n\n\n\n\n\n\nHver tangent viser hastigheden ved et bestemt tidspunkt: 1, 2, eller 3 sekunder. Bemærk, at hældningerne bliver større, når tiden stiger – det betyder, at cyklen kører hurtigere og hurtigere.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   },
   {
@@ -66,7 +106,7 @@
     "section": "Den afledte funktion: Hastighed",
     "text": "Den afledte funktion: Hastighed\nDen afledte funktion \\(f'(x) = 2x\\) er faktisk en graf over hastigheden. Lad os tegne den for at se, hvordan hastigheden ændrer sig over tid:\n\n\n\n\n\n\n\n\n\nGrafen viser, at hastigheden stiger jævnt og følger en ret linje. Hvis vi kigger tilbage på tangenterne, kan vi se, at hældningerne (hastighederne) passer med værdierne på denne graf. For eksempel ved \\(x = 3\\) er hastigheden 6, præcis som vi beregnede.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   },
   {
@@ -74,9 +114,9 @@
     "href": "differentialregning.html#den-dobbelte-afledte-acceleration",
     "title": "Differentialregning",
     "section": "Den dobbelte afledte: Acceleration",
-    "text": "Den dobbelte afledte: Acceleration\nNu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig over tid – det kalder vi acceleration. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den dobbelt afledte.\nHastighedsfunktionen er:\n\\[f'(x) = 2x\\]\nNår vi differentierer igen, får vi:\n\\[f''(x) = 2\\]\nDet betyder, at accelerationen er 2 meter per sekund per sekund (eller \\(2 \\text{m/s}^2\\)). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund.\nLad os tegne en graf for accelerationen for at gøre det tydeligt:\n\n\n\n\n\n\n\n\n\nDenne lidt kedelige, graf er bare en lige linje, fordi accelerationen er konstant. Det fortæller os, at cyklen hele tiden får lige meget mere fart.",
+    "text": "Den dobbelte afledte: Acceleration\nNu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig over tid – det kalder vi acceleration. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den dobbelt afledte.\nHastighedsfunktionen er:\n\\[f'(x) = 2x\\]\nNår vi differentierer igen, får vi:\n\\[f''(x) = 2\\]\nDet betyder, at accelerationen er 2 meter per sekund per sekund (eller \\(2\\frac{m}{s^2}\\)). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund. (Hvis du synes, enheden for acceleration, \\(\\frac{m}{s^2}\\) er lidt forvirrende, så tjek @chap:enheder.)\nLad os tegne en graf for accelerationen for at gøre det tydeligt:\n\n\n\n\n\n\n\n\n\nDenne lidt kedelige, graf er bare en lige linje, fordi accelerationen er konstant. Det fortæller os, at cyklen hele tiden får lige meget mere fart.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   },
   {
@@ -86,7 +126,7 @@
     "section": "Et knap så enkelt eksempel",
     "text": "Et knap så enkelt eksempel\n\nAfstand\nLad os sige, at vi i stedet for vores første, ret enkle funktion, \\(f(x) = x^2\\), bruger en mere kompliceret funktion, lad os kalde den \\(g(x)\\):\n\\[ g(x) = x^3 - 18x^2 + 80x \\] Her er \\(x\\) stadig tiden (i sekunder), og \\(g(x)\\) er afstanden (i meter). Denne funktion er en tredjegradsligning, hvilket betyder, at grafen ikke bare stiger eller falder hele tiden – den kan gå op og ned som en rutsjebane.\nLad os starte med at tegne grafen for at se, hvordan cykelturen nu ser ud:\n\n\n\n\n\n\n\n\n\nSom man kan se, stiger afstanden de første par sekunder, men så falder den igen. Man kan forestille sig, at du havde glemt cykelhjelmen, vendte om og hentede den, og så startede turen en gang til. Til sidst, når du er kommet godt i gang, går det hurtigt fremad.\n\n\nHastighed\nLigesom før vil vi tegne tangenter for at finde hastigheden på forskellige tidspunkter. Tangenten viser, hvor stejl grafen er, og det fortæller os, hvor hurtigt du cykler. Vi vælger 3 tidspunkter: \\(x=2, 7, 12\\).\nFor at tegne tangenterne skal vi bruge den afledte funktion til at finde hældningen. Den afledte af: \\[ g(x) = x^3 - 18x^2 + 80x \\] er: \\[ g'(x) = 3x^2 - 36x + 80 \\]\nDen differentieringsregel vi bruger her, ser sådan ud:\n\\[ f(x) = x^n \\] \\[ f'(x) = nx^{(n-1)} \\] (Hvorfor den regel gælder, kan du finde en forklaring på til allersidst.)\n\\(g'(x)\\) er altså en funktion, der fortæller os hastigheden, eller hældingen til tangenten, for hver tid, \\(x\\). For at tegne tangenten ved en bestemt x-værdi, \\(x_0\\), bruger vi ligningen for tangentlinjen: \\[ y = g(x_0) + g'(x_0) \\cdot (x - x_0) \\] Lad os tegne grafen med nogle tangenter, så vi får et indtryk af, hvordan det ser ud:\n\n\n\n\n\n\n\n\n\nSom vi kan se, har nogle af tangenterne negativ hældning, fordi cyklisten vender om og kører tilbage igen for at hente den glemte cykelhjelm. Derfor er hastigheden på en måde negativ.\nLad os for sjov prøve at tegne en hel masse tangenter, for at illustrere hvordan tangenter opfører sig:\n\n\n\n\n\n\n\n\n\nDet er ret flot, og hvis man kigger efter, kan man se hvordan tangenternes hældning gradvist ændrer sig, som tiden går, og vi bevæger os ud af x-aksen.\nVi kan vise alle hældningerne, ved at at tegne vores afledte funktion, \\(g'(x)\\). Den er en andengradsligning og danner derfor en parabel:\n\n\n\n\n\n\n\n\n\nDu kan kontrollere, at de sorte prikker viser hældningen for de tangenter, vi så tidligere. Bemærk at hastigheden efter 12 sekunder er meget høj, over 75 meter i sekundet, hvilket selvfølgelig ikke er helt realistisk for en cykel.\n\n\nAcceleration\nFor at finde accelerationen, differentierer vi hastighedsfunktionen én gang til, med de samme differentieringsregler som tidligere. Den dobbelt afledte, \\(g''(x)\\) er:\n\\[ g''(x)=6x-36 \\]\nDenne funktion viser, hvordan accelerationen ændrer sig over tid. Lad os tegne den:\n\n\n\n\n\n\n\n\n\nHvor den afledte funktion viste hastigheden ved forskellige tidspunkter, viser den dobbelt afledte funktion, hvor meget hastigheden ændrer sig over tid. Det er det, vi kalder acceleration.\nI grafen kan man se, at accelerationen stiger jævnt over tid. Når for eksempel \\(x=2\\), er accelerationen negativ, fordi cyklisten er ved at tage farten af for at vende om. Men som tiden går, bliver accelerationen større og større, hvilket betyder, at hastigheden ændrer sig hurtigere og hurtigere. Det er klart, at det ikke kan fortsætte sådan, for der er grænser for, hvor hurtigt cykler (og alle andre transportmidler) kan køre.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   },
   {
@@ -96,27 +136,7 @@
     "section": "Opsummering",
     "text": "Opsummering\n\nVi startede med at kigge på, hvor langt en cykel kører. Vi brugte en ret enkel andengradsligning som eksempel til at beskrive afstand, \\(f(x)\\), som funktion af tid, \\(x\\), sådan her: \\(f(x) = x^2\\).\nVi fandt ud af, at tangentens hældning viser cyklens hastighed, og vi brugte differentiering til at finde hastighedsfunktionen: \\(f'(x) = 2x\\).\nVi tegnede tangenter og så, at hastigheden stiger over tid.\nDerefter så vi på acceleration ved at differentiere igen \\(f''(x) = 2\\), og vi tegnede en ret kedelig graf for at vise, at accelerationen er konstant.\nTil sidst prøvede vi det hele igen for en lidt mere kompliceret funktion, nemlig en tredjegradsligning: \\(g(x) = x^3 - 18x^2 + 80x\\). Vi så at:\n\nDen afledte funktion, altså hastighedsfunktionen, \\(g'(x) = 3x^2 - 36x + 80\\), er en andengradsligning, som sjovt nok kan give negative hastigheder.\nDen dobbelt afledte funktion, altså accelerationsfunktionen, \\(g''(x)=6x-36\\), viste, at hastigheden hele tiden steg.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Differentialregning</span>"
-    ]
-  },
-  {
-    "objectID": "enheder.html",
-    "href": "enheder.html",
-    "title": "Enheder",
-    "section": "",
-    "text": "Hvad er enheder?",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Enheder</span>"
-    ]
-  },
-  {
-    "objectID": "potenser-rodder.html",
-    "href": "potenser-rodder.html",
-    "title": "Potenser og rødder",
-    "section": "",
-    "text": "Hvad er potenser og rødder?",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Potenser og rødder</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]
   }
 ]

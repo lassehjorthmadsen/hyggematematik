@@ -1,6 +1,6 @@
 ---
 title: "Differentialregning"
-autor: "Lasse Hjorth Madsen"
+author: "Lasse Hjorth Madsen"
 published: "today"
 format: html
 ---
@@ -48,7 +48,7 @@ I det her eksempel viser grafen, at du cykler hurtigere og hurtigere. Jo længer
 
 ## Hvad er en tangent?
 
-En **tangent** er en lige linje, der rører grafen et bestemt sted og viser, hvor stejl grafen er lige der. For vores cykel betyder tangentens **hældning** cyklens **hastighed** på det tidspunkt.
+En *tangent* er en lige linje, der rører grafen et bestemt sted og viser, hvor stejl grafen er lige der. For vores cykel betyder tangentens *hældning* cyklens *hastighed* på det tidspunkt.
 
 Tænk på det sådan: Når kurven er meget stejl, ændrer afstanden sig hurtigt, hvilket er det samme som at sige, at du kører hurtigt. Tangenten fortæller os præcis, hvor hurtigt du kører på et givet tidspunkt.
 
@@ -70,17 +70,17 @@ p1 +
 
 Den røde streg er tangenten ved $x=3$. Hældningen af denne linje fortæller os hastigheden, som vi snart finder ud af.
 
-## Hvordan finder vi tangentens hældning?
+## Tangentens hældning
 
-For at finde hastigheden (tangentens hældning), bruger vi **differentiering**. Det betyder, at vi finder en ny regel, der fortæller os, hvor stejl grafen er for hver tid $x$.
+For at finde hastigheden (tangentens hældning), bruger vi *differentiering*. Det betyder, at vi finder en ny regel, der fortæller os, hvor stejl grafen er for hver tid $x$.
 
 Vores afstandsfunktion er:
 
 $$ f(x) = x^2 $$
 
-Når vi differentierer, får vi den **afledte** funktion, som er hastigheden. Vi kalder den $f'(x)$, som udtales "f-mærke".
+Når vi differentierer, får vi den *afledte* funktion, som er hastigheden. Vi kalder den $f'(x)$, som udtales "f-mærke".
 
-$$ f'(x) = 2t $$
+$$ f'(x) = 2x $$
 
 Lige nu skal du bare vide, at vi brugte en særlig regel, for at finde ud af, at når $f(x)=x^2$, så er $f'(x) = 2x$. Den regel kommer vi tilbage til.
 
@@ -90,7 +90,7 @@ $$ f'(3) = 2 \cdot 3 = 6 \text{ meter per sekund} $$
 
 Så ved $x=3\ sekunder$ kører du 6 meter per sekund. Den afledte funktion $f'(x)=2x$ giver os med andre ord hastigheden for enhver tid.
 
-## Flere tangenter og deres hældninger
+## Flere tangenter og hældninger
 
 Lad os tegne grafen igen, men nu med tangenter ved flere tidspunkter, så vi kan se, hvordan hastigheden ændrer sig. Vi vælger $x=1,2,3$:
 
@@ -143,7 +143,7 @@ Grafen viser, at hastigheden stiger jævnt og følger en ret linje. Hvis vi kigg
 
 ## Den dobbelte afledte: Acceleration
 
-Nu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig over tid -- det kalder vi **acceleration**. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den **dobbelt afledte**.
+Nu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig over tid -- det kalder vi *acceleration*. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den *dobbelt afledte*.
 
 Hastighedsfunktionen er:
 
@@ -153,7 +153,7 @@ Når vi differentierer igen, får vi:
 
 $$f''(x) = 2$$
 
-Det betyder, at accelerationen er 2 meter per sekund per sekund (eller $2 \text{m/s}^2$). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund.
+Det betyder, at accelerationen er 2 meter per sekund per sekund (eller $2\frac{m}{s^2}$). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund. (Hvis du synes, enheden for acceleration, $\frac{m}{s^2}$ er lidt forvirrende, så tjek @chap:enheder.)
 
 Lad os tegne en graf for accelerationen for at gøre det tydeligt:
 
@@ -317,9 +317,9 @@ I grafen kan man se, at accelerationen stiger jævnt over tid. Når for eksempel
 ## Opsummering
 
 -   Vi startede med at kigge på, hvor langt en cykel kører. Vi brugte en ret enkel andengradsligning som eksempel til at beskrive afstand, $f(x)$, som funktion af tid, $x$, sådan her: $f(x) = x^2$.
--   Vi fandt ud af, at tangentens hældning viser cyklens **hastighed**, og vi brugte differentiering til at finde **hastighedsfunktionen**: $f'(x) = 2x$.
+-   Vi fandt ud af, at tangentens hældning viser cyklens *hastighed*, og vi brugte differentiering til at finde *hastighedsfunktionen*: $f'(x) = 2x$.
 -   Vi tegnede tangenter og så, at hastigheden stiger over tid.
--   Derefter så vi på **acceleration** ved at differentiere igen $f''(x) = 2$, og vi tegnede en ret kedelig graf for at vise, at accelerationen er konstant.
+-   Derefter så vi på *acceleration* ved at differentiere igen $f''(x) = 2$, og vi tegnede en ret kedelig graf for at vise, at accelerationen er konstant.
 - Til sidst prøvede vi det hele igen for en lidt mere kompliceret funktion, nemlig en tredjegradsligning: $g(x) = x^3 - 18x^2 + 80x$. Vi så at:
-   - Den afledte funktion, altså **hastighedsfunktionen**, $g'(x) = 3x^2 - 36x + 80$, er en andengradsligning, som sjovt nok kan give negative hastigheder.
-   - Den dobbelt afledte funktion, altså **accelerationsfunktionen**, $g''(x)=6x-36$, viste, at hastigheden hele tiden steg. 
+   - Den afledte funktion, altså *hastighedsfunktionen*, $g'(x) = 3x^2 - 36x + 80$, er en andengradsligning, som sjovt nok kan give negative hastigheder.
+   - Den dobbelt afledte funktion, altså *accelerationsfunktionen*, $g''(x)=6x-36$, viste, at hastigheden hele tiden steg. 
