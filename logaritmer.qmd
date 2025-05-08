@@ -5,4 +5,4 @@ published: "today"
 format: html
 ---
 
-## Hvad er logaritmer?
+## Hvad er logaritmer? {#sec-logaritmer}

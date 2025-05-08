@@ -13,3 +13,4 @@ _site/
 # macOS/Windows artifacts
 .DS_Store
 Thumbs.db
+/.quarto/

@@ -5,7 +5,7 @@ published: "today"
 format: html
 ---
 
-# Hvad er enheder? {#chap:enheder}
+## Hvad er enheder? {#sec-enheder}
 
 Enheder er vigtige. For eksempel betyder det en del, om man kommer 20 *sekunder* for sent til en aftale, eller 20 *minutter* for sent. Sekunder og minutter er to forskellige tidsenheder. 
 
@@ -59,7 +59,9 @@ En knap så kendt enhed er hertz, som bruges til at måle, hvor *ofte* noget for
 Et eksempel kan være hjerteslag eller puls. Lad os sige, at en person har 90 hjerteslag på 60 sekunder. Pulsen er derfor:
 
 $$ \frac{90}{60 s} = \frac{3}{2 s} = 1,5 \frac{1}{s} = 1,5 s^{-1}$$
-Enheden for hertz er nemlig $s^{-1}$ og $\frac{1}{s} = s^{-1}$. Det kan godt virke forvirrende, fordi den enhed ikke er så velkendt fra hverdagen. Grunden til at vi ender med en lidt sjov enhed er, at antallet af hjerteslag bare er almindelige tælletal. Tælleren i brøken $\frac{3}{2 s}$ har med andre ord ikke nogen enhed.
+Enheden for hertz er nemlig $s^{-1}$ og $s^{-1} = \frac{1}{s}$. (Hvis du tænker at det med en negativ potens er mærkeligt, så kig på afsnittet @sec-potenser)
+
+Hertz kan godt virke forvirrende, fordi enheden $s^{-1}$ikke er så velkendt fra hverdagen. Grunden til at vi ender med en lidt sjov enhed er, at antallet af hjerteslag bare er almindelige tælletal. Tælleren i brøken $\frac{3}{2 s}$ har med andre ord ikke nogen enhed.
 
 ### Acceleration
 

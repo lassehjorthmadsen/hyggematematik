@@ -1,6 +1,7 @@
 project:
   type: book
   output-dir: docs
+
 book:
   title: "Hyggematematik"
   author: "Selma og Lasse"
@@ -11,17 +12,19 @@ book:
     - enheder.qmd
     - potenser-rodder.qmd
     - differentialregning.qmd
+
 format:
   html:
     theme: cosmo
     number-sections: false
     toc-title: "Indhold"
-    pandoc-args: ["--filter", "pandoc-crossref"]
+
 crossref:
   chapters: true
-  title-delim: ": "
+
 execute:
   echo: false
   warning: false
   message: false
+
 lang: "da"

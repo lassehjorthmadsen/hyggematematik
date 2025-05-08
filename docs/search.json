@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "Hyggematematik",
     "section": "",
-    "text": "Hvad er dette?\nDet er noter fra Selma og Lasses hyggematematik",
+    "text": "Hvad er hyggematematik?\nHer er mit bedste forsøg på at forklare alle de ting, Selma spørger om, som har med matematik at gøre. Vi kalder det hyggematematik.",
     "crumbs": [
-      "Hvad er dette?"
+      "Hvad er hyggematematik?"
     ]
   },
   {
@@ -34,7 +34,7 @@
     "href": "enheder.html#sjove-enheder",
     "title": "Enheder",
     "section": "Sjove enheder",
-    "text": "Sjove enheder\n\nFrekvens\nHvis du fandt løbeeksemplet nemt, er det måske fordi enhederne, meter, minutter og sekunder er så velkendte.\nEn knap så kendt enhed er hertz, som bruges til at måle, hvor ofte noget forekommer i løbet at et bestemt tidsrum. Vi kalder det nogle gange frekvens.\nEt eksempel kan være hjerteslag eller puls. Lad os sige, at en person har 90 hjerteslag på 60 sekunder. Pulsen er derfor:\n\\[ \\frac{90}{60 s} = \\frac{3}{2 s} = 1,5 \\frac{1}{s} = 1,5 s^{-1}\\] Enheden for hertz er nemlig \\(s^{-1}\\) og \\(\\frac{1}{s} = s^{-1}\\). Det kan godt virke forvirrende, fordi den enhed ikke er så velkendt fra hverdagen. Grunden til at vi ender med en lidt sjov enhed er, at antallet af hjerteslag bare er almindelige tælletal. Tælleren i brøken \\(\\frac{3}{2 s}\\) har med andre ord ikke nogen enhed.\n\n\nAcceleration\n\n\nKraft\nNewton",
+    "text": "Sjove enheder\n\nFrekvens\nHvis du fandt løbeeksemplet nemt, er det måske fordi enhederne, meter, minutter og sekunder er så velkendte.\nEn knap så kendt enhed er hertz, som bruges til at måle, hvor ofte noget forekommer i løbet at et bestemt tidsrum. Vi kalder det nogle gange frekvens.\nEt eksempel kan være hjerteslag eller puls. Lad os sige, at en person har 90 hjerteslag på 60 sekunder. Pulsen er derfor:\n\\[ \\frac{90}{60 s} = \\frac{3}{2 s} = 1,5 \\frac{1}{s} = 1,5 s^{-1}\\] Enheden for hertz er nemlig \\(s^{-1}\\) og \\(s^{-1} = \\frac{1}{s}\\). (Hvis du tænker at det med en negativ potens er mærkeligt, så kig på afsnittet Hvad er potenser og rødder?)\nHertz kan godt virke forvirrende, fordi enheden \\(s^{-1}\\)ikke er så velkendt fra hverdagen. Grunden til at vi ender med en lidt sjov enhed er, at antallet af hjerteslag bare er almindelige tælletal. Tælleren i brøken \\(\\frac{3}{2 s}\\) har med andre ord ikke nogen enhed.\n\n\nAcceleration\n\n\nKraft\nNewton",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Enheder</span>"
     ]
@@ -44,7 +44,7 @@
     "href": "potenser-rodder.html",
     "title": "Potenser og rødder",
     "section": "",
-    "text": "Hvad er potenser og rødder?\nSe kapitlet @chap:enheder for mere information.",
+    "text": "Hvad er potenser og rødder?",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Potenser og rødder</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "differentialregning.html#den-dobbelte-afledte-acceleration",
     "title": "Differentialregning",
     "section": "Den dobbelte afledte: Acceleration",
-    "text": "Den dobbelte afledte: Acceleration\nNu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig over tid – det kalder vi acceleration. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den dobbelt afledte.\nHastighedsfunktionen er:\n\\[f'(x) = 2x\\]\nNår vi differentierer igen, får vi:\n\\[f''(x) = 2\\]\nDet betyder, at accelerationen er 2 meter per sekund per sekund (eller \\(2\\frac{m}{s^2}\\)). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund. (Hvis du synes, enheden for acceleration, \\(\\frac{m}{s^2}\\) er lidt forvirrende, så tjek @chap:enheder.)\nLad os tegne en graf for accelerationen for at gøre det tydeligt:\n\n\n\n\n\n\n\n\n\nDenne lidt kedelige, graf er bare en lige linje, fordi accelerationen er konstant. Det fortæller os, at cyklen hele tiden får lige meget mere fart.",
+    "text": "Den dobbelte afledte: Acceleration\nNu tager vi det et skridt videre. Nogle gange ændrer hastigheden sig over tid – det kalder vi acceleration. For at finde accelerationen, differentierer vi hastighedsfunktionen (den afledte) én gang til. Det kaldes den dobbelt afledte.\nHastighedsfunktionen er:\n\\[f'(x) = 2x\\]\nNår vi differentierer igen, får vi:\n\\[f''(x) = 2\\]\nDet betyder, at accelerationen er 2 meter per sekund per sekund (eller \\(2\\frac{m}{s^2}\\)). Det er konstant, så cyklen øger sin hastighed med 2 meter per sekund for hvert sekund. (Hvis du synes, enheden for acceleration, \\(\\frac{m}{s^2}\\) er lidt forvirrende, så tjek afsnittet Hvad er enheder?)\nLad os tegne en graf for accelerationen for at gøre det tydeligt:\n\n\n\n\n\n\n\n\n\nDenne lidt kedelige, graf er bare en lige linje, fordi accelerationen er konstant. Det fortæller os, at cyklen hele tiden får lige meget mere fart.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Differentialregning</span>"
     ]

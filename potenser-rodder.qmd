@@ -5,6 +5,5 @@ published: "today"
 format: html
 ---
 
-## Hvad er potenser og rødder?
+## Hvad er potenser og rødder? {#sec-potenser}
 
-Se kapitlet @chap:enheder for mere information.
