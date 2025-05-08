@@ -22,30 +22,38 @@ Regnestykket er så enkelt, at mange næsten ikke tænker over det, men vi har t
 $$\frac{10\ km}{1\ t} = 10 \frac{km}{t}$$
 Hvor kilometer er forkortet til $km$ og timer til $t$. Resultatet er den gennemsnitlige hastighed, og enheden er $\frac{km}{t}$, det samme som km/t, altså kilometer i timen. (Det er den *gennemsnitlige* hastighed, for man løber nok ikke præcist lige hurtigt hele vejen.) 
 
-$\frac{km}{t}$ er *enheden* for hastighed. Tricket er, at enhederne opfører sig som ethvert andet regnestyke. Hvis vi for eksempel havde haft:
+$\frac{km}{t}$ er altså *enheden* for hastighed. Det gode er, at enhederne opfører sig som ethvert andet regnestykke. Denne her lille udregning minder for eksempel meget om hastighedsudregningen før:
 
 $$\frac{8\ a}{2\ b} = 4 \frac{a}{b}$$
-Vi kan omskrive det lidt mere, hvis det er svært umiddelbart at se, hvorfor regnestykket ovenfor er rigtigt:
+Vi kan omskrive det lidt mere, hvis det er svært umiddelbart at se, hvorfor regnestykket er rigtigt:
 
-$$\frac{8\ a}{2\ b} = \frac{8}{2} \cdot \frac{a}{b} = 4 \cdot \frac{a}{b}$$
+$$\frac{8\ a}{2\ b} = \frac{8}{2} \cdot \frac{a}{b} = 4 \cdot \frac{a}{b} = 4\frac{a}{b}$$
 
-Tricket er som sagt, at enheder opfører sig ligesom variablerne $a$ og $b$ i stykket herover.
+Tricket er altså, at enheder opfører sig ligesom variablerne $a$ og $b$ i stykket herover.
 
-Hvis vi i løbeeksemplet ikke ville udregne løbehastigheden mål i kilometer i timen, men i stedet for vide, hvor mange timer det tager at løbe en kilometer, ville regnestykket bare være den omvendte brøk:
+Hvis vi i løbeeksemplet ikke ville udregne løbehastigheden målt i kilometer i timen, men i stedet for vide, hvor mange timer det tager at løbe en kilometer, ville regnestykket bare være den omvendte brøk:
 
 $$\frac{1\ t}{10\ km} = 0,1 \frac{t}{km}$$
-Det tager altså 0,1 time at løbe en kilometer. Løbere vil tit gerne vide, hvor mange *minutter*, ikke timer, det tager at løbe en kilometer. Og eftersom $1\ time = 60\ minutter$ kan vi bare stille omregningen sådan op:
+Det tager altså 0,1 time at løbe en kilometer, og enheden er nu $\frac{t}{km}$, timer per kilometer, ikke $\frac{km}{t}$. Løbere vil tit gerne vide, hvor mange *minutter*, ikke timer, det tager at løbe en kilometer. Og eftersom $60\ minutter = 1\ time$ kan vi bare stille omregningen sådan op:
 
 $$0,1 \frac{t}{km} \cdot 60 \frac{min}{t} = 0,1 \cdot 60 \cdot \frac{t\cdot min}{km \cdot t} = 6 \frac{min}{km}$$
-Det tager altså løberen 6 minutter ($min$) at løbe én kilometer. Igen: Læg mærke til at vi fandt den nye enhed $\frac{min}{km}$ ved bare at behandle enhederne som almindelige tal eller variabler.
+Det tager altså løberen 6 minutter ($min$) at løbe én kilometer.
+
+Det kan godt være, at udregningen ser lidt forvirrende ud, så kig lidt på den og tænk over det. Det eneste vi har gjort, er at sige, at hvis det tager 0,1 time at løbe en kilometer, så tager det også 6 minutter at løbe en kilometer. Fordi 0,1 time er det samme som 6 minutter.   
+
+Igen: Læg mærke til at vi fandt den nye enhed $\frac{min}{km}$ ved bare at behandle enhederne som almindelige tal eller variabler.
 
 Hvis vi gerne vil ændre enhed igen, så se hvor lang tid det tager at løbe en meter ($m$), bruger vi blot at $1\ m = 0,001\ km$ og regner på samme måde:
 
 $$6 \frac{min}{km} \cdot 0,001 \frac{km}{m} = 0,006 \frac{min}{m}$$
 
-Det tager altså 0,006 minutter at løbe én meter. Og hvis vil gerne vil have det i sekunder per meter, bruger vi, at der 60 sekunder ($s$) per minut: 
+Det tager altså 0,006 minutter at løbe én meter.
 
-$$0,006 \frac{min}{m} \cdot 60 \frac{s}{min} = 0,36 \frac{s}{m}$$
+Enheder kan hjælpe os her, fordi vi ved, at resultatet skal have enheden $\frac{min}{m}$, og vi kan kontrollere, at er den enhed vi får, når vi ganger de to tal -- og deres enheder -- sammen.
+
+
+Hvis vil gerne vil have det i *sekunder* per meter, er det samme historie. Vi ved, at der 60 sekunder ($s$) per minut og skriver derfor: $0,006 \frac{min}{m} \cdot 60 \frac{s}{min} = 0,36 \frac{s}{m}$.
+
 Det tager 0,36 sekunder at løbe en meter.
 
 ## Sjove enheder
@@ -68,3 +76,5 @@ Hertz kan godt virke forvirrende, fordi enheden $s^{-1}$ikke er så velkendt fra
 ### Kraft
 
 Newton
+
+## Sammenfatning

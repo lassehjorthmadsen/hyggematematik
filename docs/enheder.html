@@ -176,6 +176,7 @@ window.Quarto = {
   <li><a href="#acceleration" id="toc-acceleration" class="nav-link" data-scroll-target="#acceleration">Acceleration</a></li>
   <li><a href="#kraft" id="toc-kraft" class="nav-link" data-scroll-target="#kraft">Kraft</a></li>
   </ul></li>
+  <li><a href="#sammenfatning" id="toc-sammenfatning" class="nav-link" data-scroll-target="#sammenfatning">Sammenfatning</a></li>
   </ul>
 </nav>
     </div>
@@ -218,17 +219,21 @@ window.Quarto = {
 <p>Der er nogenlunde nemt at se, at den <em>hastighed</em> man har løbet med, er 10 kilometer i timen, hvilket vi til daglig skriver sådan her: 10 km/t.</p>
 <p>Regnestykket er så enkelt, at mange næsten ikke tænker over det, men vi har taget afstanden (de 10 kilometer) og divideret med tiden (den ene time) sådan her:</p>
 <p><span class="math display">\[\frac{10\ km}{1\ t} = 10 \frac{km}{t}\]</span> Hvor kilometer er forkortet til <span class="math inline">\(km\)</span> og timer til <span class="math inline">\(t\)</span>. Resultatet er den gennemsnitlige hastighed, og enheden er <span class="math inline">\(\frac{km}{t}\)</span>, det samme som km/t, altså kilometer i timen. (Det er den <em>gennemsnitlige</em> hastighed, for man løber nok ikke præcist lige hurtigt hele vejen.)</p>
-<p><span class="math inline">\(\frac{km}{t}\)</span> er <em>enheden</em> for hastighed. Tricket er, at enhederne opfører sig som ethvert andet regnestyke. Hvis vi for eksempel havde haft:</p>
-<p><span class="math display">\[\frac{8\ a}{2\ b} = 4 \frac{a}{b}\]</span> Vi kan omskrive det lidt mere, hvis det er svært umiddelbart at se, hvorfor regnestykket ovenfor er rigtigt:</p>
-<p><span class="math display">\[\frac{8\ a}{2\ b} = \frac{8}{2} \cdot \frac{a}{b} = 4 \cdot \frac{a}{b}\]</span></p>
-<p>Tricket er som sagt, at enheder opfører sig ligesom variablerne <span class="math inline">\(a\)</span> og <span class="math inline">\(b\)</span> i stykket herover.</p>
-<p>Hvis vi i løbeeksemplet ikke ville udregne løbehastigheden mål i kilometer i timen, men i stedet for vide, hvor mange timer det tager at løbe en kilometer, ville regnestykket bare være den omvendte brøk:</p>
-<p><span class="math display">\[\frac{1\ t}{10\ km} = 0,1 \frac{t}{km}\]</span> Det tager altså 0,1 time at løbe en kilometer. Løbere vil tit gerne vide, hvor mange <em>minutter</em>, ikke timer, det tager at løbe en kilometer. Og eftersom <span class="math inline">\(1\ time = 60\ minutter\)</span> kan vi bare stille omregningen sådan op:</p>
-<p><span class="math display">\[0,1 \frac{t}{km} \cdot 60 \frac{min}{t} = 0,1 \cdot 60 \cdot \frac{t\cdot min}{km \cdot t} = 6 \frac{min}{km}\]</span> Det tager altså løberen 6 minutter (<span class="math inline">\(min\)</span>) at løbe én kilometer. Igen: Læg mærke til at vi fandt den nye enhed <span class="math inline">\(\frac{min}{km}\)</span> ved bare at behandle enhederne som almindelige tal eller variabler.</p>
+<p><span class="math inline">\(\frac{km}{t}\)</span> er altså <em>enheden</em> for hastighed. Det gode er, at enhederne opfører sig som ethvert andet regnestykke. Denne her lille udregning minder for eksempel meget om hastighedsudregningen før:</p>
+<p><span class="math display">\[\frac{8\ a}{2\ b} = 4 \frac{a}{b}\]</span> Vi kan omskrive det lidt mere, hvis det er svært umiddelbart at se, hvorfor regnestykket er rigtigt:</p>
+<p><span class="math display">\[\frac{8\ a}{2\ b} = \frac{8}{2} \cdot \frac{a}{b} = 4 \cdot \frac{a}{b} = 4\frac{a}{b}\]</span></p>
+<p>Tricket er altså, at enheder opfører sig ligesom variablerne <span class="math inline">\(a\)</span> og <span class="math inline">\(b\)</span> i stykket herover.</p>
+<p>Hvis vi i løbeeksemplet ikke ville udregne løbehastigheden målt i kilometer i timen, men i stedet for vide, hvor mange timer det tager at løbe en kilometer, ville regnestykket bare være den omvendte brøk:</p>
+<p><span class="math display">\[\frac{1\ t}{10\ km} = 0,1 \frac{t}{km}\]</span> Det tager altså 0,1 time at løbe en kilometer, og enheden er nu <span class="math inline">\(\frac{t}{km}\)</span>, timer per kilometer ikke <span class="math inline">\(\frac{km}{t}\)</span>. Løbere vil tit gerne vide, hvor mange <em>minutter</em>, ikke timer, det tager at løbe en kilometer. Og eftersom <span class="math inline">\(60\ minutter = 1\ time\)</span> kan vi bare stille omregningen sådan op:</p>
+<p><span class="math display">\[0,1 \frac{t}{km} \cdot 60 \frac{min}{t} = 0,1 \cdot 60 \cdot \frac{t\cdot min}{km \cdot t} = 6 \frac{min}{km}\]</span> Det tager altså løberen 6 minutter (<span class="math inline">\(min\)</span>) at løbe én kilometer.</p>
+<p>Det kan godt være, at udregningen ser lidt forvirrende ud, så kig lidt på den og tænk over det. Det eneste vi har gjort, er at sige, at hvis det tager 0,1 time at løbe en kilometer, så tager det også 6 minutter at løbe en kilometer. Fordi 0,1 time er det samme som 6 minutter.</p>
+<p>Igen: Læg mærke til at vi fandt den nye enhed <span class="math inline">\(\frac{min}{km}\)</span> ved bare at behandle enhederne som almindelige tal eller variabler.</p>
 <p>Hvis vi gerne vil ændre enhed igen, så se hvor lang tid det tager at løbe en meter (<span class="math inline">\(m\)</span>), bruger vi blot at <span class="math inline">\(1\ m = 0,001\ km\)</span> og regner på samme måde:</p>
 <p><span class="math display">\[6 \frac{min}{km} \cdot 0,001 \frac{km}{m} = 0,006 \frac{min}{m}\]</span></p>
-<p>Det tager altså 0,006 minutter at løbe én meter. Og hvis vil gerne vil have det i sekunder per meter, bruger vi, at der 60 sekunder (<span class="math inline">\(s\)</span>) per minut:</p>
-<p><span class="math display">\[0,006 \frac{min}{m} \cdot 60 \frac{s}{min} = 0,36 \frac{s}{m}\]</span> Det tager 0,36 sekunder at løbe en meter.</p>
+<p>Det tager altså 0,006 minutter at løbe én meter.</p>
+<p>Enheder kan hjælpe os her, fordi vi ved, at resultatet skal have enheden <span class="math inline">\(\frac{min}{m}\)</span>, og vi kan kontrollere, at er den enhed vi få, når vi ganger det to tal – og deres enheder – sammen.</p>
+<p>Hvis vil gerne vil have det i <em>sekunder</em> per meter, er det samme historie. Vi ved, at der 60 sekunder (<span class="math inline">\(s\)</span>) per minut og skriver derfor: <span class="math inline">\(0,006 \frac{min}{m} \cdot 60 \frac{s}{min} = 0,36 \frac{s}{m}\)</span>.</p>
+<p>Det tager 0,36 sekunder at løbe en meter.</p>
 </section>
 <section id="sjove-enheder" class="level2">
 <h2 class="anchored" data-anchor-id="sjove-enheder">Sjove enheder</h2>
@@ -246,9 +251,12 @@ window.Quarto = {
 <section id="kraft" class="level3">
 <h3 class="anchored" data-anchor-id="kraft">Kraft</h3>
 <p>Newton</p>
-
-
 </section>
+</section>
+<section id="sammenfatning" class="level2">
+<h2 class="anchored" data-anchor-id="sammenfatning">Sammenfatning</h2>
+
+
 </section>
 
 </main> <!-- /main -->
