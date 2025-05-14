@@ -69,7 +69,7 @@ Et eksempel kan være hjerteslag eller puls. Lad os sige, at en person har 90 hj
 $$ \frac{90}{60 s} = \frac{3}{2 s} = 1,5 \frac{1}{s} = 1,5 s^{-1}$$
 Enheden for hertz er nemlig $s^{-1}$ og $s^{-1} = \frac{1}{s}$. (Hvis du tænker at det med en negativ potens er mærkeligt, så kig på afsnittet @sec-potenser)
 
-Hertz kan godt virke forvirrende, fordi enheden $s^{-1}$ikke er så velkendt fra hverdagen. Grunden til at vi ender med en lidt sjov enhed er, at antallet af hjerteslag bare er almindelige tælletal. Tælleren i brøken $\frac{3}{2 s}$ har med andre ord ikke nogen enhed.
+Hertz kan godt virke forvirrende, fordi enheden $s^{-1}$ ikke er så velkendt fra hverdagen. Grunden til at vi ender med en lidt sjov enhed er, at antallet af hjerteslag bare er almindelige tælletal. Tælleren i brøken $\frac{3}{2 s}$ har med andre ord ikke nogen enhed.
 
 ### Acceleration
 
@@ -93,7 +93,7 @@ Cyklen har altså øget sin hastighed med $0{,}1\frac{m}{s}$ *per sekund* og acc
 
 Selvom vi ikke på forhånd vidste, hvad enheden for acceleration var, kan vi altså finde ud af det, ved at tage enhederne (meter og sekunder) med i vores udregning.
 
-Man bruger acceleration til mange ting. For eksempel er *tyngdeaccelerationen* omkring $9{,}8 \frac{m}{s^2}$. Det betyder, at hvis man smider en mønt ud fra toppen af et højt hus, så får tyngdekraften mønten til at falde 9,8 meter i sekundet *hurtigere* -- hvert sekund. Efter ét sekund falder mønten altså med $9{,}8 \frac{m}{s^2}$, efter to sekunder med $2 \cdot 9{,}8 \frac{m}{s^2} = 19{,}6 \frac{m}{s^2}$ og så videre, indtil den rammer jorden.   
+Man bruger acceleration til mange ting. For eksempel er *tyngdeaccelerationen* omkring $9{,}8 \frac{m}{s^2}$. Det betyder, at hvis man smider en mønt ud fra toppen af et højt hus, så får tyngdekraften mønten til at falde 9,8 meter i sekundet *hurtigere* -- hvert sekund. Efter ét sekund falder mønten altså med $9{,}8 \frac{m}{s}$, efter to sekunder med $2 \cdot 9{,}8 \frac{m}{s} = 19{,}6 \frac{m}{s}$ og så videre, indtil den rammer jorden.   
 
 Smart, ikke?
 
