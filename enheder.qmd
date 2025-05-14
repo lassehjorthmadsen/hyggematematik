@@ -99,6 +99,14 @@ Smart, ikke?
 
 ### Kraft
 
-Kraft er en anden sjov størrelse, der måles i enheden newton som er $1\ kg\cdot\frac{m}{s^2}$
+::: {.column-margin}
+[![Isaac Newton (1642-1727)](https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg)](https://en.wikipedia.org/wiki/Isaac_Newton)
+:::
+
+Kraft er en anden sjov størrelse, der måles i enheden newton, som er $1\ kg\cdot\frac{m}{s^2}$, og for at gøre det lettere, bruger man bare bogstavet $N$.
+
+Navnet kommer fra Isaac Newton, en berømt videnskabsmand, som levede for 300 år siden.
+
+
 
 ## Sammenfatning
