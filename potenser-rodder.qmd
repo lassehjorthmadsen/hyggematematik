@@ -20,10 +20,7 @@ $$ 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2= 2^
 
 Man kan udtale det på flere måder: "to opløftet til ti" eller "10 i tiende" eller "10 i tiende potens.
 
-Hvis vi skriver det lidt mere generelt:
-
-$$ a^n $$
-Så kalder man $a$ for *grundtallet* og $n$ for potensen.
+Hvis vi skriver det lidt mere generelt: $a^n$. Hvor man kalder $a$ for *grundtallet* og $n$ for potensen.
 
 ### Potensregneregler
 
