@@ -26,5 +26,6 @@ execute:
   echo: false
   warning: false
   message: false
+  freeze: auto
 
 lang: "da"

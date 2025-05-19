@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -139,7 +168,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Indhold</h2>
    
   <ul>
-  <li><a href="#sec-potenser" id="toc-sec-potenser" class="nav-link active" data-scroll-target="#sec-potenser">Hvad er potenser og rødder?</a></li>
+  <li><a href="#sec-potenser" id="toc-sec-potenser" class="nav-link active" data-scroll-target="#sec-potenser">Hvad er potenser og rødder?</a>
+  <ul class="collapse">
+  <li><a href="#potenser" id="toc-potenser" class="nav-link" data-scroll-target="#potenser">Potenser</a></li>
+  <li><a href="#potensregneregler" id="toc-potensregneregler" class="nav-link" data-scroll-target="#potensregneregler">Potensregneregler</a></li>
+  <li><a href="#rødder" id="toc-rødder" class="nav-link" data-scroll-target="#rødder">Rødder</a></li>
+  </ul></li>
+  <li><a href="#eksempler" id="toc-eksempler" class="nav-link" data-scroll-target="#eksempler">Eksempler</a>
+  <ul class="collapse">
+  <li><a href="#renters-rente" id="toc-renters-rente" class="nav-link" data-scroll-target="#renters-rente">Renters rente</a></li>
+  <li><a href="#epidemier" id="toc-epidemier" class="nav-link" data-scroll-target="#epidemier">Epidemier</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -173,8 +212,39 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="sec-potenser" class="level2">
 <h2 class="anchored" data-anchor-id="sec-potenser">Hvad er potenser og rødder?</h2>
+<section id="potenser" class="level3">
+<h3 class="anchored" data-anchor-id="potenser">Potenser</h3>
+<p>Potenser er faktisk nemt: Det er bare en smart måde at skrive ned, når et tal bliver ganget med sig selv et vist antal gange. For eksempel:</p>
+<p><span class="math display">\[ 5 \cdot 5 = 5^2 = 25 \]</span> <span class="math display">\[ 5 \cdot 5 \cdot 5 = 5^3 = 125 \]</span> <span class="math display">\[ 5 \cdot 5 \cdot 5 \cdot 5 = 5^4 = 625 \]</span></p>
+<p>Det er selvfølgelig allermest smart, hvis man har et laaangt gangestykke af denne type:</p>
+<p><span class="math display">\[ 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2= 2^{10} = 1024 \]</span></p>
+<p>Man kan udtale det på flere måder: “to opløftet til ti” eller “10 i tiende” eller “10 i tiende potens.</p>
+<p>Hvis vi skriver det lidt mere generelt:</p>
+<p><span class="math display">\[ a^n \]</span> Så kalder man <span class="math inline">\(a\)</span> for <em>grundtallet</em> og <span class="math inline">\(n\)</span> for potensen.</p>
+</section>
+<section id="potensregneregler" class="level3">
+<h3 class="anchored" data-anchor-id="potensregneregler">Potensregneregler</h3>
+<p>Der der nogle nyttige regneregler man kan bruge, når man regner med potenser. For eksempel:</p>
+<p><span class="math display">\[ a^n \cdot a^m = a^{n+m}\]</span></p>
+<p>Den letteste måde at forstå, hvorfor det er sådan, er ved at se på et lille regneeksempel:</p>
+<p><span class="math display">\[ 3^2 \cdot 3^3 = 3^{2+3} = 3^5 = 243 \]</span> Vi kan se klart, at det må være sådan, ved at skrive det som almindelige gangestykker og bruge parenteser til holde styr på rodet:</p>
+<p><span class="math display">\[ 3^2 \cdot 3^3 = (3 \cdot 3) \cdot (3 \cdot 3 \cdot 3) = 3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 = 3^5 \]</span></p>
+<p>Når man ganger to ens grundtal opløftet til forskellige potenser, kan man altså bare lægge potenserne samme. Det er nemlig lige meget, om man først ganger 3 med sig selv 2 gange, og <em>så</em> ganger med 3 ganget med sig selv 3 gange, <em>eller</em> man bare gør det hele på én gang.</p>
+</section>
+<section id="rødder" class="level3">
+<h3 class="anchored" data-anchor-id="rødder">Rødder</h3>
+</section>
+</section>
+<section id="eksempler" class="level2">
+<h2 class="anchored" data-anchor-id="eksempler">Eksempler</h2>
+<section id="renters-rente" class="level3">
+<h3 class="anchored" data-anchor-id="renters-rente">Renters rente</h3>
+</section>
+<section id="epidemier" class="level3">
+<h3 class="anchored" data-anchor-id="epidemier">Epidemier</h3>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

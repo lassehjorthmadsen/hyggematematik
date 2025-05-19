@@ -105,8 +105,18 @@ Smart, ikke?
 
 Kraft er en anden sjov størrelse, der måles i enheden newton, som er $1\ kg\cdot\frac{m}{s^2}$, og for at gøre det lettere, bruger man bare bogstavet $N$.
 
-Navnet kommer fra Isaac Newton, en berømt videnskabsmand, som levede for 300 år siden.
+Navnet kommer fra Isaac Newton, en berømt videnskabsmand, som levede for 300 år siden. Vi kender den ene del af enheden $\frac{m}{s^2}$ fra acceleration ovenfor. 1N er den kraft, der skal bruges for at accelerere en masse på 1 kg med 1 $\frac{m}{s^2}$.
 
+En person på 70 kg bliver påvirket af tyngdeaccelerationen, med en vis kraft. Den kraft kan vi måle i Newton og ret nemt finde, ved at gange de 70 kg med tyngdeaccelerationen, som jo var cirka $9{,}8 \frac{m}{s^2}$. Altså:
 
+$$70\ kg \cdot 9{,}8 \frac{m}{s^2} = 686\ kg\cdot\frac{m}{s^2} = 686\ N$$
+
+Nu er vi selvfølgelig godt i gang med fysikken; meningen var egentlig mest at lægge mærke til enheden $N$ eller newton.
 
 ## Sammenfatning
+
+- Vi har set på, hvordan enheder opfører sig som almindelige variabler. For eksempel hvis man har gået 10 km på 2 timer, så er gennemsnitshastigheden: $\frac{14\ km}{2\ t} = 7 \frac{km}{t}$ 
+
+- Vi så også på lidt mere komplicerede situationer som acceleration, hvor enheden er $\frac{m}{s^2}$
+
+- Man kan også bruge enheder som en slags kontrol for, om man regner rigtigt: Hvis man *ved* man gerne vil ende med en hastighed målt i $\frac{m}{s}$ kan man kontrollere, at det også er den enhed man faktisk ender med, ved at tage enheden med i sine udregninger.

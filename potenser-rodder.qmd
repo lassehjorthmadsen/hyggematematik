@@ -6,4 +6,46 @@ format: html
 ---
 
 ## Hvad er potenser og rødder? {#sec-potenser}
+### Potenser
 
+Potenser er faktisk nemt: Det er bare en smart måde at skrive ned, når et tal bliver ganget med sig selv et vist antal gange. For eksempel:
+
+$$ 5 \cdot 5 = 5^2 = 25 $$
+$$ 5 \cdot 5 \cdot 5 = 5^3 = 125 $$
+$$ 5 \cdot 5 \cdot 5 \cdot 5 = 5^4 = 625 $$
+
+Det er selvfølgelig allermest smart, hvis man har et laaangt gangestykke af denne type:
+
+$$ 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2= 2^{10} = 1024 $$
+
+Man kan udtale det på flere måder: "to opløftet til ti" eller "10 i tiende" eller "10 i tiende potens.
+
+Hvis vi skriver det lidt mere generelt:
+
+$$ a^n $$
+Så kalder man $a$ for *grundtallet* og $n$ for potensen.
+
+### Potensregneregler
+
+Der er nogle nyttige regneregler man kan bruge, når man regner med potenser. For eksempel:
+
+$$ a^n \cdot a^m = a^{n+m}$$
+
+Den letteste måde at forstå, hvorfor det er sådan, er ved at se på et lille regneeksempel:
+
+$$ 3^2 \cdot 3^3 = 3^{2+3} = 3^5 = 243 $$
+Vi kan se klart, at det må være sådan, ved at skrive det som almindelige gangestykker og bruge parenteser til holde styr på rodet:
+
+$$ 3^2 \cdot 3^3 = (3 \cdot 3) \cdot (3 \cdot 3 \cdot 3) = 3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 = 3^5 $$
+
+Når man ganger to ens grundtal opløftet til forskellige potenser, kan man altså bare lægge potenserne samme. Det er nemlig lige meget, om man først ganger 3 med sig selv 2 gange, og *så* ganger med 3 ganget med sig selv 3 gange, *eller* man bare gør det hele på én gang.
+
+
+
+### Rødder
+
+## Eksempler
+
+### Renters rente
+
+### Epidemier
