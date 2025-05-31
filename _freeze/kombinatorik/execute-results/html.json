@@ -1,0 +1,17 @@
+{
+  "hash": "3c606fa14fc343060d41d3fe216de028",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Kombinatorik\"\nauthor: \"Lasse Hjorth Madsen\"\npublished: \"today\"\nformat: html\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Hvad er kombinatorik?\n\nKombinatorik handler om, hvordan man kan vælge og sammensætte ting.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](kombinatorik_files/figure-html/unnamed-chunk-1-1.png){width=1056}\n:::\n:::\n",
+    "supporting": [
+      "kombinatorik_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

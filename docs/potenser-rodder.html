@@ -158,6 +158,11 @@ window.Quarto = {
   <a href="./differentialregning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Differentialregning</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kombinatorik.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kombinatorik</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -173,11 +178,7 @@ window.Quarto = {
   <li><a href="#potenser" id="toc-potenser" class="nav-link" data-scroll-target="#potenser">Potenser</a></li>
   <li><a href="#potensregneregler" id="toc-potensregneregler" class="nav-link" data-scroll-target="#potensregneregler">Potensregneregler</a></li>
   <li><a href="#rødder" id="toc-rødder" class="nav-link" data-scroll-target="#rødder">Rødder</a></li>
-  </ul></li>
-  <li><a href="#eksempler" id="toc-eksempler" class="nav-link" data-scroll-target="#eksempler">Eksempler</a>
-  <ul class="collapse">
-  <li><a href="#renters-rente" id="toc-renters-rente" class="nav-link" data-scroll-target="#renters-rente">Renters rente</a></li>
-  <li><a href="#epidemier" id="toc-epidemier" class="nav-link" data-scroll-target="#epidemier">Epidemier</a></li>
+  <li><a href="#eksempler" id="toc-eksempler" class="nav-link" data-scroll-target="#eksempler">Eksempler</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -219,31 +220,50 @@ window.Quarto = {
 <p>Det er selvfølgelig allermest smart, hvis man har et laaangt gangestykke af denne type:</p>
 <p><span class="math display">\[ 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2= 2^{10} = 1024 \]</span></p>
 <p>Man kan udtale det på flere måder: “to opløftet til ti” eller “10 i tiende” eller “10 i tiende potens.</p>
-<p>Hvis vi skriver det lidt mere generelt:</p>
-<p><span class="math display">\[ a^n \]</span> Så kalder man <span class="math inline">\(a\)</span> for <em>grundtallet</em> og <span class="math inline">\(n\)</span> for potensen.</p>
+<p>Hvis vi skriver det lidt mere generelt: <span class="math inline">\(a^n\)</span>. Hvor man kalder <span class="math inline">\(a\)</span> for <em>grundtallet</em> og <span class="math inline">\(n\)</span> for potensen.</p>
 </section>
 <section id="potensregneregler" class="level3">
 <h3 class="anchored" data-anchor-id="potensregneregler">Potensregneregler</h3>
-<p>Der der nogle nyttige regneregler man kan bruge, når man regner med potenser. For eksempel:</p>
+<p>Der er nogle nyttige regneregler man kan bruge, når man regner med potenser. For eksempel:</p>
+<section id="multiplikation-af-to-potenser-med-samme-grundtal" class="level4">
+<h4 class="anchored" data-anchor-id="multiplikation-af-to-potenser-med-samme-grundtal">Multiplikation af to potenser med samme grundtal</h4>
 <p><span class="math display">\[ a^n \cdot a^m = a^{n+m}\]</span></p>
 <p>Den letteste måde at forstå, hvorfor det er sådan, er ved at se på et lille regneeksempel:</p>
 <p><span class="math display">\[ 3^2 \cdot 3^3 = 3^{2+3} = 3^5 = 243 \]</span> Vi kan se klart, at det må være sådan, ved at skrive det som almindelige gangestykker og bruge parenteser til holde styr på rodet:</p>
 <p><span class="math display">\[ 3^2 \cdot 3^3 = (3 \cdot 3) \cdot (3 \cdot 3 \cdot 3) = 3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 = 3^5 \]</span></p>
 <p>Når man ganger to ens grundtal opløftet til forskellige potenser, kan man altså bare lægge potenserne samme. Det er nemlig lige meget, om man først ganger 3 med sig selv 2 gange, og <em>så</em> ganger med 3 ganget med sig selv 3 gange, <em>eller</em> man bare gør det hele på én gang.</p>
 </section>
+<section id="division-af-to-potenser-med-samme-grundtal" class="level4">
+<h4 class="anchored" data-anchor-id="division-af-to-potenser-med-samme-grundtal">Division af to potenser med samme grundtal</h4>
+<p>Man kan bruge en lignende regel, når man <em>dividerer</em> to ens grundtal opløftet til forskellige potenser:</p>
+<p><span class="math display">\[ \frac{a^n}{a^m} = a^{n-m}\]</span> Igen er det nemmest at se, hvorfor det er sådan, ved at tage et eksempel:</p>
+<p><span class="math display">\[ \frac{4^5}{4^3} = 4^{5-2} = 4^2 = 16\]</span></p>
+<p>Fordi:</p>
+<p><span class="math display">\[ \frac{4^5}{4^3} = \frac{4 \cdot 4 \cdot 4 \cdot 4 \cdot 4}{{4 \cdot 4 \cdot 4}} = \frac{4 \cdot 4}{1} = 4^2 = 16\]</span></p>
+</section>
+<section id="potenser-af-potenser" class="level4">
+<h4 class="anchored" data-anchor-id="potenser-af-potenser">Potenser af potenser</h4>
+</section>
+<section id="potens-af-produkter" class="level4">
+<h4 class="anchored" data-anchor-id="potens-af-produkter">Potens af produkter</h4>
+</section>
+<section id="potenser-af-brøker" class="level4">
+<h4 class="anchored" data-anchor-id="potenser-af-brøker">Potenser af brøker</h4>
+</section>
+</section>
 <section id="rødder" class="level3">
 <h3 class="anchored" data-anchor-id="rødder">Rødder</h3>
 </section>
+<section id="eksempler" class="level3">
+<h3 class="anchored" data-anchor-id="eksempler">Eksempler</h3>
+<section id="renters-rente" class="level4">
+<h4 class="anchored" data-anchor-id="renters-rente">Renters rente</h4>
 </section>
-<section id="eksempler" class="level2">
-<h2 class="anchored" data-anchor-id="eksempler">Eksempler</h2>
-<section id="renters-rente" class="level3">
-<h3 class="anchored" data-anchor-id="renters-rente">Renters rente</h3>
-</section>
-<section id="epidemier" class="level3">
-<h3 class="anchored" data-anchor-id="epidemier">Epidemier</h3>
+<section id="epidemier" class="level4">
+<h4 class="anchored" data-anchor-id="epidemier">Epidemier</h4>
 
 
+</section>
 </section>
 </section>
 

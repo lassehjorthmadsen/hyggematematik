@@ -9,9 +9,11 @@ book:
   language: "da"
   chapters:
     - index.qmd
+    - parabler.qmd
     - enheder.qmd
     - potenser-rodder.qmd
     - differentialregning.qmd
+    - kombinatorik.qmd
 
 format:
   html:

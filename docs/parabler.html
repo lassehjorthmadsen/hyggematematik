@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Selma og Lasse">
+<meta name="author" content="Lasse Hjorth Madsen">
 
-<title>Hyggematematik</title>
+<title>Parabler – Hyggematematik</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./parabler.html" rel="next">
+<link href="./enheder.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -82,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skift sidebjælke" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Hvad er hyggematematik?</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./parabler.html"><span class="chapter-title">Parabler</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skift sidebjælke" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Søg" onclick="window.quartoOpenSearch();">
@@ -109,13 +139,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hvad er hyggematematik?</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./parabler.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Parabler</span></a>
+  <a href="./parabler.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Parabler</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -148,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Indhold</h2>
    
   <ul>
-  <li><a href="#hvad-er-hyggematematik" id="toc-hvad-er-hyggematematik" class="nav-link active" data-scroll-target="#hvad-er-hyggematematik">Hvad er hyggematematik?</a></li>
+  <li><a href="#sec-parabler" id="toc-sec-parabler" class="nav-link active" data-scroll-target="#sec-parabler">Hvad er parabler?</a></li>
   </ul>
 </nav>
     </div>
@@ -157,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hyggematematik</h1>
+<h1 class="title"><span class="chapter-title">Parabler</span></h1>
 </div>
 
 
@@ -167,16 +197,10 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Forfatter</div>
     <div class="quarto-title-meta-contents">
-             <p>Selma og Lasse </p>
+             <p>Lasse Hjorth Madsen </p>
           </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Udgivet</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">31. maj 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -186,9 +210,101 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hvad-er-hyggematematik" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="hvad-er-hyggematematik">Hvad er hyggematematik?</h2>
-<p>Her er mit bedste forsøg på at forklare alle de ting, Selma spørger om, som har med matematik at gøre. Vi kalder det hyggematematik.</p>
+<section id="sec-parabler" class="level2">
+<h2 class="anchored" data-anchor-id="sec-parabler">Hvad er parabler?</h2>
+<p>Parabler er gode, for de er ikke specielt svære og når man plotter dem, er de ret flotte.</p>
+<p>Parabler er den kurve som andengradsligninger danner, når man plotter dem i et koordinatsystem.</p>
+<p>Den generelle formel for en andengradsligning ser, som du måske allerede ved, sådan her ud:</p>
+<p><span class="math display">\[ f(x) = ax^2 + bx + c \]</span></p>
+<p>Når man plotter den i et koordinatsystem med en x-akse og en y-akse, siger man bare, at <span class="math inline">\(y=f(x)\)</span> sådan her:</p>
+<p><span class="math display">\[ y = f(x) = ax^2 + bx + c \]</span></p>
+<p>Lad os tegne den mest enkle parabel, man kan forestille sig. Vi siger at <span class="math inline">\(a=1\)</span>, <span class="math inline">\(b=0\)</span> og <span class="math inline">\(c=0\)</span>. Dermed bliver opgaven at tegne kurven:</p>
+<p><span class="math display">\[y=x^2\]</span></p>
+<p>Det ser sådan her ud:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="parabler_files/figure-html/plot1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Et par hurtige observationer:</p>
+<ul>
+<li><p>Vi ser nemt, at parablen er <em>symmetrisk</em> omkring y-aksen. Det er fordi, at <span class="math inline">\(-x^2 = x^2\)</span> så negative x-værdier giver samme y-værdi, som til tilsvarende positive x-værdier. For eksempel er de to punkter <span class="math inline">\((-3, 9)\)</span> og <span class="math inline">\((3, 9)\)</span> markeret med en prik. Altså: <span class="math inline">\(3^2 = -3^2 = 9\)</span>.</p></li>
+<li><p>Vi ser også at y aldrig er negativ. Det er af samme grund som skaber symmetrien: Alle tal opløftet til 2 giver noget positivt. Eller lidt mere formelt, ligningen: <span class="math inline">\(x^2 &lt; 0\)</span> har ingen løsninger, hvilket man kan skrive sådan her, <span class="math inline">\(x \in \emptyset\)</span>, hvis man gerne vil være meget matematisk.</p></li>
+<li><p>Endelig ligger parablens <em>toppunkt</em> lige præcis i punktet <span class="math inline">\((0,0)\)</span>. Udtrykket toppunkt er måske lidt misvisende, for på en måde er det <em>bundpunktet</em>, altså den mindste y-værdi vi kan finde på kurven. Når vi taler om parabler, bruges udtrykket toppunkt tit om grafens maksimum <em>eller</em> minimum. Her er toppunktet <span class="math inline">\((0,0)\)</span> parablens <em>minimum</em>.</p></li>
+</ul>
+<p>Lad os se på hvad der sker, hvis man ændrer <span class="math inline">\(a\)</span> (som vi til en start bare satte til 1). Vi prøver med <span class="math inline">\(a = 1,2,3\)</span> og sætter stadig <span class="math inline">\(b=0\)</span> og <span class="math inline">\(c=0\)</span>. Her er et plot med tre parabler:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="parabler_files/figure-html/plot2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Vi kan se, at <span class="math inline">\(a\)</span> betyder noget for, hvor <em>stejl</em> parablen er. Det er ikke så mærkeligt, for når vi gange med et større og større tal (<span class="math inline">\(x = 1, 2, 3\)</span>) så bliver y jo hver gang <em>endnu</em> større. Altså: <span class="math inline">\(3x^2 &gt; 2x^2 &gt; x^2\)</span>.</p>
+<p>Måske kan du allerede nu se, hvad der sker, hvis <span class="math inline">\(a\)</span> er negativ? Lad os prøve at lave et plot også med negative <span class="math inline">\(a\)</span>-værdier: <span class="math inline">\(a = -3, -2, -1, 1, 2, 3\)</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="parabler_files/figure-html/plot3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Når <span class="math inline">\(a\)</span> er lig -1 i stedet for 1, bliver alle y-værdierne jo bare negative tal. Parablerne med negative værdier for <span class="math inline">\(a\)</span> bliver derfor bare spejlbilleder af deres søskende med positive <span class="math inline">\(a\)</span>-værdier.</p>
+<p>Nogle gange husker man det ved at tænke på parblerne som <em>glade</em> (positive <span class="math inline">\(a\)</span>-værdier) eller <em>sure</em> (negative <span class="math inline">\(a\)</span>-værdier). <em>Størrelsen</em> af <span class="math inline">\(a\)</span> fortæller så, <em>hvor</em> glade eller sure parablerne er.</p>
+<p>Nok om <span class="math inline">\(a\)</span>, lad os se på <span class="math inline">\(b\)</span> i formlen <span class="math inline">\(y = ax^2 + bx + c\)</span>. Igen sætter vi <span class="math inline">\(a=1\)</span> og <span class="math inline">\(c=0\)</span>, men denne gang prøver vi med et to forskellige værdier af <span class="math inline">\(b\)</span>, <span class="math inline">\(b=0,4\)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="parabler_files/figure-html/plot4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Denne gang kan vi se, at de to parabler er <em>forskudte</em>, ikke spejlede. Parablen hvor <span class="math inline">\(b=4\)</span> er ligesom skubbet lidt ned og til venstre. Toppunkterne er markeret med en prik, og man kan se, at toppunktet for <span class="math inline">\(b=4\)</span> netop ligger lidt lavere og lidt længere til venstre vores helt enkle parabel hvor <span class="math inline">\(b=0\)</span> (altså den allerførste vi så på: <span class="math inline">\(y=x^2\)</span>.)</p>
+<p>Hvad der helt præcist er sket, kan vi godt komme lidt nærmere. Hvis vi tegner en lige linje gennem de to toppunkter kan vi både se og beregne, at dens hældning er netop 2. Hvis vi kalder de to toppunkter for <span class="math inline">\(t_1\)</span> og <span class="math inline">\(t_2\)</span> og aflæser toppunkterne til <span class="math inline">\(t_1 = (-2, -4)\)</span> og <span class="math inline">\(t_2 =(0, 0)\)</span> kan vi at <em>forskellen</em> mellem <span class="math inline">\(x\)</span>-værdierne er <span class="math inline">\(0-(-2) = 2\)</span> og <em>forskellen</em> mellem y-værdierne er <span class="math inline">\(0-(-4) = 4\)</span>. Hældningen på en lige linje gennem de to punkter er altså <span class="math inline">\(\frac{4}{2} = 2\)</span>.</p>
+<p>Lad os prøve at tegne linjen:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="parabler_files/figure-html/plot5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Man kan altså se, at de to parabler er parallelforskude langs en linje, der netop har hældningen <span class="math inline">\(\frac{b}{2}\)</span>, i vores tilfælde <span class="math inline">\(\frac{4}{2} = 2\)</span>.</p>
+<p>Okay, turen er kommet til at se på <span class="math inline">\(c\)</span> i formlen <span class="math inline">\(y = ax^2 + bx + c\)</span>. Lad os prøve at sætte <span class="math inline">\(a=2\)</span>, <span class="math inline">\(b=1\)</span> og lade <span class="math inline">\(c\)</span> variere, <span class="math inline">\(c=0, 2, 4\)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="parabler_files/figure-html/plot6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Denne her gang kan vi se, at <span class="math inline">\(c\)</span> simpelhen bare er y-værdierne der svarer til <span class="math inline">\(x=0\)</span>, det vi også kalder skæringspunktet med y-aksen. (Også selvom jeg her har tegnet y-aksen helt til venstre, så den ikke står i vejen for kurverne.)</p>
+<p>Hvis vi tænker på ligningen for en ret linje: <span class="math inline">\(f(x) = ax + b\)</span>, kan vi måske huske er her er det <span class="math inline">\(b\)</span> som er skæringspunkt med y-aksen. For andengradsligningen, <span class="math inline">\(f(x) = ax^2 + bx + c\)</span> er det altså <span class="math inline">\(c\)</span> der spiller rollen som skæringspunkt med y-aksen.</p>
+<p>Det er ikke så svært at se, at det må være sådan, for vi kan bare sætte <span class="math inline">\(x=0\)</span> ind i formlerne. For den rette linje har vi: <span class="math inline">\(f(0) = a\cdot0 + b = b\)</span>. Og for parablen: <span class="math inline">\(f(0) = a \cdot 0^2 + b\cdot0 + c= c\)</span>.</p>
+<p>Lad os prøve at sætte det hele sammen i ét plot:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="parabler_files/figure-html/plot7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -595,10 +711,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Hvad er hyggematematik?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Hvad er hyggematematik?</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./parabler.html" class="pagination-link" aria-label="Parabler">
-        <span class="nav-page-text"><span class="chapter-title">Parabler</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./enheder.html" class="pagination-link" aria-label="Enheder">
+        <span class="nav-page-text"><span class="chapter-title">Enheder</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -5,6 +5,7 @@ published: "today"
 format: html
 ---
 
+
 ## Hvad er potenser og rødder? {#sec-potenser}
 ### Potenser
 
@@ -26,6 +27,8 @@ Hvis vi skriver det lidt mere generelt: $a^n$. Hvor man kalder $a$ for *grundtal
 
 Der er nogle nyttige regneregler man kan bruge, når man regner med potenser. For eksempel:
 
+#### Multiplikation af to potenser med samme grundtal
+
 $$ a^n \cdot a^m = a^{n+m}$$
 
 Den letteste måde at forstå, hvorfor det er sådan, er ved at se på et lille regneeksempel:
@@ -37,12 +40,30 @@ $$ 3^2 \cdot 3^3 = (3 \cdot 3) \cdot (3 \cdot 3 \cdot 3) = 3 \cdot 3 \cdot 3 \cd
 
 Når man ganger to ens grundtal opløftet til forskellige potenser, kan man altså bare lægge potenserne samme. Det er nemlig lige meget, om man først ganger 3 med sig selv 2 gange, og *så* ganger med 3 ganget med sig selv 3 gange, *eller* man bare gør det hele på én gang.
 
+#### Division af to potenser med samme grundtal
 
+Man kan bruge en lignende regel, når man *dividerer* to ens grundtal opløftet til forskellige potenser:
+
+$$ \frac{a^n}{a^m} = a^{n-m}$$
+Igen er det nemmest at se, hvorfor det er sådan, ved at tage et eksempel:
+
+
+$$ \frac{4^5}{4^3} = 4^{5-2} = 4^2 = 16$$
+
+Fordi:
+
+$$ \frac{4^5}{4^3} = \frac{4 \cdot 4 \cdot 4 \cdot 4 \cdot 4}{{4 \cdot 4 \cdot 4}} = \frac{4 \cdot 4}{1} = 4^2 = 16$$
+
+#### Potenser af potenser
+
+#### Potens af produkter
+
+#### Potenser af brøker
 
 ### Rødder
 
-## Eksempler
+### Eksempler
 
-### Renters rente
+#### Renters rente
 
-### Epidemier
+#### Epidemier
