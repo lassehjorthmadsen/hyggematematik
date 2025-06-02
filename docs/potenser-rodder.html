@@ -145,6 +145,11 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./parabler.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Parabler</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./enheder.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Enheder</span></a>
   </div>
 </li>
@@ -176,8 +181,13 @@ window.Quarto = {
   <li><a href="#sec-potenser" id="toc-sec-potenser" class="nav-link active" data-scroll-target="#sec-potenser">Hvad er potenser og rødder?</a>
   <ul class="collapse">
   <li><a href="#potenser" id="toc-potenser" class="nav-link" data-scroll-target="#potenser">Potenser</a></li>
-  <li><a href="#potensregneregler" id="toc-potensregneregler" class="nav-link" data-scroll-target="#potensregneregler">Potensregneregler</a></li>
+  <li><a href="#multiplikation-af-to-potenser-med-samme-grundtal" id="toc-multiplikation-af-to-potenser-med-samme-grundtal" class="nav-link" data-scroll-target="#multiplikation-af-to-potenser-med-samme-grundtal">Multiplikation af to potenser med samme grundtal</a></li>
+  <li><a href="#division-af-to-potenser-med-samme-grundtal" id="toc-division-af-to-potenser-med-samme-grundtal" class="nav-link" data-scroll-target="#division-af-to-potenser-med-samme-grundtal">Division af to potenser med samme grundtal</a></li>
+  <li><a href="#potenser-af-potenser" id="toc-potenser-af-potenser" class="nav-link" data-scroll-target="#potenser-af-potenser">Potenser af potenser</a></li>
+  <li><a href="#potenser-af-produkter" id="toc-potenser-af-produkter" class="nav-link" data-scroll-target="#potenser-af-produkter">Potenser af produkter</a></li>
+  <li><a href="#potenser-af-brøker" id="toc-potenser-af-brøker" class="nav-link" data-scroll-target="#potenser-af-brøker">Potenser af brøker</a></li>
   <li><a href="#rødder" id="toc-rødder" class="nav-link" data-scroll-target="#rødder">Rødder</a></li>
+  <li><a href="#sjove-potenser" id="toc-sjove-potenser" class="nav-link" data-scroll-target="#sjove-potenser">Sjove potenser</a></li>
   <li><a href="#eksempler" id="toc-eksempler" class="nav-link" data-scroll-target="#eksempler">Eksempler</a></li>
   </ul></li>
   </ul>
@@ -219,40 +229,86 @@ window.Quarto = {
 <p><span class="math display">\[ 5 \cdot 5 = 5^2 = 25 \]</span> <span class="math display">\[ 5 \cdot 5 \cdot 5 = 5^3 = 125 \]</span> <span class="math display">\[ 5 \cdot 5 \cdot 5 \cdot 5 = 5^4 = 625 \]</span></p>
 <p>Det er selvfølgelig allermest smart, hvis man har et laaangt gangestykke af denne type:</p>
 <p><span class="math display">\[ 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2= 2^{10} = 1024 \]</span></p>
-<p>Man kan udtale det på flere måder: “to opløftet til ti” eller “10 i tiende” eller “10 i tiende potens.</p>
-<p>Hvis vi skriver det lidt mere generelt: <span class="math inline">\(a^n\)</span>. Hvor man kalder <span class="math inline">\(a\)</span> for <em>grundtallet</em> og <span class="math inline">\(n\)</span> for potensen.</p>
+<p>Man kan udtale det på flere måder: “to opløftet til ti” eller “to i tiende” eller “to i tiende potens.</p>
+<p>Hvis vi skriver det lidt mere generelt kan vi sige <span class="math inline">\(a^n\)</span>, hvor man kalder <span class="math inline">\(a\)</span> for <em>grundtallet</em> og <span class="math inline">\(n\)</span> for <em>potensen</em>.</p>
+<p>Der er nogle nyttige regneregler man kan bruge, når man regner med potenser. Lad os gennemgå de vigtigste:</p>
 </section>
-<section id="potensregneregler" class="level3">
-<h3 class="anchored" data-anchor-id="potensregneregler">Potensregneregler</h3>
-<p>Der er nogle nyttige regneregler man kan bruge, når man regner med potenser. For eksempel:</p>
-<section id="multiplikation-af-to-potenser-med-samme-grundtal" class="level4">
-<h4 class="anchored" data-anchor-id="multiplikation-af-to-potenser-med-samme-grundtal">Multiplikation af to potenser med samme grundtal</h4>
+<section id="multiplikation-af-to-potenser-med-samme-grundtal" class="level3">
+<h3 class="anchored" data-anchor-id="multiplikation-af-to-potenser-med-samme-grundtal">Multiplikation af to potenser med samme grundtal</h3>
 <p><span class="math display">\[ a^n \cdot a^m = a^{n+m}\]</span></p>
 <p>Den letteste måde at forstå, hvorfor det er sådan, er ved at se på et lille regneeksempel:</p>
 <p><span class="math display">\[ 3^2 \cdot 3^3 = 3^{2+3} = 3^5 = 243 \]</span> Vi kan se klart, at det må være sådan, ved at skrive det som almindelige gangestykker og bruge parenteser til holde styr på rodet:</p>
 <p><span class="math display">\[ 3^2 \cdot 3^3 = (3 \cdot 3) \cdot (3 \cdot 3 \cdot 3) = 3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 = 3^5 \]</span></p>
 <p>Når man ganger to ens grundtal opløftet til forskellige potenser, kan man altså bare lægge potenserne samme. Det er nemlig lige meget, om man først ganger 3 med sig selv 2 gange, og <em>så</em> ganger med 3 ganget med sig selv 3 gange, <em>eller</em> man bare gør det hele på én gang.</p>
 </section>
-<section id="division-af-to-potenser-med-samme-grundtal" class="level4">
-<h4 class="anchored" data-anchor-id="division-af-to-potenser-med-samme-grundtal">Division af to potenser med samme grundtal</h4>
+<section id="division-af-to-potenser-med-samme-grundtal" class="level3">
+<h3 class="anchored" data-anchor-id="division-af-to-potenser-med-samme-grundtal">Division af to potenser med samme grundtal</h3>
 <p>Man kan bruge en lignende regel, når man <em>dividerer</em> to ens grundtal opløftet til forskellige potenser:</p>
 <p><span class="math display">\[ \frac{a^n}{a^m} = a^{n-m}\]</span> Igen er det nemmest at se, hvorfor det er sådan, ved at tage et eksempel:</p>
 <p><span class="math display">\[ \frac{4^5}{4^3} = 4^{5-2} = 4^2 = 16\]</span></p>
 <p>Fordi:</p>
 <p><span class="math display">\[ \frac{4^5}{4^3} = \frac{4 \cdot 4 \cdot 4 \cdot 4 \cdot 4}{{4 \cdot 4 \cdot 4}} = \frac{4 \cdot 4}{1} = 4^2 = 16\]</span></p>
 </section>
-<section id="potenser-af-potenser" class="level4">
-<h4 class="anchored" data-anchor-id="potenser-af-potenser">Potenser af potenser</h4>
+<section id="potenser-af-potenser" class="level3">
+<h3 class="anchored" data-anchor-id="potenser-af-potenser">Potenser af potenser</h3>
+<p>Hvis man opløfter til en potens, og så opløfter <em>en gang til</em>, til en ny potens, gælder denne regel:</p>
+<p><span class="math display">\[ (a^m)^n = a^{m\cdot n} \]</span> Det er heller ikke så svært at se, hvis tager et eksempel og skriver det lidt om:</p>
+<p><span class="math display">\[ (5^2)^3 = 5^2 \cdot 5^2 \cdot 5^2 \]</span></p>
+<p>Og herfra kan vi enten skrive det helt ud, <em>eller</em> bruge reglen for multiplikation af potenser med samme grundtal. Altså:</p>
+<p><span class="math display">\[ 5^2 \cdot 5^2 \cdot 5^2 = 5^{2+2+2} = 5^6 \]</span> Eller:</p>
+<p><span class="math display">\[ 5^2 \cdot 5^2 \cdot 5^2= (5 \cdot 5) \cdot (5 \cdot 5) \cdot (5 \cdot 5) = 5 \cdot 5 \cdot 5 \cdot 5 \cdot 5 \cdot 5 = 5^6 \]</span></p>
 </section>
-<section id="potens-af-produkter" class="level4">
-<h4 class="anchored" data-anchor-id="potens-af-produkter">Potens af produkter</h4>
+<section id="potenser-af-produkter" class="level3">
+<h3 class="anchored" data-anchor-id="potenser-af-produkter">Potenser af produkter</h3>
+<p>Her er reglen for, hvordan man opløfter <em>produktet</em> af to tal til en potens:</p>
+<p><span class="math display">\[ (a \cdot b)^n = a^n \cdot a^n \]</span></p>
+<p>Og eksemplet der viser hvorfor, det må passe:</p>
+<p><span class="math display">\[ (4x)^3 = 4x \cdot 4x \cdot 4x = 4 \cdot 4 \cdot 4 \cdot x \cdot x \cdot x = 4^3 \cdot x^3 \]</span></p>
 </section>
-<section id="potenser-af-brøker" class="level4">
-<h4 class="anchored" data-anchor-id="potenser-af-brøker">Potenser af brøker</h4>
-</section>
+<section id="potenser-af-brøker" class="level3">
+<h3 class="anchored" data-anchor-id="potenser-af-brøker">Potenser af brøker</h3>
+<p>Denne her regel gælder generelt (men duer kun, hvis <span class="math inline">\(b\)</span> <em>ikke</em> er nul).</p>
+<p><span class="math display">\[ \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n},\ b \neq 0 \]</span></p>
+<p>Et eksempel:</p>
+<p><span class="math display">\[ \left( \frac{2}{3} \right) ^ 2 = \frac{2}{3} \cdot \frac{2}{3} = \frac{2^2}{3^2} \]</span> Fordi vi ganger to brøker ved at gange nævner med nævner og tæller med tæller.</p>
 </section>
 <section id="rødder" class="level3">
 <h3 class="anchored" data-anchor-id="rødder">Rødder</h3>
+<p>Den mest almindelige rod er kvadratroden som vi skriver sådan her: <span class="math inline">\(\sqrt{x}\)</span>. Det betyder “det tal som ganget med sig selv giver <span class="math inline">\(x\)</span>. For eksempel: <span class="math inline">\(\sqrt{9} = 3\)</span> fordi 3 ganget med sig selv giver 9.</p>
+<p>Rødder er det <em>omvendte</em> af potenser. Det betyder at en kvadratrod <em>ophæver</em> et tal opløftet til to. Sådan her:</p>
+<p><span class="math display">\[ \sqrt{x^2} = x\]</span></p>
+<p>Det gælder også omvendt:</p>
+<p><span class="math display">\[ (\sqrt{x})^2 = x\]</span></p>
+<p>Altså for eksempel: <span class="math inline">\(\sqrt{3^2} = 3\)</span> og <span class="math inline">\((\sqrt{9})^2 = 9\)</span></p>
+<p>Ligesom potenstal ikke behøver være to, kan rødder også godt være andet en kvadratrødder. Den <em>tredje</em> rod, for eksempel, kalder vi nogle gange <em>kubikroden</em> og skriver sådan: <span class="math inline">\(\sqrt[3]{x}\)</span>. Kubikroden er, når vi finder et tal som ganget med sig selv <em>tre</em> gange, giver noget bestemt. For eksempel: <span class="math inline">\(\sqrt[3]{8} = 2\)</span> fordi <span class="math inline">\(2^3=8\)</span>.</p>
+<p>Som sagt ophæver rødder de tilsvarende potenser, sådan her:</p>
+<p><span class="math display">\[ \sqrt{x^2} = x \]</span></p>
+<p><span class="math display">\[ \sqrt[3]{x^3} = x \]</span></p>
+<p><span class="math display">\[ \sqrt[4]{x^4} = x \]</span></p>
+<p><span class="math display">\[ \sqrt[5]{x^5} = x \]</span></p>
+<p><span class="math display">\[ \sqrt[6]{x^6} = x \]</span></p>
+<p><span class="math display">\[ \sqrt[218]{x^{218}} = x \]</span></p>
+<p>Hvis du er vågen, har du måske lagt mærke til, at det er lidt ulogisk, at kvadratroden skrives sådan her: <span class="math inline">\(\sqrt{x}\)</span> og ikke sådan her: <span class="math inline">\(\sqrt[2]{x}\)</span>. Det simpelthen fordi, at kvadratroden er den allermest almindelige rod så vi springer bare to-tallet over for at gøre udtrykket lidt nemmere at skrive.</p>
+<p>Fordi rødder ophæver potenser, kan man blive ved og ved med en kvadratrodstrappe sådan her:</p>
+<p><span class="math display">\[ \sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{x^2}^2}^2}^2}^2}^2}^2} = x\]</span></p>
+<p>Det er lidt fjollet og ret forvirrende at se på.</p>
+</section>
+<section id="sjove-potenser" class="level3">
+<h3 class="anchored" data-anchor-id="sjove-potenser">Sjove potenser</h3>
+<p>Hvad sker der egentlig hvis man prøver det her:</p>
+<p><span class="math display">\[ x^{\frac{1}{2}} = \ ? \]</span></p>
+<p>Hvis vi tænker tilbage på vores potensregneregler ved vi at:</p>
+<p><span class="math display">\[ \left(x^\frac{1}{2}\right)^2 = x^{\frac{1}{2}\cdot 2} = x^1 = x \]</span> Vi ved samtidig at:</p>
+<p><span class="math display">\[ (\sqrt{x})^2 = x \]</span>.</p>
+<p>Så derfor må:</p>
+<p><span class="math display">\[ x^\frac{1}{2} = \sqrt{x} \]</span></p>
+<p>Selvom vi ikke umiddelbart kan forestille os, hvor dan man ganger et tal med sig selv “en halv gang”, så må det altså svare til at tage kvadratroden, hvis potensregnereglerne skal passe også for andet end heltal.</p>
+<p>Tilsvarende gælder:</p>
+<p><span class="math display">\[x^\frac{1}{3} = \sqrt[3]{x}\]</span> Og: <span class="math display">\[x^\frac{1}{4} = \sqrt[4]{x}\]</span> Og:</p>
+<p><span class="math display">\[x^\frac{1}{5} = \sqrt[5]{x}\]</span></p>
+<p>Og:</p>
+<p><span class="math display">\[x^\frac{1}{219} = \sqrt[219]{x}\]</span></p>
+<p>og så videre.</p>
 </section>
 <section id="eksempler" class="level3">
 <h3 class="anchored" data-anchor-id="eksempler">Eksempler</h3>

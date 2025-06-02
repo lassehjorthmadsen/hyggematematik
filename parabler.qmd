@@ -12,9 +12,9 @@ theme_set(theme_minimal())
 
 ## Hvad er parabler? {#sec-parabler}
 
-Parabler er gode, for de er ikke specielt svære og når man plotter dem, er de ret flotte.
+Parabler er den kurve som andengradsligninger danner, når man plotter dem i et koordinatsystem. Parabler er gode, for de er ikke specielt svære og når man plotter dem, er de ret flotte.
 
-Parabler er den kurve som andengradsligninger danner, når man plotter dem i et koordinatsystem.
+## Den generelle formel
 
 Den generelle formel for en andengradsligning ser, som du måske allerede ved, sådan her ud:
 
@@ -42,9 +42,12 @@ punkter <- tibble(x = c(-3, 0, 3), y = f(x, a, b, c))
 ggplot(data, aes(x, y)) +
   geom_line(color = "blue", size = 1) +
   geom_point(data = punkter, size = 2) +
+  geom_segment(x = 0, xend = 0, y = 0, yend = 26, color = "black",
+               arrow = arrow(type = "closed", 
+                             length = unit(6, "points"))) +
   scale_x_continuous(breaks = seq(-5, 5, by = 1)) +
   scale_y_continuous(breaks = seq(0, 25, by = 2)) +
-  labs(title = "En meget enkel parabel")
+  labs(title = "En meget enkel parabel") 
 ```
 
 Et par hurtige observationer:
@@ -55,7 +58,10 @@ Et par hurtige observationer:
 
 - Endelig ligger parablens *toppunkt* lige præcis i punktet $(0,0)$. Udtrykket toppunkt er måske lidt misvisende, for på en måde er det *bundpunktet*, altså den mindste y-værdi vi kan finde på kurven. Når vi taler om parabler, bruges udtrykket toppunkt tit om grafens maksimum *eller* minimum. Her er toppunktet $(0,0)$ parablens *minimum*.
 
-Lad os se på hvad der sker, hvis man ændrer $a$ (som vi til en start bare satte til 1). Vi prøver med $a = 1,2,3$ og sætter stadig $b=0$ og $c=0$. Her er et plot med tre parabler:
+
+## Hvis man ændrer $a$ ...
+
+Lad os se på hvad der sker, hvis man ændrer $a$ (som vi til en start bare satte til 1). Vi prøver med $a = 1,2,3$ og sætter stadig $b=0$ og $c=0$. Her er et plot med tre parabler (hvor vi klarer os uden y-aksen, så den ikke kommer i vejen):
 
 
 ```{r plot2}
@@ -81,12 +87,16 @@ ggplot(data, aes(x, y, color = factor(a), group = a)) +
   geom_line(size = 1) +
   scale_x_continuous(breaks = seq(-5, 5, by = 1)) +
   scale_y_continuous(limits = c(-25, 25)) +
-    labs(title = "Seks ret enkle enkel parableer", color = "a")
+    labs(title = "Seks ret enkle enkel parabler", color = "a")
 ```
 
 Når $a$ er lig -1 i stedet for 1, bliver alle y-værdierne jo bare negative tal. Parablerne med negative værdier for $a$ bliver derfor bare spejlbilleder af deres søskende med positive $a$-værdier.
 
 Nogle gange husker man det ved at tænke på parblerne som *glade* (positive $a$-værdier) eller *sure* (negative $a$-værdier). *Størrelsen* af $a$ fortæller så, *hvor* glade eller sure parablerne er.
+
+Læg mærke til, at hvis $a=0$ så bliver vores andengradsligning til: $y = 0 \cdot x^2 + bx + c = bx + c$ hvilket bare er det samme som en ret linje: $y = ax + b$ (bortset fra at vi her bruger bogstaverne $a$ og $b$) og altså slet ikke nogen parabel. 
+
+## Hvis man ændrer $b$ ...
 
 Nok om $a$, lad os se på $b$ i formlen $y = ax^2 + bx + c$. Igen sætter vi $a=1$ og $c=0$, men denne gang prøver vi med et to forskellige værdier af $b$, $b=0,4$.
 
@@ -101,7 +111,7 @@ p4 <- ggplot(data, aes(x, y, color = factor(b), group = b)) +
   geom_point(data = punkter, color = "black", size = 2) +
   scale_x_continuous(breaks = seq(-5, 5, by = 1)) +
   scale_y_continuous(breaks = seq(-20, 20, by = 2), limits = c(-5, 20)) +
-  labs(title = "To parallelforskudte parableer", color = "b")
+  labs(title = "To parallelforskudte parabler", color = "b")
 
 p4
 ```
@@ -119,6 +129,8 @@ p4 + geom_line(data = linje_punkter, color = "gray")
 
 Man kan altså se, at de to parabler er parallelforskude langs en linje, der netop har hældningen $\frac{b}{2}$, i vores tilfælde $\frac{4}{2} = 2$.
 
+## Hvis man ændrer $c$ ...
+
 Okay, turen er kommet til at se på $c$ i formlen $y = ax^2 + bx + c$. Lad os prøve at sætte $a=2$, $b=1$ og lade $c$ variere, $c=0, 2, 4$.
 
 ```{r plot6}
@@ -132,10 +144,10 @@ ggplot(data, aes(x, y, color = factor(c), group = c)) +
   geom_point(data = punkter, color = "black", size = 2) +
   scale_x_continuous(breaks = seq(-5, 5, by = 1)) +
   scale_y_continuous(breaks = seq(-20, 20, by = 2), limits = c(-5, 20)) +
-  labs(title = "To parallelforskudte parableer", color = "c")
+  labs(title = "To parallelforskudte parabler", color = "c")
 ```
 
-Denne her gang kan vi se, at $c$ simpelhen bare er y-værdierne der svarer til $x=0$, det vi også kalder skæringspunktet med y-aksen. (Også selvom jeg her har tegnet y-aksen helt til venstre, så den ikke står i vejen for kurverne.)
+Denne her gang kan vi se, at $c$ simpelthen bare er y-værdierne der svarer til $x=0$, det vi også kalder skæringspunktet med y-aksen. (Også selvom jeg her har undladt at tegne y-aksen, så den ikke står i vejen for kurverne.)
 
 Hvis vi tænker på ligningen for en ret linje: $f(x) = ax + b$, kan vi måske huske er her er det $b$ som er skæringspunkt med y-aksen. For andengradsligningen, $f(x) = ax^2 + bx + c$ er det altså $c$ der spiller rollen som skæringspunkt med y-aksen. 
 
@@ -162,3 +174,37 @@ ggplot(data, aes(x, y, color = group_label)) +
   labs(title = "En masse forskellige parabler", color = "a, b og c")
 ```
 
+## Toppunkt
+
+Indtil videre har vi bare aflæst parablerne toppunkter. Men man kan også *beregne* dem. Her skal vi bruge et ekstra hjælpebegreb som vi kalder *diskriminanten* og får bogstavet $D$. Vi udregner diskriminanten sådan her:
+
+$$ D = b^2 - 4ac $$
+
+Koordinatet til toppunktet for en hvilken som helst parabel er nu:
+
+$$ T = (-\frac{b}{2a}, - \frac{D}{4a}) $$
+Tager vi for eksempel vores to parallelforskudte parabler fra før, med forskrifterne $y_1 = x^2$ og $y_2 = x^2 + 4x$, kan vi beregne:
+
+$$ D_1 = 0^2 -4 \cdot 1 \cdot 0 = 0 $$
+og:
+
+$$ D_2 = 4^2 -4 \cdot 1 \cdot 0 = 16 $$
+
+De to toppunkter er nu:
+
+$$ T_1 = (-\frac{0}{2}, - \frac{0}{4}) = (0, 0) $$
+og:
+
+$$ T_2 = (-\frac{4}{2}, - \frac{15}{4}) = (-2, -4) $$
+
+Vi kan lige tjekke plottet fra før og se om det passer:
+
+```{r plot8}
+p4
+```
+
+Det passer sørme!
+
+## Rødder
+
+## Tre punkter

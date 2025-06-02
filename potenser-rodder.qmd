@@ -19,15 +19,13 @@ Det er selvfølgelig allermest smart, hvis man har et laaangt gangestykke af den
 
 $$ 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2= 2^{10} = 1024 $$
 
-Man kan udtale det på flere måder: "to opløftet til ti" eller "10 i tiende" eller "10 i tiende potens.
+Man kan udtale det på flere måder: "to opløftet til ti" eller "to i tiende" eller "to i tiende potens.
 
-Hvis vi skriver det lidt mere generelt: $a^n$. Hvor man kalder $a$ for *grundtallet* og $n$ for potensen.
+Hvis vi skriver det lidt mere generelt kan vi sige $a^n$, hvor man kalder $a$ for *grundtallet* og $n$ for *potensen*.
 
-### Potensregneregler
+Der er nogle nyttige regneregler man kan bruge, når man regner med potenser. Lad os gennemgå de vigtigste:
 
-Der er nogle nyttige regneregler man kan bruge, når man regner med potenser. For eksempel:
-
-#### Multiplikation af to potenser med samme grundtal
+### Multiplikation af to potenser med samme grundtal
 
 $$ a^n \cdot a^m = a^{n+m}$$
 
@@ -40,7 +38,7 @@ $$ 3^2 \cdot 3^3 = (3 \cdot 3) \cdot (3 \cdot 3 \cdot 3) = 3 \cdot 3 \cdot 3 \cd
 
 Når man ganger to ens grundtal opløftet til forskellige potenser, kan man altså bare lægge potenserne samme. Det er nemlig lige meget, om man først ganger 3 med sig selv 2 gange, og *så* ganger med 3 ganget med sig selv 3 gange, *eller* man bare gør det hele på én gang.
 
-#### Division af to potenser med samme grundtal
+### Division af to potenser med samme grundtal
 
 Man kan bruge en lignende regel, når man *dividerer* to ens grundtal opløftet til forskellige potenser:
 
@@ -54,16 +52,122 @@ Fordi:
 
 $$ \frac{4^5}{4^3} = \frac{4 \cdot 4 \cdot 4 \cdot 4 \cdot 4}{{4 \cdot 4 \cdot 4}} = \frac{4 \cdot 4}{1} = 4^2 = 16$$
 
-#### Potenser af potenser
+### Potenser af potenser
 
-#### Potens af produkter
+Hvis man opløfter til en potens, og så opløfter *en gang til*, til en ny potens, gælder denne regel:
 
-#### Potenser af brøker
+$$ (a^m)^n = a^{m\cdot n} $$
+Det er heller ikke så svært at se, hvis tager et eksempel og skriver det lidt om:
+
+$$ (5^2)^3 = 5^2 \cdot 5^2 \cdot 5^2 $$
+
+Og herfra kan vi enten skrive det helt ud, *eller* bruge reglen for multiplikation af potenser med samme grundtal. Altså:
+
+$$ 5^2 \cdot 5^2 \cdot 5^2 = 5^{2+2+2} = 5^6 $$
+Eller:
+
+$$ 5^2 \cdot 5^2 \cdot 5^2= (5 \cdot 5) \cdot (5 \cdot 5) \cdot (5 \cdot 5) = 5 \cdot 5 \cdot 5 \cdot 5 \cdot 5 \cdot 5 = 5^6 $$
+
+### Potenser af produkter
+
+Her er reglen for, hvordan man opløfter *produktet* af to tal til en potens:
+
+$$ (a \cdot b)^n = a^n \cdot a^n $$
+
+Og eksemplet der viser hvorfor, det må passe:
+
+$$ (4x)^3 = 4x \cdot 4x \cdot 4x = 4 \cdot 4 \cdot 4 \cdot x \cdot x \cdot x = 4^3 \cdot x^3 $$
+
+### Potenser af brøker
+
+Denne her regel gælder generelt (men duer kun, hvis $b$ *ikke* er nul).
+
+$$ \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n},\ b \neq 0 $$
+
+Et eksempel:
+
+$$ \left( \frac{2}{3} \right) ^ 2 = \frac{2}{3} \cdot \frac{2}{3} = \frac{2^2}{3^2} $$
+Fordi vi ganger to brøker ved at gange nævner med nævner og tæller med tæller.
 
 ### Rødder
 
-### Eksempler
+Den mest almindelige rod er kvadratroden som vi skriver sådan her: $\sqrt{x}$. Det betyder "det tal som ganget med sig selv giver $x$. For eksempel: $\sqrt{9} = 3$ fordi 3 ganget med sig selv giver 9.
 
-#### Renters rente
+Rødder er det *omvendte* af potenser. Det betyder at en kvadratrod *ophæver* et tal opløftet til to. Sådan her:
 
-#### Epidemier
+
+$$ \sqrt{x^2} = x$$
+
+Det gælder også omvendt:
+
+$$ (\sqrt{x})^2 = x$$
+
+Altså for eksempel: $\sqrt{3^2} = 3$ og $(\sqrt{9})^2 = 9$ 
+
+Ligesom potenstal ikke behøver være to, kan rødder også godt være andet en kvadratrødder. Den *tredje* rod, for eksempel, kalder vi nogle gange *kubikroden* og skriver sådan: $\sqrt[3]{x}$. Kubikroden er, når vi finder et tal som ganget med sig selv *tre* gange, giver noget bestemt. For eksempel: $\sqrt[3]{8} = 2$ fordi $2^3=8$.
+
+Som sagt ophæver rødder de tilsvarende potenser, sådan her:
+
+$$ \sqrt{x^2} = x $$
+
+$$ \sqrt[3]{x^3} = x $$
+
+$$ \sqrt[4]{x^4} = x $$
+
+$$ \sqrt[5]{x^5} = x $$
+
+$$ \sqrt[6]{x^6} = x $$
+
+$$ \sqrt[218]{x^{218}} = x $$
+
+Hvis du er vågen, har du måske lagt mærke til, at det er lidt ulogisk, at kvadratroden skrives sådan her: $\sqrt{x}$ og ikke sådan her: $\sqrt[2]{x}$. Det simpelthen fordi, at kvadratroden er den allermest almindelige rod så vi springer bare to-tallet over for at gøre udtrykket lidt nemmere at skrive.
+
+Fordi rødder ophæver potenser, kan man blive ved og ved med en kvadratrodstrappe sådan her:
+
+$$ \sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{x^2}^2}^2}^2}^2}^2}^2} = x$$
+
+Det er lidt fjollet og ret forvirrende at se på.
+
+### Sjove potenser
+
+Hvad sker der egentlig hvis man prøver det her:
+
+$$ x^{\frac{1}{2}} = \ ? $$
+
+Hvis vi tænker tilbage på vores potensregneregler ved vi at:
+
+$$ \left(x^\frac{1}{2}\right)^2 = x^{\frac{1}{2}\cdot 2} = x^1 = x $$
+Vi ved samtidig at:
+
+$$ (\sqrt{x})^2 = x $$. 
+
+Så derfor må:
+
+$$ x^\frac{1}{2} = \sqrt{x} $$
+
+Selvom vi ikke umiddelbart kan forestille os, hvor dan man ganger et tal med sig selv "en halv gang", så må det altså svare til at tage kvadratroden, hvis potensregnereglerne skal passe også for andet end heltal.
+
+Tilsvarende gælder:
+
+$$x^\frac{1}{3} = \sqrt[3]{x}$$ 
+Og:
+$$x^\frac{1}{4} = \sqrt[4]{x}$$
+Og: 
+
+$$x^\frac{1}{5} = \sqrt[5]{x}$$ 
+
+Og: 
+
+$$x^\frac{1}{219} = \sqrt[219]{x}$$
+
+og så videre.
+
+Det betyder, at potenstal og rødder kan være *alle* tal, og vi kan derfor også godt skrive $x^2,3$ eller $4^\pi$ eller $\sqrt[2.34]{x} = x^\frac{1}{2,34}$.
+
+Tyg eventuelt lidt på, hvorfor det sidste udtryk må være rigtig.
+
+Men hvorfor? Hvad kan man bruge det til?
+
+### Renters rente
+
+### Epidemier

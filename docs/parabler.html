@@ -179,6 +179,13 @@ window.Quarto = {
    
   <ul>
   <li><a href="#sec-parabler" id="toc-sec-parabler" class="nav-link active" data-scroll-target="#sec-parabler">Hvad er parabler?</a></li>
+  <li><a href="#den-generelle-formel" id="toc-den-generelle-formel" class="nav-link" data-scroll-target="#den-generelle-formel">Den generelle formel</a></li>
+  <li><a href="#hvis-man-ændrer-a" id="toc-hvis-man-ændrer-a" class="nav-link" data-scroll-target="#hvis-man-ændrer-a">Hvis man ændrer <span class="math inline">\(a\)</span> …</a></li>
+  <li><a href="#hvis-man-ændrer-b" id="toc-hvis-man-ændrer-b" class="nav-link" data-scroll-target="#hvis-man-ændrer-b">Hvis man ændrer <span class="math inline">\(b\)</span> …</a></li>
+  <li><a href="#hvis-man-ændrer-c" id="toc-hvis-man-ændrer-c" class="nav-link" data-scroll-target="#hvis-man-ændrer-c">Hvis man ændrer <span class="math inline">\(c\)</span> …</a></li>
+  <li><a href="#toppunkt" id="toc-toppunkt" class="nav-link" data-scroll-target="#toppunkt">Toppunkt</a></li>
+  <li><a href="#rødder" id="toc-rødder" class="nav-link" data-scroll-target="#rødder">Rødder</a></li>
+  <li><a href="#tre-punkter" id="toc-tre-punkter" class="nav-link" data-scroll-target="#tre-punkter">Tre punkter</a></li>
   </ul>
 </nav>
     </div>
@@ -212,8 +219,10 @@ window.Quarto = {
 
 <section id="sec-parabler" class="level2">
 <h2 class="anchored" data-anchor-id="sec-parabler">Hvad er parabler?</h2>
-<p>Parabler er gode, for de er ikke specielt svære og når man plotter dem, er de ret flotte.</p>
-<p>Parabler er den kurve som andengradsligninger danner, når man plotter dem i et koordinatsystem.</p>
+<p>Parabler er den kurve som andengradsligninger danner, når man plotter dem i et koordinatsystem. Parabler er gode, for de er ikke specielt svære og når man plotter dem, er de ret flotte.</p>
+</section>
+<section id="den-generelle-formel" class="level2">
+<h2 class="anchored" data-anchor-id="den-generelle-formel">Den generelle formel</h2>
 <p>Den generelle formel for en andengradsligning ser, som du måske allerede ved, sådan her ud:</p>
 <p><span class="math display">\[ f(x) = ax^2 + bx + c \]</span></p>
 <p>Når man plotter den i et koordinatsystem med en x-akse og en y-akse, siger man bare, at <span class="math inline">\(y=f(x)\)</span> sådan her:</p>
@@ -236,7 +245,10 @@ window.Quarto = {
 <li><p>Vi ser også at y aldrig er negativ. Det er af samme grund som skaber symmetrien: Alle tal opløftet til 2 giver noget positivt. Eller lidt mere formelt, ligningen: <span class="math inline">\(x^2 &lt; 0\)</span> har ingen løsninger, hvilket man kan skrive sådan her, <span class="math inline">\(x \in \emptyset\)</span>, hvis man gerne vil være meget matematisk.</p></li>
 <li><p>Endelig ligger parablens <em>toppunkt</em> lige præcis i punktet <span class="math inline">\((0,0)\)</span>. Udtrykket toppunkt er måske lidt misvisende, for på en måde er det <em>bundpunktet</em>, altså den mindste y-værdi vi kan finde på kurven. Når vi taler om parabler, bruges udtrykket toppunkt tit om grafens maksimum <em>eller</em> minimum. Her er toppunktet <span class="math inline">\((0,0)\)</span> parablens <em>minimum</em>.</p></li>
 </ul>
-<p>Lad os se på hvad der sker, hvis man ændrer <span class="math inline">\(a\)</span> (som vi til en start bare satte til 1). Vi prøver med <span class="math inline">\(a = 1,2,3\)</span> og sætter stadig <span class="math inline">\(b=0\)</span> og <span class="math inline">\(c=0\)</span>. Her er et plot med tre parabler:</p>
+</section>
+<section id="hvis-man-ændrer-a" class="level2">
+<h2 class="anchored" data-anchor-id="hvis-man-ændrer-a">Hvis man ændrer <span class="math inline">\(a\)</span> …</h2>
+<p>Lad os se på hvad der sker, hvis man ændrer <span class="math inline">\(a\)</span> (som vi til en start bare satte til 1). Vi prøver med <span class="math inline">\(a = 1,2,3\)</span> og sætter stadig <span class="math inline">\(b=0\)</span> og <span class="math inline">\(c=0\)</span>. Her er et plot med tre parabler (hvor vi klarer os uden y-aksen, så den ikke kommer i vejen):</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -259,6 +271,10 @@ window.Quarto = {
 </div>
 <p>Når <span class="math inline">\(a\)</span> er lig -1 i stedet for 1, bliver alle y-værdierne jo bare negative tal. Parablerne med negative værdier for <span class="math inline">\(a\)</span> bliver derfor bare spejlbilleder af deres søskende med positive <span class="math inline">\(a\)</span>-værdier.</p>
 <p>Nogle gange husker man det ved at tænke på parblerne som <em>glade</em> (positive <span class="math inline">\(a\)</span>-værdier) eller <em>sure</em> (negative <span class="math inline">\(a\)</span>-værdier). <em>Størrelsen</em> af <span class="math inline">\(a\)</span> fortæller så, <em>hvor</em> glade eller sure parablerne er.</p>
+<p>Læg mærke til, at hvis <span class="math inline">\(a=0\)</span> så bliver vores andengradsligning til: <span class="math inline">\(y = 0 \cdot x^2 + bx + c = bx + c\)</span> hvilket bare er det samme som en ret linje: <span class="math inline">\(y = ax + b\)</span> (bortset fra at vi her bruger bogstaverne <span class="math inline">\(a\)</span> og <span class="math inline">\(b\)</span>) og altså slet ikke nogen parabel.</p>
+</section>
+<section id="hvis-man-ændrer-b" class="level2">
+<h2 class="anchored" data-anchor-id="hvis-man-ændrer-b">Hvis man ændrer <span class="math inline">\(b\)</span> …</h2>
 <p>Nok om <span class="math inline">\(a\)</span>, lad os se på <span class="math inline">\(b\)</span> i formlen <span class="math inline">\(y = ax^2 + bx + c\)</span>. Igen sætter vi <span class="math inline">\(a=1\)</span> og <span class="math inline">\(c=0\)</span>, men denne gang prøver vi med et to forskellige værdier af <span class="math inline">\(b\)</span>, <span class="math inline">\(b=0,4\)</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -282,6 +298,9 @@ window.Quarto = {
 </div>
 </div>
 <p>Man kan altså se, at de to parabler er parallelforskude langs en linje, der netop har hældningen <span class="math inline">\(\frac{b}{2}\)</span>, i vores tilfælde <span class="math inline">\(\frac{4}{2} = 2\)</span>.</p>
+</section>
+<section id="hvis-man-ændrer-c" class="level2">
+<h2 class="anchored" data-anchor-id="hvis-man-ændrer-c">Hvis man ændrer <span class="math inline">\(c\)</span> …</h2>
 <p>Okay, turen er kommet til at se på <span class="math inline">\(c\)</span> i formlen <span class="math inline">\(y = ax^2 + bx + c\)</span>. Lad os prøve at sætte <span class="math inline">\(a=2\)</span>, <span class="math inline">\(b=1\)</span> og lade <span class="math inline">\(c\)</span> variere, <span class="math inline">\(c=0, 2, 4\)</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -292,7 +311,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Denne her gang kan vi se, at <span class="math inline">\(c\)</span> simpelhen bare er y-værdierne der svarer til <span class="math inline">\(x=0\)</span>, det vi også kalder skæringspunktet med y-aksen. (Også selvom jeg her har tegnet y-aksen helt til venstre, så den ikke står i vejen for kurverne.)</p>
+<p>Denne her gang kan vi se, at <span class="math inline">\(c\)</span> simpelthen bare er y-værdierne der svarer til <span class="math inline">\(x=0\)</span>, det vi også kalder skæringspunktet med y-aksen. (Også selvom jeg her har undladt at tegne y-aksen, så den ikke står i vejen for kurverne.)</p>
 <p>Hvis vi tænker på ligningen for en ret linje: <span class="math inline">\(f(x) = ax + b\)</span>, kan vi måske huske er her er det <span class="math inline">\(b\)</span> som er skæringspunkt med y-aksen. For andengradsligningen, <span class="math inline">\(f(x) = ax^2 + bx + c\)</span> er det altså <span class="math inline">\(c\)</span> der spiller rollen som skæringspunkt med y-aksen.</p>
 <p>Det er ikke så svært at se, at det må være sådan, for vi kan bare sætte <span class="math inline">\(x=0\)</span> ind i formlerne. For den rette linje har vi: <span class="math inline">\(f(0) = a\cdot0 + b = b\)</span>. Og for parablen: <span class="math inline">\(f(0) = a \cdot 0^2 + b\cdot0 + c= c\)</span>.</p>
 <p>Lad os prøve at sætte det hele sammen i ét plot:</p>
@@ -305,6 +324,35 @@ window.Quarto = {
 </div>
 </div>
 </div>
+</section>
+<section id="toppunkt" class="level2">
+<h2 class="anchored" data-anchor-id="toppunkt">Toppunkt</h2>
+<p>Indtil videre har vi bare aflæst parablerne toppunkter. Men man kan også <em>beregne</em> dem. Her skal vi bruge et ekstra hjælpebegreb som vi kalder <em>diskriminanten</em> og får bogstavet <span class="math inline">\(D\)</span>. Vi udregner diskriminanten sådan her:</p>
+<p><span class="math display">\[ D = b^2 - 4ac \]</span></p>
+<p>Koordinatet til toppunktet for en hvilken som helst parabel er nu:</p>
+<p><span class="math display">\[ T = (-\frac{b}{2a}, - \frac{D}{4a}) \]</span> Tager vi for eksempel vores to parallelforskudte parabler fra før, med forskrifterne <span class="math inline">\(y_1 = x^2\)</span> og <span class="math inline">\(y_2 = x^2 + 4x\)</span>, kan vi beregne:</p>
+<p><span class="math display">\[ D_1 = 0^2 -4 \cdot 1 \cdot 0 = 0 \]</span> og:</p>
+<p><span class="math display">\[ D_2 = 4^2 -4 \cdot 1 \cdot 0 = 16 \]</span></p>
+<p>De to toppunkter er nu:</p>
+<p><span class="math display">\[ T_1 = (-\frac{0}{2}, - \frac{0}{4}) = (0, 0) \]</span> og:</p>
+<p><span class="math display">\[ T_2 = (-\frac{4}{2}, - \frac{15}{4}) = (-2, -4) \]</span></p>
+<p>Vi kan lige tjekke plottet fra før og se om det passer:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="parabler_files/figure-html/plot8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Det passer sørme!</p>
+</section>
+<section id="rødder" class="level2">
+<h2 class="anchored" data-anchor-id="rødder">Rødder</h2>
+</section>
+<section id="tre-punkter" class="level2">
+<h2 class="anchored" data-anchor-id="tre-punkter">Tre punkter</h2>
 
 
 </section>

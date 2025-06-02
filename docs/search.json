@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Hyggematematik",
     "section": "",
-    "text": "Hvad er hyggematematik?\nHer er mit bedste forsøg på at forklare alle de ting, Selma spørger om, som har med matematik at gøre. Vi kalder det hyggematematik.",
+    "text": "Hvad er hyggematematik?\nHyggematematik er for dig, som synes, at matematik godt må være lidt hyggeligere. Og som tror på, at det godt kan lade sig gøre, selvom ideen virker helt skør for mange andre.\nHyggematematik er også for dig, som måske er lidt træt af endeløse rækker af regneopgaver i skolebøgerne, og måske har en fornemmelse af, at det hele godt kunne være lidt sjovere.\nDet er også for alle de forældre, der, ligesom mig selv, godt kan have svært ved at finde en super god måde at svare på alle de spørgsmål, vores børn har til deres matematiklektier.\nHyggematematik er nemlig også mit bedste forsøg på at forklare alle de ting, min datter Selma spørger om, som har med matematik at gøre.",
     "crumbs": [
       "Hvad er hyggematematik?"
     ]
@@ -56,7 +56,7 @@
     "section": "",
     "text": "Hvad er potenser og rødder?",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Potenser og rødder</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Potenser og rødder</span>"
     ]
   },
   {
@@ -154,9 +154,9 @@
     "href": "potenser-rodder.html#sec-potenser",
     "title": "Potenser og rødder",
     "section": "",
-    "text": "Potenser\nPotenser er faktisk nemt: Det er bare en smart måde at skrive ned, når et tal bliver ganget med sig selv et vist antal gange. For eksempel:\n\\[ 5 \\cdot 5 = 5^2 = 25 \\] \\[ 5 \\cdot 5 \\cdot 5 = 5^3 = 125 \\] \\[ 5 \\cdot 5 \\cdot 5 \\cdot 5 = 5^4 = 625 \\]\nDet er selvfølgelig allermest smart, hvis man har et laaangt gangestykke af denne type:\n\\[ 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2= 2^{10} = 1024 \\]\nMan kan udtale det på flere måder: “to opløftet til ti” eller “10 i tiende” eller “10 i tiende potens.\nHvis vi skriver det lidt mere generelt: \\(a^n\\). Hvor man kalder \\(a\\) for grundtallet og \\(n\\) for potensen.\n\n\nPotensregneregler\nDer er nogle nyttige regneregler man kan bruge, når man regner med potenser. For eksempel:\n\nMultiplikation af to potenser med samme grundtal\n\\[ a^n \\cdot a^m = a^{n+m}\\]\nDen letteste måde at forstå, hvorfor det er sådan, er ved at se på et lille regneeksempel:\n\\[ 3^2 \\cdot 3^3 = 3^{2+3} = 3^5 = 243 \\] Vi kan se klart, at det må være sådan, ved at skrive det som almindelige gangestykker og bruge parenteser til holde styr på rodet:\n\\[ 3^2 \\cdot 3^3 = (3 \\cdot 3) \\cdot (3 \\cdot 3 \\cdot 3) = 3 \\cdot 3 \\cdot 3 \\cdot 3 \\cdot 3 = 3^5 \\]\nNår man ganger to ens grundtal opløftet til forskellige potenser, kan man altså bare lægge potenserne samme. Det er nemlig lige meget, om man først ganger 3 med sig selv 2 gange, og så ganger med 3 ganget med sig selv 3 gange, eller man bare gør det hele på én gang.\n\n\nDivision af to potenser med samme grundtal\nMan kan bruge en lignende regel, når man dividerer to ens grundtal opløftet til forskellige potenser:\n\\[ \\frac{a^n}{a^m} = a^{n-m}\\] Igen er det nemmest at se, hvorfor det er sådan, ved at tage et eksempel:\n\\[ \\frac{4^5}{4^3} = 4^{5-2} = 4^2 = 16\\]\nFordi:\n\\[ \\frac{4^5}{4^3} = \\frac{4 \\cdot 4 \\cdot 4 \\cdot 4 \\cdot 4}{{4 \\cdot 4 \\cdot 4}} = \\frac{4 \\cdot 4}{1} = 4^2 = 16\\]\n\n\nPotenser af potenser\n\n\nPotens af produkter\n\n\nPotenser af brøker\n\n\n\nRødder\n\n\nEksempler\n\nRenters rente\n\n\nEpidemier",
+    "text": "Potenser\nPotenser er faktisk nemt: Det er bare en smart måde at skrive ned, når et tal bliver ganget med sig selv et vist antal gange. For eksempel:\n\\[ 5 \\cdot 5 = 5^2 = 25 \\] \\[ 5 \\cdot 5 \\cdot 5 = 5^3 = 125 \\] \\[ 5 \\cdot 5 \\cdot 5 \\cdot 5 = 5^4 = 625 \\]\nDet er selvfølgelig allermest smart, hvis man har et laaangt gangestykke af denne type:\n\\[ 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2= 2^{10} = 1024 \\]\nMan kan udtale det på flere måder: “to opløftet til ti” eller “to i tiende” eller “to i tiende potens.\nHvis vi skriver det lidt mere generelt kan vi sige \\(a^n\\), hvor man kalder \\(a\\) for grundtallet og \\(n\\) for potensen.\nDer er nogle nyttige regneregler man kan bruge, når man regner med potenser. Lad os gennemgå de vigtigste:\n\n\nMultiplikation af to potenser med samme grundtal\n\\[ a^n \\cdot a^m = a^{n+m}\\]\nDen letteste måde at forstå, hvorfor det er sådan, er ved at se på et lille regneeksempel:\n\\[ 3^2 \\cdot 3^3 = 3^{2+3} = 3^5 = 243 \\] Vi kan se klart, at det må være sådan, ved at skrive det som almindelige gangestykker og bruge parenteser til holde styr på rodet:\n\\[ 3^2 \\cdot 3^3 = (3 \\cdot 3) \\cdot (3 \\cdot 3 \\cdot 3) = 3 \\cdot 3 \\cdot 3 \\cdot 3 \\cdot 3 = 3^5 \\]\nNår man ganger to ens grundtal opløftet til forskellige potenser, kan man altså bare lægge potenserne samme. Det er nemlig lige meget, om man først ganger 3 med sig selv 2 gange, og så ganger med 3 ganget med sig selv 3 gange, eller man bare gør det hele på én gang.\n\n\nDivision af to potenser med samme grundtal\nMan kan bruge en lignende regel, når man dividerer to ens grundtal opløftet til forskellige potenser:\n\\[ \\frac{a^n}{a^m} = a^{n-m}\\] Igen er det nemmest at se, hvorfor det er sådan, ved at tage et eksempel:\n\\[ \\frac{4^5}{4^3} = 4^{5-2} = 4^2 = 16\\]\nFordi:\n\\[ \\frac{4^5}{4^3} = \\frac{4 \\cdot 4 \\cdot 4 \\cdot 4 \\cdot 4}{{4 \\cdot 4 \\cdot 4}} = \\frac{4 \\cdot 4}{1} = 4^2 = 16\\]\n\n\nPotenser af potenser\nHvis man opløfter til en potens, og så opløfter en gang til, til en ny potens, gælder denne regel:\n\\[ (a^m)^n = a^{m\\cdot n} \\] Det er heller ikke så svært at se, hvis tager et eksempel og skriver det lidt om:\n\\[ (5^2)^3 = 5^2 \\cdot 5^2 \\cdot 5^2 \\]\nOg herfra kan vi enten skrive det helt ud, eller bruge reglen for multiplikation af potenser med samme grundtal. Altså:\n\\[ 5^2 \\cdot 5^2 \\cdot 5^2 = 5^{2+2+2} = 5^6 \\] Eller:\n\\[ 5^2 \\cdot 5^2 \\cdot 5^2= (5 \\cdot 5) \\cdot (5 \\cdot 5) \\cdot (5 \\cdot 5) = 5 \\cdot 5 \\cdot 5 \\cdot 5 \\cdot 5 \\cdot 5 = 5^6 \\]\n\n\nPotenser af produkter\nHer er reglen for, hvordan man opløfter produktet af to tal til en potens:\n\\[ (a \\cdot b)^n = a^n \\cdot a^n \\]\nOg eksemplet der viser hvorfor, det må passe:\n\\[ (4x)^3 = 4x \\cdot 4x \\cdot 4x = 4 \\cdot 4 \\cdot 4 \\cdot x \\cdot x \\cdot x = 4^3 \\cdot x^3 \\]\n\n\nPotenser af brøker\nDenne her regel gælder generelt (men duer kun, hvis \\(b\\) ikke er nul).\n\\[ \\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n},\\ b \\neq 0 \\]\nEt eksempel:\n\\[ \\left( \\frac{2}{3} \\right) ^ 2 = \\frac{2}{3} \\cdot \\frac{2}{3} = \\frac{2^2}{3^2} \\] Fordi vi ganger to brøker ved at gange nævner med nævner og tæller med tæller.\n\n\nRødder\nDen mest almindelige rod er kvadratroden som vi skriver sådan her: \\(\\sqrt{x}\\). Det betyder “det tal som ganget med sig selv giver \\(x\\). For eksempel: \\(\\sqrt{9} = 3\\) fordi 3 ganget med sig selv giver 9.\nRødder er det omvendte af potenser. Det betyder at en kvadratrod ophæver et tal opløftet til to. Sådan her:\n\\[ \\sqrt{x^2} = x\\]\nDet gælder også omvendt:\n\\[ (\\sqrt{x})^2 = x\\]\nAltså for eksempel: \\(\\sqrt{3^2} = 3\\) og \\((\\sqrt{9})^2 = 9\\)\nLigesom potenstal ikke behøver være to, kan rødder også godt være andet en kvadratrødder. Den tredje rod, for eksempel, kalder vi nogle gange kubikroden og skriver sådan: \\(\\sqrt[3]{x}\\). Kubikroden er, når vi finder et tal som ganget med sig selv tre gange, giver noget bestemt. For eksempel: \\(\\sqrt[3]{8} = 2\\) fordi \\(2^3=8\\).\nSom sagt ophæver rødder de tilsvarende potenser, sådan her:\n\\[ \\sqrt{x^2} = x \\]\n\\[ \\sqrt[3]{x^3} = x \\]\n\\[ \\sqrt[4]{x^4} = x \\]\n\\[ \\sqrt[5]{x^5} = x \\]\n\\[ \\sqrt[6]{x^6} = x \\]\n\\[ \\sqrt[218]{x^{218}} = x \\]\nHvis du er vågen, har du måske lagt mærke til, at det er lidt ulogisk, at kvadratroden skrives sådan her: \\(\\sqrt{x}\\) og ikke sådan her: \\(\\sqrt[2]{x}\\). Det simpelthen fordi, at kvadratroden er den allermest almindelige rod så vi springer bare to-tallet over for at gøre udtrykket lidt nemmere at skrive.\nFordi rødder ophæver potenser, kan man blive ved og ved med en kvadratrodstrappe sådan her:\n\\[ \\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{x^2}^2}^2}^2}^2}^2}^2} = x\\]\nDet er lidt fjollet og ret forvirrende at se på.\n\n\nSjove potenser\nHvad sker der egentlig hvis man prøver det her:\n\\[ x^{\\frac{1}{2}} = \\ ? \\]\nHvis vi tænker tilbage på vores potensregneregler ved vi at:\n\\[ \\left(x^\\frac{1}{2}\\right)^2 = x^{\\frac{1}{2}\\cdot 2} = x^1 = x \\] Vi ved samtidig at:\n\\[ (\\sqrt{x})^2 = x \\].\nSå derfor må:\n\\[ x^\\frac{1}{2} = \\sqrt{x} \\]\nSelvom vi ikke umiddelbart kan forestille os, hvor dan man ganger et tal med sig selv “en halv gang”, så må det altså svare til at tage kvadratroden, hvis potensregnereglerne skal passe også for andet end heltal.\nTilsvarende gælder:\n\\[x^\\frac{1}{3} = \\sqrt[3]{x}\\] Og: \\[x^\\frac{1}{4} = \\sqrt[4]{x}\\] Og:\n\\[x^\\frac{1}{5} = \\sqrt[5]{x}\\]\nOg:\n\\[x^\\frac{1}{219} = \\sqrt[219]{x}\\]\nog så videre.\n\n\nEksempler\n\nRenters rente\n\n\nEpidemier",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Potenser og rødder</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Potenser og rødder</span>"
     ]
   },
   {
@@ -176,7 +176,7 @@
     "section": "",
     "text": "Hvad er kombinatorik?\nKombinatorik handler om, hvordan man kan vælge og sammensætte ting.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kombinatorik</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Kombinatorik</span>"
     ]
   },
   {
@@ -184,7 +184,7 @@
     "href": "parabler.html",
     "title": "Parabler",
     "section": "",
-    "text": "Hvad er parabler?\nParabler er gode, for de er ikke specielt svære og når man plotter dem, er de ret flotte.\nParabler er den kurve som andengradsligninger danner, når man plotter dem i et koordinatsystem.\nDen generelle formel for en andengradsligning ser, som du måske allerede ved, sådan her ud:\n\\[ f(x) = ax^2 + bx + c \\]\nNår man plotter den i et koordinatsystem med en x-akse og en y-akse, siger man bare, at \\(y=f(x)\\) sådan her:\n\\[ y = f(x) = ax^2 + bx + c \\]\nLad os tegne den mest enkle parabel, man kan forestille sig. Vi siger at \\(a=1\\), \\(b=0\\) og \\(c=0\\). Dermed bliver opgaven at tegne kurven:\n\\[y=x^2\\]\nDet ser sådan her ud:\nEt par hurtige observationer:\nLad os se på hvad der sker, hvis man ændrer \\(a\\) (som vi til en start bare satte til 1). Vi prøver med \\(a = 1,2,3\\) og sætter stadig \\(b=0\\) og \\(c=0\\). Her er et plot med tre parabler:\nVi kan se, at \\(a\\) betyder noget for, hvor stejl parablen er. Det er ikke så mærkeligt, for når vi gange med et større og større tal (\\(x = 1, 2, 3\\)) så bliver y jo hver gang endnu større. Altså: \\(3x^2 &gt; 2x^2 &gt; x^2\\).\nMåske kan du allerede nu se, hvad der sker, hvis \\(a\\) er negativ? Lad os prøve at lave et plot også med negative \\(a\\)-værdier: \\(a = -3, -2, -1, 1, 2, 3\\)\nNår \\(a\\) er lig -1 i stedet for 1, bliver alle y-værdierne jo bare negative tal. Parablerne med negative værdier for \\(a\\) bliver derfor bare spejlbilleder af deres søskende med positive \\(a\\)-værdier.\nNogle gange husker man det ved at tænke på parblerne som glade (positive \\(a\\)-værdier) eller sure (negative \\(a\\)-værdier). Størrelsen af \\(a\\) fortæller så, hvor glade eller sure parablerne er.\nNok om \\(a\\), lad os se på \\(b\\) i formlen \\(y = ax^2 + bx + c\\). Igen sætter vi \\(a=1\\) og \\(c=0\\), men denne gang prøver vi med et to forskellige værdier af \\(b\\), \\(b=0,4\\).\nDenne gang kan vi se, at de to parabler er forskudte, ikke spejlede. Parablen hvor \\(b=4\\) er ligesom skubbet lidt ned og til venstre. Toppunkterne er markeret med en prik, og man kan se, at toppunktet for \\(b=4\\) netop ligger lidt lavere og lidt længere til venstre vores helt enkle parabel hvor \\(b=0\\) (altså den allerførste vi så på: \\(y=x^2\\).)\nHvad der helt præcist er sket, kan vi godt komme lidt nærmere. Hvis vi tegner en lige linje gennem de to toppunkter kan vi både se og beregne, at dens hældning er netop 2. Hvis vi kalder de to toppunkter for \\(t_1\\) og \\(t_2\\) og aflæser toppunkterne til \\(t_1 = (-2, -4)\\) og \\(t_2 =(0, 0)\\) kan vi at forskellen mellem \\(x\\)-værdierne er \\(0-(-2) = 2\\) og forskellen mellem y-værdierne er \\(0-(-4) = 4\\). Hældningen på en lige linje gennem de to punkter er altså \\(\\frac{4}{2} = 2\\).\nLad os prøve at tegne linjen:\nMan kan altså se, at de to parabler er parallelforskude langs en linje, der netop har hældningen \\(\\frac{b}{2}\\), i vores tilfælde \\(\\frac{4}{2} = 2\\).\nOkay, turen er kommet til at se på \\(c\\) i formlen \\(y = ax^2 + bx + c\\). Lad os prøve at sætte \\(a=2\\), \\(b=1\\) og lade \\(c\\) variere, \\(c=0, 2, 4\\).\nDenne her gang kan vi se, at \\(c\\) simpelhen bare er y-værdierne der svarer til \\(x=0\\), det vi også kalder skæringspunktet med y-aksen. (Også selvom jeg her har tegnet y-aksen helt til venstre, så den ikke står i vejen for kurverne.)\nHvis vi tænker på ligningen for en ret linje: \\(f(x) = ax + b\\), kan vi måske huske er her er det \\(b\\) som er skæringspunkt med y-aksen. For andengradsligningen, \\(f(x) = ax^2 + bx + c\\) er det altså \\(c\\) der spiller rollen som skæringspunkt med y-aksen.\nDet er ikke så svært at se, at det må være sådan, for vi kan bare sætte \\(x=0\\) ind i formlerne. For den rette linje har vi: \\(f(0) = a\\cdot0 + b = b\\). Og for parablen: \\(f(0) = a \\cdot 0^2 + b\\cdot0 + c= c\\).\nLad os prøve at sætte det hele sammen i ét plot:",
+    "text": "Hvad er parabler?\nParabler er den kurve som andengradsligninger danner, når man plotter dem i et koordinatsystem. Parabler er gode, for de er ikke specielt svære og når man plotter dem, er de ret flotte.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
     ]
@@ -195,6 +195,86 @@
     "title": "Parabler",
     "section": "",
     "text": "Vi ser nemt, at parablen er symmetrisk omkring y-aksen. Det er fordi, at \\(-x^2 = x^2\\) så negative x-værdier giver samme y-værdi, som til tilsvarende positive x-værdier. For eksempel er de to punkter \\((-3, 9)\\) og \\((3, 9)\\) markeret med en prik. Altså: \\(3^2 = -3^2 = 9\\).\nVi ser også at y aldrig er negativ. Det er af samme grund som skaber symmetrien: Alle tal opløftet til 2 giver noget positivt. Eller lidt mere formelt, ligningen: \\(x^2 &lt; 0\\) har ingen løsninger, hvilket man kan skrive sådan her, \\(x \\in \\emptyset\\), hvis man gerne vil være meget matematisk.\nEndelig ligger parablens toppunkt lige præcis i punktet \\((0,0)\\). Udtrykket toppunkt er måske lidt misvisende, for på en måde er det bundpunktet, altså den mindste y-værdi vi kan finde på kurven. Når vi taler om parabler, bruges udtrykket toppunkt tit om grafens maksimum eller minimum. Her er toppunktet \\((0,0)\\) parablens minimum.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
+    ]
+  },
+  {
+    "objectID": "parabler.html#den-generelle-formel",
+    "href": "parabler.html#den-generelle-formel",
+    "title": "Parabler",
+    "section": "Den generelle formel",
+    "text": "Den generelle formel\nDen generelle formel for en andengradsligning ser, som du måske allerede ved, sådan her ud:\n\\[ f(x) = ax^2 + bx + c \\]\nNår man plotter den i et koordinatsystem med en x-akse og en y-akse, siger man bare, at \\(y=f(x)\\) sådan her:\n\\[ y = f(x) = ax^2 + bx + c \\]\nLad os tegne den mest enkle parabel, man kan forestille sig. Vi siger at \\(a=1\\), \\(b=0\\) og \\(c=0\\). Dermed bliver opgaven at tegne kurven:\n\\[y=x^2\\]\nDet ser sådan her ud:\n\n\n\n\n\n\n\n\n\nEt par hurtige observationer:\n\nVi ser nemt, at parablen er symmetrisk omkring y-aksen. Det er fordi, at \\(-x^2 = x^2\\) så negative x-værdier giver samme y-værdi, som til tilsvarende positive x-værdier. For eksempel er de to punkter \\((-3, 9)\\) og \\((3, 9)\\) markeret med en prik. Altså: \\(3^2 = -3^2 = 9\\).\nVi ser også at y aldrig er negativ. Det er af samme grund som skaber symmetrien: Alle tal opløftet til 2 giver noget positivt. Eller lidt mere formelt, ligningen: \\(x^2 &lt; 0\\) har ingen løsninger, hvilket man kan skrive sådan her, \\(x \\in \\emptyset\\), hvis man gerne vil være meget matematisk.\nEndelig ligger parablens toppunkt lige præcis i punktet \\((0,0)\\). Udtrykket toppunkt er måske lidt misvisende, for på en måde er det bundpunktet, altså den mindste y-værdi vi kan finde på kurven. Når vi taler om parabler, bruges udtrykket toppunkt tit om grafens maksimum eller minimum. Her er toppunktet \\((0,0)\\) parablens minimum.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
+    ]
+  },
+  {
+    "objectID": "parabler.html#hvis-man-ændrer-a",
+    "href": "parabler.html#hvis-man-ændrer-a",
+    "title": "Parabler",
+    "section": "Hvis man ændrer \\(a\\) …",
+    "text": "Hvis man ændrer \\(a\\) …\nLad os se på hvad der sker, hvis man ændrer \\(a\\) (som vi til en start bare satte til 1). Vi prøver med \\(a = 1,2,3\\) og sætter stadig \\(b=0\\) og \\(c=0\\). Her er et plot med tre parabler (hvor vi klarer os uden y-aksen, så den ikke kommer i vejen):\n\n\n\n\n\n\n\n\n\nVi kan se, at \\(a\\) betyder noget for, hvor stejl parablen er. Det er ikke så mærkeligt, for når vi gange med et større og større tal (\\(x = 1, 2, 3\\)) så bliver y jo hver gang endnu større. Altså: \\(3x^2 &gt; 2x^2 &gt; x^2\\).\nMåske kan du allerede nu se, hvad der sker, hvis \\(a\\) er negativ? Lad os prøve at lave et plot også med negative \\(a\\)-værdier: \\(a = -3, -2, -1, 1, 2, 3\\)\n\n\n\n\n\n\n\n\n\nNår \\(a\\) er lig -1 i stedet for 1, bliver alle y-værdierne jo bare negative tal. Parablerne med negative værdier for \\(a\\) bliver derfor bare spejlbilleder af deres søskende med positive \\(a\\)-værdier.\nNogle gange husker man det ved at tænke på parblerne som glade (positive \\(a\\)-værdier) eller sure (negative \\(a\\)-værdier). Størrelsen af \\(a\\) fortæller så, hvor glade eller sure parablerne er.\nLæg mærke til, at hvis \\(a=0\\) så bliver vores andengradsligning til: \\(y = 0 \\cdot x^2 + bx + c = bx + c\\) hvilket bare er det samme som en ret linje: \\(y = ax + b\\) (bortset fra at vi her bruger bogstaverne \\(a\\) og \\(b\\)) og altså slet ikke nogen parabel.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
+    ]
+  },
+  {
+    "objectID": "parabler.html#hvis-man-ændrer-b",
+    "href": "parabler.html#hvis-man-ændrer-b",
+    "title": "Parabler",
+    "section": "Hvis man ændrer \\(b\\) …",
+    "text": "Hvis man ændrer \\(b\\) …\nNok om \\(a\\), lad os se på \\(b\\) i formlen \\(y = ax^2 + bx + c\\). Igen sætter vi \\(a=1\\) og \\(c=0\\), men denne gang prøver vi med et to forskellige værdier af \\(b\\), \\(b=0,4\\).\n\n\n\n\n\n\n\n\n\nDenne gang kan vi se, at de to parabler er forskudte, ikke spejlede. Parablen hvor \\(b=4\\) er ligesom skubbet lidt ned og til venstre. Toppunkterne er markeret med en prik, og man kan se, at toppunktet for \\(b=4\\) netop ligger lidt lavere og lidt længere til venstre vores helt enkle parabel hvor \\(b=0\\) (altså den allerførste vi så på: \\(y=x^2\\).)\nHvad der helt præcist er sket, kan vi godt komme lidt nærmere. Hvis vi tegner en lige linje gennem de to toppunkter kan vi både se og beregne, at dens hældning er netop 2. Hvis vi kalder de to toppunkter for \\(t_1\\) og \\(t_2\\) og aflæser toppunkterne til \\(t_1 = (-2, -4)\\) og \\(t_2 =(0, 0)\\) kan vi at forskellen mellem \\(x\\)-værdierne er \\(0-(-2) = 2\\) og forskellen mellem y-værdierne er \\(0-(-4) = 4\\). Hældningen på en lige linje gennem de to punkter er altså \\(\\frac{4}{2} = 2\\).\nLad os prøve at tegne linjen:\n\n\n\n\n\n\n\n\n\nMan kan altså se, at de to parabler er parallelforskude langs en linje, der netop har hældningen \\(\\frac{b}{2}\\), i vores tilfælde \\(\\frac{4}{2} = 2\\).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
+    ]
+  },
+  {
+    "objectID": "parabler.html#hvis-man-ændrer-c",
+    "href": "parabler.html#hvis-man-ændrer-c",
+    "title": "Parabler",
+    "section": "Hvis man ændrer \\(c\\) …",
+    "text": "Hvis man ændrer \\(c\\) …\nOkay, turen er kommet til at se på \\(c\\) i formlen \\(y = ax^2 + bx + c\\). Lad os prøve at sætte \\(a=2\\), \\(b=1\\) og lade \\(c\\) variere, \\(c=0, 2, 4\\).\n\n\n\n\n\n\n\n\n\nDenne her gang kan vi se, at \\(c\\) simpelthen bare er y-værdierne der svarer til \\(x=0\\), det vi også kalder skæringspunktet med y-aksen. (Også selvom jeg her har undladt at tegne y-aksen, så den ikke står i vejen for kurverne.)\nHvis vi tænker på ligningen for en ret linje: \\(f(x) = ax + b\\), kan vi måske huske er her er det \\(b\\) som er skæringspunkt med y-aksen. For andengradsligningen, \\(f(x) = ax^2 + bx + c\\) er det altså \\(c\\) der spiller rollen som skæringspunkt med y-aksen.\nDet er ikke så svært at se, at det må være sådan, for vi kan bare sætte \\(x=0\\) ind i formlerne. For den rette linje har vi: \\(f(0) = a\\cdot0 + b = b\\). Og for parablen: \\(f(0) = a \\cdot 0^2 + b\\cdot0 + c= c\\).\nLad os prøve at sætte det hele sammen i ét plot:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
+    ]
+  },
+  {
+    "objectID": "parabler.html#toppunkt",
+    "href": "parabler.html#toppunkt",
+    "title": "Parabler",
+    "section": "Toppunkt",
+    "text": "Toppunkt\nIndtil videre har vi bare aflæst parablerne toppunkter. Men man kan også beregne dem. Her skal vi bruge et ekstra hjælpebegreb som vi kalder diskriminanten og får bogstavet \\(D\\). Vi udregner diskriminanten sådan her:\n\\[ D = b^2 - 4ac \\]\nKoordinatet til toppunktet for en hvilken som helst parabel er nu:\n\\[ T = (-\\frac{b}{2a}, - \\frac{D}{4a}) \\] Tager vi for eksempel vores to parallelforskudte parabler fra før, med forskrifterne \\(y_1 = x^2\\) og \\(y_2 = x^2 + 4x\\), kan vi beregne:\n\\[ D_1 = 0^2 -4 \\cdot 1 \\cdot 0 = 0 \\] og:\n\\[ D_2 = 4^2 -4 \\cdot 1 \\cdot 0 = 16 \\]\nDe to toppunkter er nu:\n\\[ T_1 = (-\\frac{0}{2}, - \\frac{0}{4}) = (0, 0) \\] og:\n\\[ T_2 = (-\\frac{4}{2}, - \\frac{15}{4}) = (-2, -4) \\]\nVi kan lige tjekke plottet fra før og se om det passer:\n\n\n\n\n\n\n\n\n\nDet passer sørme!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
+    ]
+  },
+  {
+    "objectID": "parabler.html#rødder",
+    "href": "parabler.html#rødder",
+    "title": "Parabler",
+    "section": "Rødder",
+    "text": "Rødder",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
+    ]
+  },
+  {
+    "objectID": "parabler.html#tre-punkter",
+    "href": "parabler.html#tre-punkter",
+    "title": "Parabler",
+    "section": "Tre punkter",
+    "text": "Tre punkter",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
+    ]
+  },
+  {
+    "objectID": "parabler.html#brændpunkt",
+    "href": "parabler.html#brændpunkt",
+    "title": "Parabler",
+    "section": "Brændpunkt",
+    "text": "Brændpunkt",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parabler</span>"
     ]
