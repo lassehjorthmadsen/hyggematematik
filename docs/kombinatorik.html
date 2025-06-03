@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -149,6 +178,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#hvad-er-kombinatorik" id="toc-hvad-er-kombinatorik" class="nav-link active" data-scroll-target="#hvad-er-kombinatorik">Hvad er kombinatorik?</a></li>
+  <li><a href="#oversigt" id="toc-oversigt" class="nav-link" data-scroll-target="#oversigt">Oversigt</a></li>
   </ul>
 </nav>
     </div>
@@ -192,6 +222,63 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+</section>
+<section id="oversigt" class="level2">
+<h2 class="anchored" data-anchor-id="oversigt">Oversigt</h2>
+<table class="caption-top table">
+<caption>Fire typer af kombinationer</caption>
+<colgroup>
+<col style="width: 34%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Ordnet</th>
+<th>Uordnet</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Med tilbagelægning</td>
+<td>Kombinationslås</td>
+<td>Bland-selv-slik</td>
+</tr>
+<tr class="even">
+<td>Uden tilbagelægning</td>
+<td>Holdopstilling</td>
+<td>Lotto-tal</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<caption>Formler for beregning af kombinationer</caption>
+<colgroup>
+<col style="width: 34%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Ordnet</th>
+<th>Uordnet</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Med tilbagelægning</td>
+<td><span class="math inline">\(n^k\)</span></td>
+<td><span class="math inline">\(\binom{n+k-1}{k} = \frac{(n+k-1)!}{k!(n-1)!}\)</span></td>
+</tr>
+<tr class="even">
+<td>Uden tilbagelægning</td>
+<td><span class="math inline">\(\frac{n!}{(n-k)!}\)</span></td>
+<td><span class="math inline">\(\binom{n}{k} = \frac{n!}{k!(n-k)!}\)</span></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>

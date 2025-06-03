@@ -1,8 +1,8 @@
 {
-  "hash": "3c606fa14fc343060d41d3fe216de028",
+  "hash": "b167276cf7a1ea51dd5dcfa2c8989d14",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Kombinatorik\"\nauthor: \"Lasse Hjorth Madsen\"\npublished: \"today\"\nformat: html\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Hvad er kombinatorik?\n\nKombinatorik handler om, hvordan man kan vælge og sammensætte ting.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](kombinatorik_files/figure-html/unnamed-chunk-1-1.png){width=1056}\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Kombinatorik\"\nauthor: \"Lasse Hjorth Madsen\"\npublished: \"today\"\nformat: html\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Hvad er kombinatorik?\n\nKombinatorik handler om, hvordan man kan vælge og sammensætte ting.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](kombinatorik_files/figure-html/unnamed-chunk-1-1.png){width=1056}\n:::\n:::\n\n\n\n## Oversigt\n\n\n|                     | Ordnet              | Uordnet             |\n|---------------------|---------------------|---------------------|\n| Med tilbagelægning  | Kombinationslås     | Bland-selv-slik     |\n| Uden tilbagelægning | Holdopstilling      | Lotto-tal           |\n\n: Fire typer af kombinationer {tbl-colwidths=\"[34,33,33]\"}\n\n\n|                     | Ordnet              | Uordnet\n|---------------------|---------------------|---------------------|\n| Med tilbagelægning  | $n^k$               | $\\binom{n+k-1}{k} = \\frac{(n+k-1)!}{k!(n-1)!}$  |\n| Uden tilbagelægning | $\\frac{n!}{(n-k)!}$ | $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$      |\n: Formler for beregning af kombinationer {tbl-colwidths=\"[34,33,33]\"}",
     "supporting": [
       "kombinatorik_files"
     ],

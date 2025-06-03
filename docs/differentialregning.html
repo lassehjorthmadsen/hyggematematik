@@ -192,6 +192,7 @@ window.Quarto = {
   <li><a href="#acceleration" id="toc-acceleration" class="nav-link" data-scroll-target="#acceleration">Acceleration</a></li>
   </ul></li>
   <li><a href="#opsummering" id="toc-opsummering" class="nav-link" data-scroll-target="#opsummering">Opsummering</a></li>
+  <li><a href="#appendix-regneregler" id="toc-appendix-regneregler" class="nav-link" data-scroll-target="#appendix-regneregler">Appendix: Regneregler</a></li>
   </ul>
 </nav>
     </div>
@@ -344,7 +345,7 @@ window.Quarto = {
 <p>Ligesom før vil vi tegne tangenter for at finde hastigheden på forskellige tidspunkter. Tangenten viser, hvor stejl grafen er, og det fortæller os, hvor hurtigt du cykler. Vi vælger 3 tidspunkter: <span class="math inline">\(x=2, 7, 12\)</span>.</p>
 <p>For at tegne tangenterne skal vi bruge den afledte funktion til at finde hældningen. Den afledte af: <span class="math display">\[ g(x) = x^3 - 18x^2 + 80x \]</span> er: <span class="math display">\[ g'(x) = 3x^2 - 36x + 80 \]</span></p>
 <p>Den differentieringsregel vi bruger her, ser sådan ud:</p>
-<p><span class="math display">\[ f(x) = x^n \]</span> <span class="math display">\[ f'(x) = nx^{(n-1)} \]</span> (<em>Hvorfor</em> den regel gælder, kan du finde en forklaring på til allersidst.)</p>
+<p><span class="math display">\[ f(x) = x^n \]</span> <span class="math display">\[ f'(x) = nx^{(n-1)} \]</span> (Du kan finde den regel og mange andre i appendix til allersidst.)</p>
 <p><span class="math inline">\(g'(x)\)</span> er altså en funktion, der fortæller os hastigheden, eller hældingen til tangenten, for hver tid, <span class="math inline">\(x\)</span>. For at tegne tangenten ved en bestemt x-værdi, <span class="math inline">\(x_0\)</span>, bruger vi ligningen for tangentlinjen: <span class="math display">\[ y = g(x_0) + g'(x_0) \cdot (x - x_0) \]</span> Lad os tegne grafen med nogle tangenter, så vi får et indtryk af, hvordan det ser ud:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -410,6 +411,76 @@ window.Quarto = {
 <li>Den dobbelt afledte funktion, altså <em>accelerationsfunktionen</em>, <span class="math inline">\(g''(x)=6x-36\)</span>, viste, at hastigheden hele tiden steg.</li>
 </ul></li>
 </ul>
+</section>
+<section id="appendix-regneregler" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-regneregler">Appendix: Regneregler</h2>
+<p>Her er en masse regneregler, man kan bruge, når man differentierer. Det kunne være sjovt at prøve dem alle sammen her – men det kommer til at fylde lidt for meget.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 31%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(f(x)\)</span></th>
+<th><span class="math inline">\(f'(x)\)</span></th>
+<th>Kommentar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(1\)</span></td>
+<td>Det svarer til, at <span class="math inline">\(y=x\)</span> har hældning 1</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(kx\)</span></td>
+<td><span class="math inline">\(k\)</span></td>
+<td>Denne her regel brugte vi tidligere</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(k\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td>En flad linje har en hældning på 0</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x^n\)</span></td>
+<td><span class="math inline">\(nx^{n-1}\)</span></td>
+<td>Denne her brugte vi også</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\frac{1}{x}\)</span></td>
+<td><span class="math inline">\(-\frac{1}{x^2}\)</span></td>
+<td>Denne og resten af reglerne brugte vi ikke</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(a^x\)</span></td>
+<td><span class="math inline">\(a^x \ln(a)\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(e^x\)</span></td>
+<td><span class="math inline">\(e^x\)</span></td>
+<td>En funktion kan godt være sin egen afledte</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(e^{kx}\)</span></td>
+<td><span class="math inline">\(k \cdot e^{kx}\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\sqrt{x}\)</span></td>
+<td><span class="math inline">\(\frac{1}{2\sqrt{x}}\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\ln(x)\)</span></td>
+<td><span class="math inline">\(\frac{1}{x}\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>

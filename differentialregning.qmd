@@ -214,7 +214,7 @@ Den differentieringsregel vi bruger her, ser sådan ud:
 
 $$ f(x) = x^n $$
 $$ f'(x) = nx^{(n-1)} $$
-(*Hvorfor* den regel gælder, kan du finde en forklaring på til allersidst.)
+(Du kan finde den regel og mange andre i appendix til allersidst.)
 
 $g'(x)$  er altså en funktion, der fortæller os hastigheden, eller hældingen til tangenten, for hver tid, $x$. For at tegne tangenten ved en bestemt x-værdi, $x_0$, bruger vi ligningen for tangentlinjen: 
 $$ y = g(x_0) + g'(x_0) \cdot (x - x_0) $$
@@ -323,3 +323,20 @@ I grafen kan man se, at accelerationen stiger jævnt over tid. Når for eksempel
 - Til sidst prøvede vi det hele igen for en lidt mere kompliceret funktion, nemlig en tredjegradsligning: $g(x) = x^3 - 18x^2 + 80x$. Vi så at:
    - Den afledte funktion, altså *hastighedsfunktionen*, $g'(x) = 3x^2 - 36x + 80$, er en andengradsligning, som sjovt nok kan give negative hastigheder.
    - Den dobbelt afledte funktion, altså *accelerationsfunktionen*, $g''(x)=6x-36$, viste, at hastigheden hele tiden steg. 
+   
+## Appendix: Regneregler
+
+Her er en masse regneregler, man kan bruge, når man differentierer. Det kunne være sjovt at prøve dem alle sammen her -- men det kommer til at fylde lidt for meget.
+
+| $f(x)$        | $f'(x)$               | Kommentar                          
+|---------------|-----------------------|------------------------------------
+| $x$           | $1$                   | Det svarer til, at $y=x$ har hældning 1 
+| $kx$          | $k$                   | Denne her regel brugte vi tidligere
+| $k$           | $0$                   | En flad linje har en hældning på 0
+| $x^n$         | $nx^{n-1}$            | Denne her brugte vi også
+| $\frac{1}{x}$ | $-\frac{1}{x^2}$      | Denne og resten af reglerne brugte vi ikke
+| $a^x$         | $a^x \ln(a)$          |
+| $e^x$         | $e^x$                 | En funktion kan godt være sin egen afledte
+| $e^{kx}$      | $k \cdot e^{kx}$      |
+| $\sqrt{x}$    | $\frac{1}{2\sqrt{x}}$ |
+| $\ln(x)$      | $\frac{1}{x}$         |
