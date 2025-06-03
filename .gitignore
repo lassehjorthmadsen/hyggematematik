@@ -1,6 +1,6 @@
 # Quarto cache and generated files
 *_cache/
-*_files/
+#*_files/
 .quarto/
 _site/
 
