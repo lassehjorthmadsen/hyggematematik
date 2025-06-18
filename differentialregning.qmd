@@ -5,7 +5,7 @@ published: "today"
 format: html
 ---
 
-## Hvad er differentialregning?
+## Hvad er differentialregning? {#sec-differential}
 
 Differentialregning handler om at forstå, hvordan ting ændrer sig -- som for eksemple hvor hurtigt en cykel kører, eller hvordan dens hastighed ændrer sig. Vi bruger eksempler og grafer til at gøre det nemt at forstå.
 

@@ -12,6 +12,7 @@ book:
     - parabler.qmd
     - enheder.qmd
     - potenser-rodder.qmd
+    - logaritmer.qmd
     - differentialregning.qmd
     - kombinatorik.qmd
 

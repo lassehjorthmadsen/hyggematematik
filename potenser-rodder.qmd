@@ -72,9 +72,9 @@ $$ 5^2 \cdot 5^2 \cdot 5^2= (5 \cdot 5) \cdot (5 \cdot 5) \cdot (5 \cdot 5) = 5 
 
 Her er reglen for, hvordan man opløfter *produktet* af to tal til en potens:
 
-$$ (a \cdot b)^n = a^n \cdot a^n $$
+$$ (a \cdot b)^n = a^n \cdot b^n $$
 
-Og eksemplet der viser hvorfor, det må passe:
+Og eksemplet der viser, hvorfor det må passe:
 
 $$ (4x)^3 = 4x \cdot 4x \cdot 4x = 4 \cdot 4 \cdot 4 \cdot x \cdot x \cdot x = 4^3 \cdot x^3 $$
 
@@ -141,7 +141,7 @@ Vi ved samtidig at:
 
 $$ (\sqrt{x})^2 = x $$. 
 
-Så derfor må:
+Så derfor må det her være rigtigt:
 
 $$ x^\frac{1}{2} = \sqrt{x} $$
 
@@ -162,7 +162,7 @@ $$x^\frac{1}{219} = \sqrt[219]{x}$$
 
 og så videre.
 
-Det betyder, at potenstal og rødder kan være *alle* tal, og vi kan derfor også godt skrive $x^2,3$ eller $4^\pi$ eller $\sqrt[2.34]{x} = x^\frac{1}{2,34}$.
+Det betyder, at potenstal og rødder kan være *alle* tal, og vi kan derfor også godt skrive $x^{2,3}$ eller $4^\pi$ eller $\sqrt[2,3]{x} = x^\frac{1}{2,3}$.
 
 Tyg eventuelt lidt på, hvorfor det sidste udtryk må være rigtig.
 
