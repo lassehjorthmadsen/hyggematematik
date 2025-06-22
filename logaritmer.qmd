@@ -264,15 +264,15 @@ Vi kan ikke på nogen nem måde selv regne ud hvad $log_2(100)$ er, så vi må b
 
 Et andet eksempel på vækst:
 
-Hvis jeg investerer 1 krone på en måde så investeringen vokser med 7% om året, hvor mange penge er der så efter 25 år?
+Hvis jeg investerer 1 krone på en måde så investeringen vokser med 8% om året, hvor mange penge er der så efter 25 år?
 
 Efter 1 år er den ene krone blevet til 1,08 kroner (den ene er den krone vi startede med, de 0,08 er afkastet på 8% efter det første år.) Efter to år er kronen blevet til $1{,}08 \cdot 1{,}08 = 1{,}08^2\approx 1{,}17$ fordi man efter andet år får 8% af de 1,08 kroner man nu har.
 
-Efter 25 år er den ene krone blevet til $1{,}08^25 \approx 6{,}85$ kroner. Hvis man istedet for 1 krone var startet med 1.000 kroner ville resultatet bare være $1.000 \cdot 1{,}08^25 \approx 6.848$ kroner.
+Efter 25 år er den ene krone blevet til $1{,}08^{25} \approx 6{,}85$ kroner. Hvis man istedet for 1 krone var startet med 1.000 kroner ville resultatet bare være $1.000 \cdot 1{,}08^{25} \approx 6{.}848$ kroner.
 
 Hvor lang tid skal der gå, før den ene kroner er blevet til én million kroner? Vækstfaktoren, eller grundtallet $a$ er som sagt 1,08, så det er også det grundtal vi skal bruge i logaritmen: $log_{1,08}(1{,}000{,}000) \approx 180$ år. 
 
-Okay, det er ret lang tid at vente, men det er også temmeligt vildt, at 1 kroner kan blive til 1 million -- selvom det måske så er dine oldebørn der får glæde af pengene.
+Okay, det er ret lang tid at vente, men det er også temmeligt vildt, at 1 krone kan blive til 1 million -- selvom det måske så er dine oldebørn der får glæde af pengene.
 
 #### Store tal og små tal
 
