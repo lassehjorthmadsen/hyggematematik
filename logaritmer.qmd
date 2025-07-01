@@ -343,28 +343,35 @@ Men ... hvordan kan vi være sikre på, at den regneregel vi brugte, $log(x^n) =
 
 Her er et lille bevis -- hold tungen lige i munden og giv dig god tid, så kan du godt følge tankegangen. Vi bruger igen ti-talslogaritmen, $log(x)$:
 
-Lad os sige at:
+Vi ved jo at:
 
-$$ log(x) = k $$
-Det er jo det samme som at spørge om, hvad vi skal opløfte 10 til, for få tallet $x$. Derfor ved vi også at:
- 
-$$ x = 10^k $$
-Det er selve definitionen på logaritme.
+$$ a = 10 ^{log(a)} $$
+Fordi eksponentialfunktionen $10^x$ er den omvendte til ti-talslogaritmen, $log(x)$, så de to funktioner ophæver hinanden. Det må så også betyde at:
 
-Så kan vi opløfte til $n$ på begge sider:
+$$ log(a^x) = log\left(\left(10 ^{log(a)}\right)^x\right) $$
 
-$$ x^n = ( 10^k)^n = 10^{kn}$$
+Hvis den er lidt svær at fordøje, så tænk på, at det her selvfølgelig er rigtigt: $log(a^x) = log(a^x)$. Og så sætter vi bare udtrykket $a = 10 ^{log(a)}$ fra før ind på $a$'s plads på *højre* side af ligningen.
 
-(Det sidste lighedstegn kommer fra potensregnereglen $(a^m)^n = a^{m\cdot n}$ som du kan læse mere om her: @sec-potenser)
+Nu kan vi bruge potensregnereglen $(a^m)^n = a^{m\cdot n}$ (som du kan læse mere om her: @sec-potenser) til at omorganisere højre side lidt:
 
-Så kan vi tage logaritmen på begge sider:
+$$ log(a^x) = log\left(10 ^{log(a)\cdot x}\right) $$
 
-$$ log(x^n) = log( 10^{kn}) = kn$$
+Fordi $log(x)$ og $10^x$ stadig er hinandens omvendte, ophæver de hinanden, så vi bare ender med eksponenten $log(a) \cdot x$ på højre side:
 
-Sidste lighedstegn er fordi $log(x)$ ophæver $10^x$.
+$$ log(a^x) = log(a)\cdot x $$
 
-Fra allerførste ligning ved vi at $log(x) = k$ og ved at sætte $log(x)$ ind på $k$'s plads får vi:
+Det er det samme som:
 
-$$ log(x^n) = n \cdot log(x) $$
+$$ log(a^x) = x \cdot log(a) $$
 
 Hvilket var lige det, vi gerne ville bevise!
+
+Man kan sige, at denne her regneregel følger direkte af definitionen på logaritmefunktionen $log(x)$ som den omvendte af eksponentionalfunktionen $10^x$, *plus* det vi i øvrigt ved om om potenser.
+
+Her er en oversigt over de tre vigtigste regneregler med logaritmer. Vi har lige bevist potensreglen, og de andre kan bevises på lignende måder -- men det springe vi over for nu.
+
+| Regel | Matematisk notation | Beskrivelse |
+|-------|-------------------|-------------|
+| Produktreglen | $\log(x \cdot y) = \log(x) + \log(y)$ | Logaritmen til et produkt er lig med summen af de enkelte logaritmer |
+| Kvotientreglen | $\log(\frac{x}{y}) = \log(x) - \log(y)$ | Logaritmen til en kvotient er lig med differensen mellem logaritmerne |
+| Potensreglen | $\log(x^n) = n \cdot \log(x)$ | Logaritmen til en potens er lig med eksponenten gange logaritmen til grundtallet |
