@@ -1,8 +1,0 @@
----
-title: "Titel"
-author: "Lasse Hjorth Madsen"
-published: "today"
-format: html
----
-
-## Hvad er ...?
