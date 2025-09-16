@@ -1,8 +1,5 @@
 ---
 title: "Logaritmer"
-author: "Lasse Hjorth Madsen"
-published: "today"
-format: html
 ---
 
 ```{r setup}

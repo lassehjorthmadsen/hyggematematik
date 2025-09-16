@@ -1,8 +1,5 @@
 ---
 title: "Potenser og rødder"
-author: "Lasse Hjorth Madsen"
-published: "today"
-format: html
 ---
 
 

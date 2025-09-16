@@ -1,8 +1,5 @@
 ---
 title: "Enheder"
-author: "Lasse Hjorth Madsen"
-published: "today"
-format: html
 ---
 
 ## Hvad er enheder? {#sec-enheder}

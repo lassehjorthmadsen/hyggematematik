@@ -1,11 +1,8 @@
 ---
 title: "Kombinatorik"
-author: "Lasse Hjorth Madsen"
-published: "today"
-format: html
 ---
 
-```{r set_up}
+```{r setup}
 library(tidyverse)
 library(igraph)
 ```
