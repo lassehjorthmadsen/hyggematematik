@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(quarto preview:*)",
+      "Bash(quarto render:*)",
+      "Bash(quarto tools list:*)",
+      "Bash(quarto install tool tinytex:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
