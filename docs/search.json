@@ -280,16 +280,6 @@
     ]
   },
   {
-    "objectID": "kombinatorik.html#oversigt",
-    "href": "kombinatorik.html#oversigt",
-    "title": "Kombinatorik",
-    "section": "Oversigt",
-    "text": "Oversigt\nSom med meget matematik er en stor del af tricket i kombinatorik at være skarp på, præcist hvad der menes i en eller anden opgave eller problem. Når vi vælger ting, bruger vi for eksempel begreberne med og uden tilbagelægning. Og vi taler om valg, som er ordnet eller uordnet. Hvad betyder det så?\n\nMed tilbagelægning: Kan vi vælge den samme ting flere gange? Nogle gange er det helt klart: Vi kan ikke vælge den samme person til festudvalget to gange. Men når vi blander fredagsslik, kan vi godt tage to stykker af vores yndlingsvingummi. Hvis vi er på restaurant er det lidt mere usikkert hvad reglerne er: Vi kan nok godt få lov til at vælge en dessert både som forret, hovedret og dessert, men det er ikke så almindeligt, og normalt tager vi én forret, én hovedret og én dessert.\nUden tilbagelægning:\n\n\nFire typer af kombinationer\n\n\n\n\n\n\n\n\nOrdnet\nUordnet\n\n\n\n\nMed tilbagelægning\nKombinationslås\nBland-selv-slik\n\n\nUden tilbagelægning\nHoldopstilling\nLotto-tal\n\n\n\n\nFormler for beregning af kombinationer\n\n\n\n\n\n\n\n\nOrdnet\nUordnet\n\n\n\n\nMed tilbagelægning\n\\(n^k\\)\n\\(\\binom{n+k-1}{k} = \\frac{(n+k-1)!}{k!(n-1)!}\\)\n\n\nUden tilbagelægning\n\\(\\frac{n!}{(n-k)!}\\)\n\\(\\binom{n}{k} = \\frac{n!}{k!(n-k)!}\\)",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Kombinatorik</span>"
-    ]
-  },
-  {
     "objectID": "kombinatorik.html#hvad-er-kombinatorik",
     "href": "kombinatorik.html#hvad-er-kombinatorik",
     "title": "Kombinatorik",

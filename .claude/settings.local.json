@@ -4,7 +4,9 @@
       "Bash(quarto preview:*)",
       "Bash(quarto render:*)",
       "Bash(quarto tools list:*)",
-      "Bash(quarto install tool tinytex:*)"
+      "Bash(quarto install tool tinytex:*)",
+      "Bash(gh repo view:*)",
+      "Bash(gh api repos/:owner/:repo/pages)"
     ],
     "deny": [],
     "ask": []
