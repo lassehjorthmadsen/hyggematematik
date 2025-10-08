@@ -63,3 +63,4 @@ Each chapter loads only the packages it needs:
 - Auto-deployment via GitHub Pages on push to main
 - `_freeze/` cache directory ignored (speeds up local rendering)
 - Always use personal email for this side project
+- Be mindful to keep 'docs/CNAME' and 'docs/.nojekyll' files, since these are needed for GitHub to serve the site at megetmeremat.dk
