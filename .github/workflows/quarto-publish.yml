@@ -39,6 +39,7 @@ jobs:
             any::tidyverse
             any::igraph
             any::latex2exp
+            any::ggrepel
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
